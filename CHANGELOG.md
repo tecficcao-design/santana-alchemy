@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.5 — 2026-11-15
+
+- Expanded the bilingual free C1 kit from one formula to five: Water Preservative, Rustic Antiseptic, Unstable Fire, Distracting Smoke and Revealing Ink.
+- Included exactly the ten required ingredients, five product templates and local SVG icons. Each formula generates its own brown-covered physical book and recipe Journal.
+- Preserved the `base-c1-demo` kit ID and all shared recipe/ingredient IDs. Existing worlds can reimport without duplicates, and character inventory and memorization remain unchanged.
+- Added crafting coverage for every included formula in both content languages and an upgrade regression for the original one-formula demo.
+- Full live crafting validation and official Foundry catalog submission remain pending.
+
 ## 0.1.4 — 2026-11-15
 
 - Added public manifest and versioned ZIP download URLs for direct Foundry installation and update checks.

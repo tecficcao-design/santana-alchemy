@@ -1,10 +1,10 @@
 {
   "formatVersion": 1,
   "id": "base-c1-demo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": {
-    "pt-BR": "Demonstração C1 — Conservante de Água",
-    "en": "C1 Demo — Water Preservative"
+    "pt-BR": "Demonstração C1 — Cinco Fórmulas",
+    "en": "C1 Demo — Five Formulas"
   },
   "ingredients": [
     {
@@ -14,11 +14,326 @@
         "en": "Salt Beetle"
       },
       "description": {
-        "pt-BR": "<p>Porção utilizável de ingrediente alquímico: Besouro de Sal.</p>",
-        "en": "<p>A usable portion of the Salt Beetle alchemical ingredient.</p>"
+        "pt-BR": "<p>Besouro branco como giz, cuja carapaça cristaliza a partir da salmoura que consome. Sua carapaça favorece dessecação, conservação, afinidade salina e resistência a águas severas.</p><table><tbody><tr><th>Tipo</th><td>Animal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>3 po · Vila</td></tr><tr><th>Ambientes</th><td>Deserto, Costeiro, Subterrâneo</td></tr><tr><th>CD de coleta</th><td>11</td></tr><tr><th>Características opcionais</th><td>Frágil</td></tr></tbody></table>",
+        "en": "<p>A chalk-white beetle whose shell crystallizes from the brine it consumes. Its shell favors desiccation, preservation, affinity with salt, and resistance to harsh waters.</p><table><tbody><tr><th>Type</th><td>Animal</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>3 gp · Village</td></tr><tr><th>Environments</th><td>Desert, Coastal, Underground</td></tr><tr><th>Gathering DC</th><td>11</td></tr><tr><th>Optional traits</th><td>Fragile</td></tr></tbody></table>"
       },
+      "img": "modules/santana-alchemy/assets/demo/ingredients/salt-beetle.svg",
       "weight": 0.01,
-      "img": "modules/santana-alchemy/assets/ingredient.svg"
+      "price": 3.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 25,
+        "type": {
+          "pt-BR": "Animal",
+          "en": "Animal"
+        },
+        "foragingDC": 11,
+        "biomes": {
+          "pt-BR": [
+            "Deserto",
+            "Costeiro",
+            "Subterrâneo"
+          ],
+          "en": [
+            "Desert",
+            "Coastal",
+            "Underground"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Frágil"
+          ],
+          "en": [
+            "Fragile"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:crackling-bark",
+      "name": {
+        "pt-BR": "Casca Estalante",
+        "en": "Crackling Bark"
+      },
+      "description": {
+        "pt-BR": "<p>Placas secas desta casca estalam e soltam pequenas faíscas quando dobradas. Favorecem liberação súbita, ignição, ruído e transições energéticas em misturas instáveis.</p><table><tbody><tr><th>Tipo</th><td>Vegetal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>3 po · Vila</td></tr><tr><th>Ambientes</th><td>Floresta, Campos, Deserto</td></tr><tr><th>CD de coleta</th><td>11</td></tr><tr><th>Características opcionais</th><td>Volátil</td></tr></tbody></table>",
+        "en": "<p>Dry plates of this bark crackle and shed tiny sparks when bent. They favor sudden release, ignition, noise, and energetic transitions in unstable mixtures.</p><table><tbody><tr><th>Type</th><td>Plant</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>3 gp · Village</td></tr><tr><th>Environments</th><td>Forest, Grasslands, Desert</td></tr><tr><th>Gathering DC</th><td>11</td></tr><tr><th>Optional traits</th><td>Volatile</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/ingredients/crackling-bark.svg",
+      "weight": 0.01,
+      "price": 3.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 26,
+        "type": {
+          "pt-BR": "Vegetal",
+          "en": "Plant"
+        },
+        "foragingDC": 11,
+        "biomes": {
+          "pt-BR": [
+            "Floresta",
+            "Campos",
+            "Deserto"
+          ],
+          "en": [
+            "Forest",
+            "Grasslands",
+            "Desert"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Volátil"
+          ],
+          "en": [
+            "Volatile"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:grass-ash",
+      "name": {
+        "pt-BR": "Cinza de Capim",
+        "en": "Grass Ash"
+      },
+      "description": {
+        "pt-BR": "<p>Cinza leve e acinzentada, obtida de gramíneas queimadas no fim de seu ciclo de crescimento. Favorece liberação, renovação, fertilização simples e reações que unem crescimento e chama.</p><table><tbody><tr><th>Tipo</th><td>Processado</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>1 po · Vilarejo</td></tr><tr><th>Ambientes</th><td>Campos, Deserto, Urbano</td></tr><tr><th>CD de coleta</th><td>10</td></tr><tr><th>Características opcionais</th><td>Sazonal</td></tr></tbody></table>",
+        "en": "<p>Light gray ash obtained from grasses burned at the end of their growth cycle. It favors release, renewal, simple fertilization, and reactions that join growth with flame.</p><table><tbody><tr><th>Type</th><td>Processed</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>1 gp · Hamlet</td></tr><tr><th>Environments</th><td>Grasslands, Desert, Urban</td></tr><tr><th>Gathering DC</th><td>10</td></tr><tr><th>Optional traits</th><td>Seasonal</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/ingredients/grass-ash.svg",
+      "weight": 0.01,
+      "price": 1.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 26,
+        "type": {
+          "pt-BR": "Processado",
+          "en": "Processed"
+        },
+        "foragingDC": 10,
+        "biomes": {
+          "pt-BR": [
+            "Campos",
+            "Deserto",
+            "Urbano"
+          ],
+          "en": [
+            "Grasslands",
+            "Desert",
+            "Urban"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Sazonal"
+          ],
+          "en": [
+            "Seasonal"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vilarejo",
+          "en": "Hamlet"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:yellow-mushroom",
+      "name": {
+        "pt-BR": "Cogumelo Amarelo",
+        "en": "Yellow Mushroom"
+      },
+      "description": {
+        "pt-BR": "<p>Um chapéu amarelo-enxofre libera pó amargo quando ferido. Seus extratos favorecem irritação, alerta, descoloração e interrupção vigorosa de processos biológicos.</p><table><tbody><tr><th>Tipo</th><td>Fungo</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>3 po · Vila</td></tr><tr><th>Ambientes</th><td>Floresta, Colinas</td></tr><tr><th>CD de coleta</th><td>12</td></tr><tr><th>Características opcionais</th><td>Contaminante</td></tr></tbody></table>",
+        "en": "<p>A sulfur-yellow cap releases bitter dust when damaged. Its extracts favor irritation, alertness, discoloration, and vigorous interruption of biological processes.</p><table><tbody><tr><th>Type</th><td>Fungus</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>3 gp · Village</td></tr><tr><th>Environments</th><td>Forest, Hills</td></tr><tr><th>Gathering DC</th><td>12</td></tr><tr><th>Optional traits</th><td>Contaminant</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/ingredients/yellow-mushroom.svg",
+      "weight": 0.01,
+      "price": 3.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 27,
+        "type": {
+          "pt-BR": "Fungo",
+          "en": "Fungus"
+        },
+        "foragingDC": 12,
+        "biomes": {
+          "pt-BR": [
+            "Floresta",
+            "Colinas"
+          ],
+          "en": [
+            "Forest",
+            "Hills"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Contaminante"
+          ],
+          "en": [
+            "Contaminant"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:ember-mushroom",
+      "name": {
+        "pt-BR": "Cogumelo de Brasa",
+        "en": "Ember Mushroom"
+      },
+      "description": {
+        "pt-BR": "<p>A parte inferior deste chapéu negro brilha como carvão abafado e se inflama quando exposta ao ar. Favorece ignição, calor persistente, fumaça e combustão retardada.</p><table><tbody><tr><th>Tipo</th><td>Fungo</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>4 po · Cidade pequena</td></tr><tr><th>Ambientes</th><td>Subterrâneo, Montanhas</td></tr><tr><th>CD de coleta</th><td>12</td></tr><tr><th>Características opcionais</th><td>Volátil</td></tr></tbody></table>",
+        "en": "<p>The underside of this black cap glows like banked charcoal and ignites when exposed to air. It favors ignition, persistent heat, smoke, and delayed combustion.</p><table><tbody><tr><th>Type</th><td>Fungus</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>4 gp · Small Town</td></tr><tr><th>Environments</th><td>Underground, Mountains</td></tr><tr><th>Gathering DC</th><td>12</td></tr><tr><th>Optional traits</th><td>Volatile</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/ingredients/ember-mushroom.svg",
+      "weight": 0.01,
+      "price": 4.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 27,
+        "type": {
+          "pt-BR": "Fungo",
+          "en": "Fungus"
+        },
+        "foragingDC": 12,
+        "biomes": {
+          "pt-BR": [
+            "Subterrâneo",
+            "Montanhas"
+          ],
+          "en": [
+            "Underground",
+            "Mountains"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Volátil"
+          ],
+          "en": [
+            "Volatile"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Cidade pequena",
+          "en": "Small Town"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:umbra-spores",
+      "name": {
+        "pt-BR": "Esporos de Umbra",
+        "en": "Umbra Spores"
+      },
+      "description": {
+        "pt-BR": "<p>Estes esporos cor de carvão permanecem visíveis na escuridão, mas quase desaparecem sob luz direta. Favorecem sombra, dormência, ocultação e crescimento em lugares hostis.</p><table><tbody><tr><th>Tipo</th><td>Fungo</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>3 po · Cidade pequena</td></tr><tr><th>Ambientes</th><td>Ampla ocorrência</td></tr><tr><th>CD de coleta</th><td>12</td></tr><tr><th>Características opcionais</th><td>Contaminante</td></tr></tbody></table>",
+        "en": "<p>These charcoal-colored spores remain visible in darkness but almost disappear in direct light. They favor shadow, dormancy, concealment, and growth in hostile places.</p><table><tbody><tr><th>Type</th><td>Fungus</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>3 gp · Small Town</td></tr><tr><th>Environments</th><td>Widespread</td></tr><tr><th>Gathering DC</th><td>12</td></tr><tr><th>Optional traits</th><td>Contaminant</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/ingredients/umbra-spores.svg",
+      "weight": 0.01,
+      "price": 3.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 28,
+        "type": {
+          "pt-BR": "Fungo",
+          "en": "Fungus"
+        },
+        "foragingDC": 12,
+        "biomes": {
+          "pt-BR": [
+            "Ampla ocorrência"
+          ],
+          "en": [
+            "Widespread"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Contaminante"
+          ],
+          "en": [
+            "Contaminant"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Cidade pequena",
+          "en": "Small Town"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:two-sided-leaf",
+      "name": {
+        "pt-BR": "Folha de Dupla Face",
+        "en": "Two-Sided Leaf"
+      },
+      "description": {
+        "pt-BR": "<p>Um lado desta folha é frio e claro; o outro, quente e escuro. Favorece inversão, estados duplos, equilíbrio e reações que mudam conforme sua orientação.</p><table><tbody><tr><th>Tipo</th><td>Vegetal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>1 po · Vilarejo</td></tr><tr><th>Ambientes</th><td>Floresta, Campos, Colinas</td></tr><tr><th>CD de coleta</th><td>10</td></tr><tr><th>Características opcionais</th><td>Sazonal</td></tr></tbody></table>",
+        "en": "<p>One side of this leaf is cool and pale; the other is warm and dark. It favors inversion, dual states, balance, and reactions that change with its orientation.</p><table><tbody><tr><th>Type</th><td>Plant</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>1 gp · Hamlet</td></tr><tr><th>Environments</th><td>Forest, Grasslands, Hills</td></tr><tr><th>Gathering DC</th><td>10</td></tr><tr><th>Optional traits</th><td>Seasonal</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/ingredients/two-sided-leaf.svg",
+      "weight": 0.01,
+      "price": 1.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 29,
+        "type": {
+          "pt-BR": "Vegetal",
+          "en": "Plant"
+        },
+        "foragingDC": 10,
+        "biomes": {
+          "pt-BR": [
+            "Floresta",
+            "Campos",
+            "Colinas"
+          ],
+          "en": [
+            "Forest",
+            "Grasslands",
+            "Hills"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Sazonal"
+          ],
+          "en": [
+            "Seasonal"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vilarejo",
+          "en": "Hamlet"
+        },
+        "unit": "portion"
+      }
     },
     {
       "id": "base:waterlogged-wood",
@@ -27,25 +342,310 @@
         "en": "Waterlogged Wood"
       },
       "description": {
-        "pt-BR": "<p>Porção utilizável de ingrediente alquímico: Madeira Encharcada.</p>",
-        "en": "<p>A usable portion of the Waterlogged Wood alchemical ingredient.</p>"
+        "pt-BR": "<p>Madeira saturada de água, vinda de raízes antigas ou naufrágios, permanece resistente apesar do peso. Favorece controle de flutuação, liberação lenta, memória da água e estrutura orgânica durável.</p><table><tbody><tr><th>Tipo</th><td>Vegetal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>1 po · Vilarejo</td></tr><tr><th>Ambientes</th><td>Floresta, Pântano, Aquático</td></tr><tr><th>CD de coleta</th><td>10</td></tr><tr><th>Características opcionais</th><td>Perecível</td></tr></tbody></table>",
+        "en": "<p>Water-saturated wood from ancient roots or shipwrecks remains sturdy despite its weight. It favors buoyancy control, slow release, the memory of water, and durable organic structure.</p><table><tbody><tr><th>Type</th><td>Plant</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>1 gp · Hamlet</td></tr><tr><th>Environments</th><td>Forest, Swamp, Aquatic</td></tr><tr><th>Gathering DC</th><td>10</td></tr><tr><th>Optional traits</th><td>Perishable</td></tr></tbody></table>"
       },
+      "img": "modules/santana-alchemy/assets/demo/ingredients/waterlogged-wood.svg",
       "weight": 0.01,
-      "img": "modules/santana-alchemy/assets/ingredient.svg"
+      "price": 1.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 33,
+        "type": {
+          "pt-BR": "Vegetal",
+          "en": "Plant"
+        },
+        "foragingDC": 10,
+        "biomes": {
+          "pt-BR": [
+            "Floresta",
+            "Pântano",
+            "Aquático"
+          ],
+          "en": [
+            "Forest",
+            "Swamp",
+            "Aquatic"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Perecível"
+          ],
+          "en": [
+            "Perishable"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vilarejo",
+          "en": "Hamlet"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:lith-powder",
+      "name": {
+        "pt-BR": "Pó de Lith",
+        "en": "Lith Powder"
+      },
+      "description": {
+        "pt-BR": "<p>Lith é o nome genérico de um mineral reativo encontrado em muitos mundos; depois de moído, seu pó claro aceita prontamente outras substâncias. Favorece catálise, reações minerais, ativação e instabilidade controlada.</p><table><tbody><tr><th>Tipo</th><td>Mineral</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>0,5 po · Vilarejo</td></tr><tr><th>Ambientes</th><td>Ampla ocorrência</td></tr><tr><th>CD de coleta</th><td>8</td></tr><tr><th>Características opcionais</th><td>Contaminante</td></tr></tbody></table>",
+        "en": "<p>Lith is a general name for a reactive mineral found in many worlds; when ground, its pale powder readily accepts other substances. It favors catalysis, mineral reactions, activation, and controlled instability.</p><table><tbody><tr><th>Type</th><td>Mineral</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>0.5 gp · Hamlet</td></tr><tr><th>Environments</th><td>Widespread</td></tr><tr><th>Gathering DC</th><td>8</td></tr><tr><th>Optional traits</th><td>Contaminant</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/ingredients/lith-powder.svg",
+      "weight": 0.01,
+      "price": 0.5,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 35,
+        "type": {
+          "pt-BR": "Mineral",
+          "en": "Mineral"
+        },
+        "foragingDC": 8,
+        "biomes": {
+          "pt-BR": [
+            "Ampla ocorrência"
+          ],
+          "en": [
+            "Widespread"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Contaminante"
+          ],
+          "en": [
+            "Contaminant"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vilarejo",
+          "en": "Hamlet"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:stone-violet",
+      "name": {
+        "pt-BR": "Violeta de Pedra",
+        "en": "Stone Violet"
+      },
+      "description": {
+        "pt-BR": "<p>Pequena flor roxa que cria raízes em fendas onde a pedra nua recebe poucas horas de luz. Favorece resistência, crescimento mineral, serenidade e beleza preservada em condições severas.</p><table><tbody><tr><th>Tipo</th><td>Vegetal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>2 po · Vila</td></tr><tr><th>Ambientes</th><td>Colinas, Montanhas, Urbano</td></tr><tr><th>CD de coleta</th><td>10</td></tr><tr><th>Características opcionais</th><td>Cultivável</td></tr></tbody></table>",
+        "en": "<p>A small purple flower takes root in cracks where bare stone receives only a few hours of light. It favors endurance, mineral growth, serenity, and beauty preserved in harsh conditions.</p><table><tbody><tr><th>Type</th><td>Plant</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>2 gp · Village</td></tr><tr><th>Environments</th><td>Hills, Mountains, Urban</td></tr><tr><th>Gathering DC</th><td>10</td></tr><tr><th>Optional traits</th><td>Cultivable</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/ingredients/stone-violet.svg",
+      "weight": 0.01,
+      "price": 2.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 39,
+        "type": {
+          "pt-BR": "Vegetal",
+          "en": "Plant"
+        },
+        "foragingDC": 10,
+        "biomes": {
+          "pt-BR": [
+            "Colinas",
+            "Montanhas",
+            "Urbano"
+          ],
+          "en": [
+            "Hills",
+            "Mountains",
+            "Urban"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Cultivável"
+          ],
+          "en": [
+            "Cultivable"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
     }
   ],
   "products": [
+    {
+      "id": "base:rustic-antiseptic",
+      "name": {
+        "pt-BR": "Antisséptico Rústico",
+        "en": "Rustic Antiseptic"
+      },
+      "description": {
+        "pt-BR": "<h2>Antisséptico Rústico</h2><table><tbody><tr><th>Forma</th><td>Solução tópica</td></tr><tr><th>Uso</th><td>Ação Bônus</td></tr><tr><th>Alvo ou área</th><td>uma criatura com 0 pontos de vida</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>Instantânea</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>A criatura fica estável, mas permanece inconsciente e não recupera pontos de vida.</p><h3>Encerramento</h3><p>Depois de estabilizar a criatura.</p><table><tbody><tr><th>Preço</th><td>10 po</td></tr><tr><th>Disponibilidade</th><td>Vilarejo</td></tr></tbody></table>",
+        "en": "<h2>Rustic Antiseptic</h2><table><tbody><tr><th>Form</th><td>Topical solution</td></tr><tr><th>Use</th><td>Bonus Action</td></tr><tr><th>Target or area</th><td>One creature with 0 Hit Points</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>Instantaneous</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The creature becomes Stable but remains Unconscious and regains no Hit Points.</p><h3>Ending</h3><p>After the creature is stabilized.</p><table><tbody><tr><th>Price</th><td>10 gp</td></tr><tr><th>Availability</th><td>Hamlet</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/products/rustic-antiseptic.svg",
+      "price": 10.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Tópicos",
+          "en": "Topical Preparations"
+        },
+        "sourcePage": 64,
+        "availability": {
+          "pt-BR": "Vilarejo",
+          "en": "Hamlet"
+        },
+        "use": {
+          "pt-BR": "Ação Bônus",
+          "en": "Bonus Action"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
     {
       "id": "base:water-preservative",
       "name": {
         "pt-BR": "Conservante de Água",
         "en": "Water Preservative"
       },
-      "price": 10,
-      "weight": 0.1,
       "description": {
-        "pt-BR": "<p><strong>Forma:</strong> solução conservante. <strong>Uso:</strong> 1 minuto, toque. Uma unidade trata até 4 litros de água potável por 7 dias.</p><p>A água permanece própria para consumo e não sofre deterioração ou contaminação natural durante o armazenamento. O produto não purifica água imprópria, não remove doenças, venenos ou magia, nem neutraliza substâncias adicionadas depois. O efeito termina após 7 dias ou quando a água é consumida.</p>",
-        "en": "<p><strong>Form:</strong> preservative solution. <strong>Use:</strong> 1 minute, touch. One unit treats up to 4 liters of potable water for 7 days.</p><p>The water remains drinkable and resists natural spoilage or contamination during storage. This does not purify unsafe water, remove diseases, poison or magic, or neutralize substances added afterward. The effect ends after 7 days or when the water is consumed.</p>"
+        "pt-BR": "<h2>Conservante de Água</h2><table><tbody><tr><th>Forma</th><td>Solução conservante</td></tr><tr><th>Uso</th><td>1 minuto</td></tr><tr><th>Alvo ou área</th><td>Até 4 litros de água potável</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>7 dias</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>A água permanece própria para consumo e não sofre deterioração ou contaminação natural durante o armazenamento. O produto não purifica água imprópria, remove doenças, venenos ou magia, nem neutraliza substâncias adicionadas depois.</p><h3>Encerramento</h3><p>Ao fim da duração ou quando a água for consumida.</p><table><tbody><tr><th>Preço</th><td>10 po</td></tr><tr><th>Disponibilidade</th><td>Vilarejo</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> Uma unidade trata até 40 litros de água armazenada.</p><p><strong>Qualidade Excepcional.</strong> A solução não altera o sabor da água tratada.</p>",
+        "en": "<h2>Water Preservative</h2><table><tbody><tr><th>Form</th><td>Preservative solution</td></tr><tr><th>Use</th><td>1 minute</td></tr><tr><th>Target or area</th><td>Up to 4 liters of potable water</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>7 days</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The water remains drinkable and does not naturally spoil or become contaminated during storage. The product does not purify unsafe water, remove diseases, poisons, or magic, or neutralize substances added afterward.</p><h3>Ending</h3><p>When the duration ends or when the water is consumed.</p><table><tbody><tr><th>Price</th><td>10 gp</td></tr><tr><th>Availability</th><td>Hamlet</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> One unit treats up to 40 liters of stored water.</p><p><strong>Exceptional Quality.</strong> The solution does not alter the treated water&#x27;s taste.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/products/water-preservative.svg",
+      "price": 10.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Tópicos",
+          "en": "Topical Preparations"
+        },
+        "sourcePage": 66,
+        "availability": {
+          "pt-BR": "Vilarejo",
+          "en": "Hamlet"
+        },
+        "use": {
+          "pt-BR": "1 minuto",
+          "en": "1 minute"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
+    {
+      "id": "base:unstable-fire",
+      "name": {
+        "pt-BR": "Fogo Instável",
+        "en": "Unstable Fire"
+      },
+      "description": {
+        "pt-BR": "<h2>Fogo Instável</h2><table><tbody><tr><th>Forma</th><td>Frasco arremessável</td></tr><tr><th>Uso</th><td>Substitui um ataque da Ação Atacar</td></tr><tr><th>Alvo ou área</th><td>uma criatura ou objeto não empunhado nem vestido</td></tr><tr><th>Alcance</th><td>6 m</td></tr><tr><th>Duração</th><td>Instantânea</td></tr><tr><th>Salvaguarda</th><td>Destreza CD 8; sucesso: metade do dano</td></tr></tbody></table><h3>Efeito</h3><p>Falha: a criatura sofre 1d8 de dano de fogo; sucesso: metade. Um objeto desacompanhado não realiza a resistência. Objetos inflamáveis podem incendiar-se; o fogo alquímico se consome no impacto e não cria uma área incendiada.</p><h3>Encerramento</h3><p>Depois de aplicar o dano.</p><table><tbody><tr><th>Preço</th><td>30 po</td></tr><tr><th>Disponibilidade</th><td>Cidade pequena</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Produção em Lotes.</strong> Permitida; além do ajuste normal, aumente a CD em +1 por volatilidade.</p><p><strong>Integridade do Produto.</strong> Volátil - calor intenso, chama aberta ou impacto grave.</p>",
+        "en": "<h2>Unstable Fire</h2><table><tbody><tr><th>Form</th><td>Thrown flask</td></tr><tr><th>Use</th><td>Replaces one attack of the Attack action</td></tr><tr><th>Target or area</th><td>One creature or an object that is neither worn nor carried</td></tr><tr><th>Range</th><td>20 ft (6 m)</td></tr><tr><th>Duration</th><td>Instantaneous</td></tr><tr><th>Saving throw</th><td>DC 8 Dexterity; half damage on success</td></tr></tbody></table><h3>Effect</h3><p>On a failed save, a creature takes 1d8 Fire damage; on a successful save, it takes half as much. An unattended object makes no saving throw. Flammable objects can catch fire; the alchemical fire burns out on impact and does not create a burning area.</p><h3>Ending</h3><p>After the damage is applied.</p><table><tbody><tr><th>Price</th><td>30 gp</td></tr><tr><th>Availability</th><td>Small Town</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Batch Production.</strong> Allowed; in addition to the normal adjustment, increase the DC by 1 for volatility.</p><p><strong>Product Integrity.</strong> Volatile: intense heat, an open flame, or a severe impact.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/products/unstable-fire.svg",
+      "price": 30.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Arremessáveis",
+          "en": "Thrown Preparations"
+        },
+        "sourcePage": 67,
+        "availability": {
+          "pt-BR": "Cidade pequena",
+          "en": "Small Town"
+        },
+        "use": {
+          "pt-BR": "Substitui um ataque da Ação Atacar",
+          "en": "Replaces one attack of the Attack action"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
+    {
+      "id": "base:distracting-smoke",
+      "name": {
+        "pt-BR": "Fumaça Distrativa",
+        "en": "Distracting Smoke"
+      },
+      "description": {
+        "pt-BR": "<h2>Fumaça Distrativa</h2><table><tbody><tr><th>Forma</th><td>Cápsula fumígena</td></tr><tr><th>Uso</th><td>Ação Utilizar</td></tr><tr><th>Alvo ou área</th><td>Esfera de 3 m de raio centrada em um ponto visível</td></tr><tr><th>Alcance</th><td>6 m</td></tr><tr><th>Duração</th><td>1 minuto</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>A área fica levemente obscurecida. Uma criatura que dependa da visão tem desvantagem em testes de Sabedoria (Percepção) relacionados ao que estiver dentro ou além da fumaça. Vento forte a dispersa ao final do turno atual.</p><h3>Encerramento</h3><p>Quando dispersada ou ao fim da duração.</p><table><tbody><tr><th>Preço</th><td>20 po</td></tr><tr><th>Disponibilidade</th><td>Vila</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Produção em Lotes.</strong> Permitida; além do ajuste normal, aumente a CD em +1 por volatilidade.</p><p><strong>Integridade do Produto.</strong> Volátil - chama aberta ou perfuração da cápsula antes do uso.</p>",
+        "en": "<h2>Distracting Smoke</h2><table><tbody><tr><th>Form</th><td>Smoke capsule</td></tr><tr><th>Use</th><td>Utilize action</td></tr><tr><th>Target or area</th><td>A 10-foot-radius (3 m) Sphere centered on a visible point</td></tr><tr><th>Range</th><td>20 ft (6 m)</td></tr><tr><th>Duration</th><td>1 minute</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The area is Lightly Obscured. A creature relying on sight has Disadvantage on Wisdom (Perception) checks concerning anything inside or beyond the smoke. Strong wind disperses it at the end of the current turn.</p><h3>Ending</h3><p>When dispersed or when the duration ends.</p><table><tbody><tr><th>Price</th><td>20 gp</td></tr><tr><th>Availability</th><td>Village</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Batch Production.</strong> Allowed; in addition to the normal adjustment, increase the DC by 1 for volatility.</p><p><strong>Product Integrity.</strong> Volatile: an open flame or puncturing the capsule before use.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/products/distracting-smoke.svg",
+      "price": 20.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Pós e Vapores",
+          "en": "Powders and Vapors"
+        },
+        "sourcePage": 68,
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "use": {
+          "pt-BR": "Ação Utilizar",
+          "en": "Utilize action"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
+    {
+      "id": "base:revealing-ink",
+      "name": {
+        "pt-BR": "Tinta Reveladora",
+        "en": "Revealing Ink"
+      },
+      "description": {
+        "pt-BR": "<h2>Tinta Reveladora</h2><table><tbody><tr><th>Forma</th><td>Tinta reagente</td></tr><tr><th>Uso</th><td>1 minuto</td></tr><tr><th>Alvo ou área</th><td>um objeto ou superfície de até 1,5 m de lado</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>10 minutos</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>Resíduos orgânicos presentes, como sangue e saliva, emitem um brilho fraco. A tinta revela vestígios mínimos deixados nas últimas 24 horas, mas não identifica origem, idade exata nem acontecimentos. Resíduos completamente removidos não são revelados.</p><h3>Encerramento</h3><p>Ao fim da duração.</p><table><tbody><tr><th>Preço</th><td>20 po</td></tr><tr><th>Disponibilidade</th><td>Vila</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> Revela resíduos deixados nos últimos 7 dias, sem identificar origem ou idade exata.</p><p><strong>Qualidade Excepcional.</strong> Depois do uso, a tinta evapora sem manchar a superfície examinada.</p><p><strong>Integridade do Produto.</strong> Sensível à luz - 1 hora de luz solar direta; frasco opaco evita o teste.</p>",
+        "en": "<h2>Revealing Ink</h2><table><tbody><tr><th>Form</th><td>Reactive ink</td></tr><tr><th>Use</th><td>1 minute</td></tr><tr><th>Target or area</th><td>One object or a surface up to 5 feet (1.5 m) on a side</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>10 minutes</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>Present organic traces, such as blood and saliva, glow faintly. The ink reveals tiny traces left within the last 24 hours, but identifies neither their source, exact age, nor what happened. Completely removed residues are not revealed.</p><h3>Ending</h3><p>When the duration ends.</p><table><tbody><tr><th>Price</th><td>20 gp</td></tr><tr><th>Availability</th><td>Village</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> It reveals residues left within the last 7 days, without identifying source or exact age.</p><p><strong>Exceptional Quality.</strong> After use, the ink evaporates without staining the examined surface.</p><p><strong>Product Integrity.</strong> Light-sensitive: 1 hour of direct sunlight; an opaque flask prevents the check.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/demo/products/revealing-ink.svg",
+      "price": 20.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Tópicos",
+          "en": "Topical Preparations"
+        },
+        "sourcePage": 74,
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "use": {
+          "pt-BR": "1 minuto",
+          "en": "1 minute"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
       },
       "item": {
         "type": "loot",
@@ -81,13 +681,198 @@
         "id": "base:water-preservative",
         "quantity": 1
       },
+      "bookPrice": 25,
+      "bookWeight": 1,
       "description": {
-        "pt-BR": "<p>Mistura tópica C1. Cada tentativa exige 1 porção de Besouro de Sal e 1 porção de Madeira Encharcada. Use Suprimentos de Alquimista ou Suprimentos de Cervejeiro. Tempo: 1 minuto. CD: 9.</p><p>Um sucesso produz uma unidade de Conservante de Água. Consulte a descrição do produto para aplicação.</p>",
-        "en": "<p>C1 topical mixture. Each attempt requires 1 Salt Beetle portion and 1 Waterlogged Wood portion. Use Alchemist’s Supplies or Brewer’s Supplies. Time: 1 minute. DC: 9.</p><p>A success produces one Water Preservative unit. See the product description for application.</p>"
+        "pt-BR": "<h2>Produção C1 — Primitiva</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa marrom — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>25 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista; alternativa: Suprimentos de Cervejeiro</td></tr><tr><th>CD de criação</th><td>9</td></tr><tr><th>Tempo normal</th><td>1 minuto</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Besouro de Sal</li><li>1 porção de Madeira Encharcada</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Conservante de Água</h2><table><tbody><tr><th>Forma</th><td>Solução conservante</td></tr><tr><th>Uso</th><td>1 minuto</td></tr><tr><th>Alvo ou área</th><td>Até 4 litros de água potável</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>7 dias</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>A água permanece própria para consumo e não sofre deterioração ou contaminação natural durante o armazenamento. O produto não purifica água imprópria, remove doenças, venenos ou magia, nem neutraliza substâncias adicionadas depois.</p><h3>Encerramento</h3><p>Ao fim da duração ou quando a água for consumida.</p><table><tbody><tr><th>Preço</th><td>10 po</td></tr><tr><th>Disponibilidade</th><td>Vilarejo</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> Uma unidade trata até 40 litros de água armazenada.</p><p><strong>Qualidade Excepcional.</strong> A solução não altera o sabor da água tratada.</p>",
+        "en": "<h2>C1 Crafting — Primitive</h2><table><tbody><tr><th>Source</th><td>Brown-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>25 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies; Brewer&#x27;s Supplies</td></tr><tr><th>Crafting DC</th><td>9</td></tr><tr><th>Normal time</th><td>1 minute</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Salt Beetle</li><li>1 portion of Waterlogged Wood</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Water Preservative</h2><table><tbody><tr><th>Form</th><td>Preservative solution</td></tr><tr><th>Use</th><td>1 minute</td></tr><tr><th>Target or area</th><td>Up to 4 liters of potable water</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>7 days</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The water remains drinkable and does not naturally spoil or become contaminated during storage. The product does not purify unsafe water, remove diseases, poisons, or magic, or neutralize substances added afterward.</p><h3>Ending</h3><p>When the duration ends or when the water is consumed.</p><table><tbody><tr><th>Price</th><td>10 gp</td></tr><tr><th>Availability</th><td>Hamlet</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> One unit treats up to 40 liters of stored water.</p><p><strong>Exceptional Quality.</strong> The solution does not alter the treated water&#x27;s taste.</p>"
       },
+      "metadata": {
+        "sourcePage": 66,
+        "family": {
+          "pt-BR": "Tópicos",
+          "en": "Topical Preparations"
+        }
+      },
+      "img": "modules/santana-alchemy/assets/demo/products/water-preservative.svg",
+      "bookImg": "modules/santana-alchemy/assets/book-brown.svg",
       "heroicDescription": {
-        "pt-BR": "Uma unidade trata até 40 litros de água armazenada. O mestre confirma a aplicação.",
-        "en": "One unit treats up to 40 liters of stored water. The GM confirms its application."
+        "pt-BR": "Uma unidade trata até 40 litros de água armazenada.",
+        "en": "One unit treats up to 40 liters of stored water."
+      }
+    },
+    {
+      "id": "base:rustic-antiseptic",
+      "name": {
+        "pt-BR": "Antisséptico Rústico",
+        "en": "Rustic Antiseptic"
+      },
+      "complexity": 1,
+      "dc": 9,
+      "timeMinutes": 1,
+      "tools": [
+        "alchemist",
+        "herb"
+      ],
+      "ingredients": [
+        {
+          "id": "base:lith-powder",
+          "quantity": 1
+        },
+        {
+          "id": "base:stone-violet",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:rustic-antiseptic",
+        "quantity": 1
+      },
+      "bookPrice": 25,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C1 — Primitiva</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa marrom — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>25 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista; alternativa: Kit de Herbalismo</td></tr><tr><th>CD de criação</th><td>9</td></tr><tr><th>Tempo normal</th><td>1 minuto</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Pó de Lith</li><li>1 porção de Violeta de Pedra</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Antisséptico Rústico</h2><table><tbody><tr><th>Forma</th><td>Solução tópica</td></tr><tr><th>Uso</th><td>Ação Bônus</td></tr><tr><th>Alvo ou área</th><td>uma criatura com 0 pontos de vida</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>Instantânea</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>A criatura fica estável, mas permanece inconsciente e não recupera pontos de vida.</p><h3>Encerramento</h3><p>Depois de estabilizar a criatura.</p><table><tbody><tr><th>Preço</th><td>10 po</td></tr><tr><th>Disponibilidade</th><td>Vilarejo</td></tr></tbody></table>",
+        "en": "<h2>C1 Crafting — Primitive</h2><table><tbody><tr><th>Source</th><td>Brown-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>25 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies; Herbalism Kit</td></tr><tr><th>Crafting DC</th><td>9</td></tr><tr><th>Normal time</th><td>1 minute</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Lith Powder</li><li>1 portion of Stone Violet</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Rustic Antiseptic</h2><table><tbody><tr><th>Form</th><td>Topical solution</td></tr><tr><th>Use</th><td>Bonus Action</td></tr><tr><th>Target or area</th><td>One creature with 0 Hit Points</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>Instantaneous</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The creature becomes Stable but remains Unconscious and regains no Hit Points.</p><h3>Ending</h3><p>After the creature is stabilized.</p><table><tbody><tr><th>Price</th><td>10 gp</td></tr><tr><th>Availability</th><td>Hamlet</td></tr></tbody></table>"
+      },
+      "metadata": {
+        "sourcePage": 64,
+        "family": {
+          "pt-BR": "Tópicos",
+          "en": "Topical Preparations"
+        }
+      },
+      "img": "modules/santana-alchemy/assets/demo/products/rustic-antiseptic.svg",
+      "bookImg": "modules/santana-alchemy/assets/book-brown.svg"
+    },
+    {
+      "id": "base:unstable-fire",
+      "name": {
+        "pt-BR": "Fogo Instável",
+        "en": "Unstable Fire"
+      },
+      "complexity": 1,
+      "dc": 9,
+      "timeMinutes": 1,
+      "tools": [
+        "alchemist"
+      ],
+      "ingredients": [
+        {
+          "id": "base:crackling-bark",
+          "quantity": 1
+        },
+        {
+          "id": "base:ember-mushroom",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:unstable-fire",
+        "quantity": 1
+      },
+      "bookPrice": 25,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C1 — Primitiva</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa marrom — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>25 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista</td></tr><tr><th>CD de criação</th><td>9</td></tr><tr><th>Tempo normal</th><td>1 minuto</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Casca Estalante</li><li>1 porção de Cogumelo de Brasa</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Fogo Instável</h2><table><tbody><tr><th>Forma</th><td>Frasco arremessável</td></tr><tr><th>Uso</th><td>Substitui um ataque da Ação Atacar</td></tr><tr><th>Alvo ou área</th><td>uma criatura ou objeto não empunhado nem vestido</td></tr><tr><th>Alcance</th><td>6 m</td></tr><tr><th>Duração</th><td>Instantânea</td></tr><tr><th>Salvaguarda</th><td>Destreza CD 8; sucesso: metade do dano</td></tr></tbody></table><h3>Efeito</h3><p>Falha: a criatura sofre 1d8 de dano de fogo; sucesso: metade. Um objeto desacompanhado não realiza a resistência. Objetos inflamáveis podem incendiar-se; o fogo alquímico se consome no impacto e não cria uma área incendiada.</p><h3>Encerramento</h3><p>Depois de aplicar o dano.</p><table><tbody><tr><th>Preço</th><td>30 po</td></tr><tr><th>Disponibilidade</th><td>Cidade pequena</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Produção em Lotes.</strong> Permitida; além do ajuste normal, aumente a CD em +1 por volatilidade.</p><p><strong>Integridade do Produto.</strong> Volátil - calor intenso, chama aberta ou impacto grave.</p>",
+        "en": "<h2>C1 Crafting — Primitive</h2><table><tbody><tr><th>Source</th><td>Brown-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>25 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies</td></tr><tr><th>Crafting DC</th><td>9</td></tr><tr><th>Normal time</th><td>1 minute</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Crackling Bark</li><li>1 portion of Ember Mushroom</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Unstable Fire</h2><table><tbody><tr><th>Form</th><td>Thrown flask</td></tr><tr><th>Use</th><td>Replaces one attack of the Attack action</td></tr><tr><th>Target or area</th><td>One creature or an object that is neither worn nor carried</td></tr><tr><th>Range</th><td>20 ft (6 m)</td></tr><tr><th>Duration</th><td>Instantaneous</td></tr><tr><th>Saving throw</th><td>DC 8 Dexterity; half damage on success</td></tr></tbody></table><h3>Effect</h3><p>On a failed save, a creature takes 1d8 Fire damage; on a successful save, it takes half as much. An unattended object makes no saving throw. Flammable objects can catch fire; the alchemical fire burns out on impact and does not create a burning area.</p><h3>Ending</h3><p>After the damage is applied.</p><table><tbody><tr><th>Price</th><td>30 gp</td></tr><tr><th>Availability</th><td>Small Town</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Batch Production.</strong> Allowed; in addition to the normal adjustment, increase the DC by 1 for volatility.</p><p><strong>Product Integrity.</strong> Volatile: intense heat, an open flame, or a severe impact.</p>"
+      },
+      "metadata": {
+        "sourcePage": 67,
+        "family": {
+          "pt-BR": "Arremessáveis",
+          "en": "Thrown Preparations"
+        }
+      },
+      "img": "modules/santana-alchemy/assets/demo/products/unstable-fire.svg",
+      "bookImg": "modules/santana-alchemy/assets/book-brown.svg"
+    },
+    {
+      "id": "base:distracting-smoke",
+      "name": {
+        "pt-BR": "Fumaça Distrativa",
+        "en": "Distracting Smoke"
+      },
+      "complexity": 1,
+      "dc": 9,
+      "timeMinutes": 1,
+      "tools": [
+        "alchemist"
+      ],
+      "ingredients": [
+        {
+          "id": "base:grass-ash",
+          "quantity": 1
+        },
+        {
+          "id": "base:yellow-mushroom",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:distracting-smoke",
+        "quantity": 1
+      },
+      "bookPrice": 25,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C1 — Primitiva</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa marrom — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>25 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista</td></tr><tr><th>CD de criação</th><td>9</td></tr><tr><th>Tempo normal</th><td>1 minuto</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Cinza de Capim</li><li>1 porção de Cogumelo Amarelo</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Fumaça Distrativa</h2><table><tbody><tr><th>Forma</th><td>Cápsula fumígena</td></tr><tr><th>Uso</th><td>Ação Utilizar</td></tr><tr><th>Alvo ou área</th><td>Esfera de 3 m de raio centrada em um ponto visível</td></tr><tr><th>Alcance</th><td>6 m</td></tr><tr><th>Duração</th><td>1 minuto</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>A área fica levemente obscurecida. Uma criatura que dependa da visão tem desvantagem em testes de Sabedoria (Percepção) relacionados ao que estiver dentro ou além da fumaça. Vento forte a dispersa ao final do turno atual.</p><h3>Encerramento</h3><p>Quando dispersada ou ao fim da duração.</p><table><tbody><tr><th>Preço</th><td>20 po</td></tr><tr><th>Disponibilidade</th><td>Vila</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Produção em Lotes.</strong> Permitida; além do ajuste normal, aumente a CD em +1 por volatilidade.</p><p><strong>Integridade do Produto.</strong> Volátil - chama aberta ou perfuração da cápsula antes do uso.</p>",
+        "en": "<h2>C1 Crafting — Primitive</h2><table><tbody><tr><th>Source</th><td>Brown-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>25 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies</td></tr><tr><th>Crafting DC</th><td>9</td></tr><tr><th>Normal time</th><td>1 minute</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Grass Ash</li><li>1 portion of Yellow Mushroom</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Distracting Smoke</h2><table><tbody><tr><th>Form</th><td>Smoke capsule</td></tr><tr><th>Use</th><td>Utilize action</td></tr><tr><th>Target or area</th><td>A 10-foot-radius (3 m) Sphere centered on a visible point</td></tr><tr><th>Range</th><td>20 ft (6 m)</td></tr><tr><th>Duration</th><td>1 minute</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The area is Lightly Obscured. A creature relying on sight has Disadvantage on Wisdom (Perception) checks concerning anything inside or beyond the smoke. Strong wind disperses it at the end of the current turn.</p><h3>Ending</h3><p>When dispersed or when the duration ends.</p><table><tbody><tr><th>Price</th><td>20 gp</td></tr><tr><th>Availability</th><td>Village</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Batch Production.</strong> Allowed; in addition to the normal adjustment, increase the DC by 1 for volatility.</p><p><strong>Product Integrity.</strong> Volatile: an open flame or puncturing the capsule before use.</p>"
+      },
+      "metadata": {
+        "sourcePage": 68,
+        "family": {
+          "pt-BR": "Pós e Vapores",
+          "en": "Powders and Vapors"
+        }
+      },
+      "img": "modules/santana-alchemy/assets/demo/products/distracting-smoke.svg",
+      "bookImg": "modules/santana-alchemy/assets/book-brown.svg"
+    },
+    {
+      "id": "base:revealing-ink",
+      "name": {
+        "pt-BR": "Tinta Reveladora",
+        "en": "Revealing Ink"
+      },
+      "complexity": 1,
+      "dc": 9,
+      "timeMinutes": 1,
+      "tools": [
+        "alchemist",
+        "painter"
+      ],
+      "ingredients": [
+        {
+          "id": "base:umbra-spores",
+          "quantity": 1
+        },
+        {
+          "id": "base:two-sided-leaf",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:revealing-ink",
+        "quantity": 1
+      },
+      "bookPrice": 25,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C1 — Primitiva</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa marrom — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>25 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista; alternativa: Suprimentos de Pintor</td></tr><tr><th>CD de criação</th><td>9</td></tr><tr><th>Tempo normal</th><td>1 minuto</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Esporos de Umbra</li><li>1 porção de Folha de Dupla Face</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Tinta Reveladora</h2><table><tbody><tr><th>Forma</th><td>Tinta reagente</td></tr><tr><th>Uso</th><td>1 minuto</td></tr><tr><th>Alvo ou área</th><td>um objeto ou superfície de até 1,5 m de lado</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>10 minutos</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>Resíduos orgânicos presentes, como sangue e saliva, emitem um brilho fraco. A tinta revela vestígios mínimos deixados nas últimas 24 horas, mas não identifica origem, idade exata nem acontecimentos. Resíduos completamente removidos não são revelados.</p><h3>Encerramento</h3><p>Ao fim da duração.</p><table><tbody><tr><th>Preço</th><td>20 po</td></tr><tr><th>Disponibilidade</th><td>Vila</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> Revela resíduos deixados nos últimos 7 dias, sem identificar origem ou idade exata.</p><p><strong>Qualidade Excepcional.</strong> Depois do uso, a tinta evapora sem manchar a superfície examinada.</p><p><strong>Integridade do Produto.</strong> Sensível à luz - 1 hora de luz solar direta; frasco opaco evita o teste.</p>",
+        "en": "<h2>C1 Crafting — Primitive</h2><table><tbody><tr><th>Source</th><td>Brown-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>25 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies; Painter&#x27;s Supplies</td></tr><tr><th>Crafting DC</th><td>9</td></tr><tr><th>Normal time</th><td>1 minute</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Umbra Spores</li><li>1 portion of Two-Sided Leaf</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Revealing Ink</h2><table><tbody><tr><th>Form</th><td>Reactive ink</td></tr><tr><th>Use</th><td>1 minute</td></tr><tr><th>Target or area</th><td>One object or a surface up to 5 feet (1.5 m) on a side</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>10 minutes</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>Present organic traces, such as blood and saliva, glow faintly. The ink reveals tiny traces left within the last 24 hours, but identifies neither their source, exact age, nor what happened. Completely removed residues are not revealed.</p><h3>Ending</h3><p>When the duration ends.</p><table><tbody><tr><th>Price</th><td>20 gp</td></tr><tr><th>Availability</th><td>Village</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> It reveals residues left within the last 7 days, without identifying source or exact age.</p><p><strong>Exceptional Quality.</strong> After use, the ink evaporates without staining the examined surface.</p><p><strong>Product Integrity.</strong> Light-sensitive: 1 hour of direct sunlight; an opaque flask prevents the check.</p>"
+      },
+      "metadata": {
+        "sourcePage": 74,
+        "family": {
+          "pt-BR": "Tópicos",
+          "en": "Topical Preparations"
+        }
+      },
+      "img": "modules/santana-alchemy/assets/demo/products/revealing-ink.svg",
+      "bookImg": "modules/santana-alchemy/assets/book-brown.svg",
+      "heroicDescription": {
+        "pt-BR": "Revela resíduos deixados nos últimos 7 dias, sem identificar origem ou idade exata.",
+        "en": "It reveals residues left within the last 7 days, without identifying source or exact age."
       }
     }
   ]

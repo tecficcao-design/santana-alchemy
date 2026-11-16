@@ -1,0 +1,58 @@
+{
+  "id": "santana-alchemy",
+  "title": "Sant Ana Alchemy — Crafting Engine",
+  "description": "Free alchemy crafting engine for D&D5e with five C1 demo formulas, recipe books and memorization. English and Brazilian Portuguese. Motor gratuito com cinco fórmulas C1 de demonstração, livros e memorização.",
+  "version": "0.1.5",
+  "url": "https://github.com/tecficcao-design/santana-alchemy",
+  "manifest": "https://raw.githubusercontent.com/tecficcao-design/santana-alchemy/main/module.json",
+  "download": "https://raw.githubusercontent.com/tecficcao-design/santana-alchemy/main/releases/0.1.5/santana-alchemy.zip",
+  "license": "LICENSE.md",
+  "bugs": "https://github.com/tecficcao-design/santana-alchemy/issues",
+  "changelog": "https://github.com/tecficcao-design/santana-alchemy/blob/main/CHANGELOG.md",
+  "readme": "README.md",
+  "media": [],
+  "authors": [
+    {
+      "name": "Marcelo Sant Ana",
+      "url": "https://payhip.com/SantAnaRPGPress"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "maximum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/alchemy.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "flags": {
+    "santana-alchemy": {
+      "kit": "examples/demo-kit.json"
+    }
+  }
+}

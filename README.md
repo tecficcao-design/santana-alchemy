@@ -1,12 +1,22 @@
 # Sant Ana Alchemy — Free Crafting Engine
 
-Version 0.1.4 • Marcelo Sant Ana / Sant Ana RPG Press
+Version 0.1.5 • Marcelo Sant Ana / Sant Ana RPG Press
 
 For Foundry VTT 14 and the dnd5e system. English and Brazilian Portuguese UI. This is a public test build; complete live crafting validation remains pending.
 
-**Português (Brasil):** motor gratuito de Alquimia para Foundry 14/dnd5e, com interface em português e inglês. Inclui a demonstração Conservante de Água (dois ingredientes e uma fórmula). [Instruções completas em português](README_PT-BR.md). Os pacotes completos C1–C5 e o forrageamento continuam exclusivos dos compradores do livro.
+**Português (Brasil):** motor gratuito de Alquimia para Foundry 14/dnd5e, com interface em português e inglês. Inclui cinco fórmulas C1, dez ingredientes, cinco livros e os cinco produtos prontos. [Instruções completas em português](README_PT-BR.md). Os pacotes completos C1–C5 e o forrageamento continuam como bônus dos compradores do livro.
 
-The free package contains the engine, two demonstration ingredients and one formula. The complete C1–C5 content packs and foraging module are separate book bonuses. [Book and complete content / Livro e conteúdo completo](https://payhip.com/SantAnaRPGPress).
+The free package contains the engine and five complete C1 formulas, with ten ingredients, five physical recipe books and five finished-product templates. The complete C1–C5 content packs and foraging module are separate book bonuses. [Book and complete content / Livro e conteúdo completo](https://payhip.com/SantAnaRPGPress).
+
+| English | Português | Try it for |
+|---|---|---|
+| Water Preservative | Conservante de Água | Keeping drinking water on expeditions |
+| Rustic Antiseptic | Antisséptico Rústico | Stabilizing a creature at 0 Hit Points |
+| Unstable Fire | Fogo Instável | A thrown preparation dealing Fire damage |
+| Distracting Smoke | Fumaça Distrativa | Interfering with sight-based Perception |
+| Revealing Ink | Tinta Reveladora | Finding recent traces of blood or saliva |
+
+Every included formula is C1, DC 9, with a normal crafting time of one minute. The product descriptions contain the full use rules and limits; product effects are applied by the table.
 
 ## Install
 
@@ -28,8 +38,8 @@ Installation files are hosted in this public repository. Full live validation an
 
 ## Try it
 
-1. Open **Alchemy — Manage → Install kit** and install **C1 Demo — Water Preservative**.
-2. Drag its physical book and both ingredients from the Item folders to a test character.
+1. Open **Alchemy — Manage → Install kit** and install **C1 Demo — Five Formulas**.
+2. Pick a formula and drag its physical book and required ingredients from the Item folders to a test character. Water Preservative is a simple first example.
 3. Add Alchemist's Supplies or approved physical tool access through the GM manager.
 4. Select the character token and run **Alchemy — Craft Item**.
 5. Record first study (one hour of agreed game time), choose the formula again, review ingredients and pacing, and resolve the crafting check.
@@ -44,7 +54,11 @@ Core C1–C5 rules, natural 1/20, failure severity/mitigation, pacing, overall c
 
 Damage, conditions, contamination, flawed product limitations, C3 severe additional ingredient loss, and heroic enhancements require GM adjudication; the consequence is displayed. Optional specialties, batches, quality, installations and other optional book subsystems remain table-managed in this version. The engine does not automatically apply Alchemist class features. Product-use automation belongs to the individual kit; the demo produces a reference item whose application is handled by the table.
 
-Foraging and the commercial C1–C5 content packs are separate. This free build contains one demonstration formula, not the complete paid book.
+Foraging and the complete C1–C5 content packs are separate. This free build contains a five-formula selection from C1. The complete C1 pack has 25 formulas, and the book has 125 formulas across C1–C5.
+
+## Updating an existing demo world
+
+Update the engine in Foundry and install **C1 Demo — Five Formulas** in the manager again. The kit keeps its original identifier: existing Water Preservative documents are reused and the four additional formulas are added. Choose the explicit template-update option to apply the expanded descriptions, prices and icons to existing world templates. Character inventory copies and study/memorization progress are preserved. The same permanent recipe and ingredient IDs are used in the complete C1 pack, so its import reuses the demo content.
 
 ## Kits and maintenance
 

@@ -1,6 +1,6 @@
 # Sant Ana Alchemy — Motor Gratuito
 
-Versão 0.1.4 • Marcelo Sant Ana / Sant Ana RPG Press
+Versão 0.1.5 • Marcelo Sant Ana / Sant Ana RPG Press
 
 Motor de fabricação alquímica para Foundry VTT 14 e o sistema dnd5e. A interface está disponível em português e inglês. Esta é uma versão pública de testes; a homologação completa da fabricação em mesa real permanece pendente.
 
@@ -14,7 +14,17 @@ Motor de fabricação alquímica para Foundry VTT 14 e o sistema dnd5e. A interf
 - CDs e tempos C1–C5, condições gerais, Acelerar, Jogar Seguro e Desafio Heroico.
 - Rolagem, consumo, entrega do produto e registro de progresso/memorização.
 - Importação de kits JSON e reconhecimento de módulos de conteúdo compatíveis.
-- Demonstração gratuita: Conservante de Água, com dois ingredientes, livro, nota e modelo do produto.
+- Demonstração gratuita: cinco fórmulas C1, dez ingredientes, cinco livros físicos, cinco notas e os modelos dos cinco produtos prontos.
+
+| Fórmula incluída | Uso na aventura |
+|---|---|
+| Conservante de Água | Conservar água potável durante viagens |
+| Antisséptico Rústico | Estabilizar uma criatura com 0 PV |
+| Fogo Instável | Arremessar uma preparação que causa dano de fogo |
+| Fumaça Distrativa | Dificultar testes de Percepção que dependam da visão |
+| Tinta Reveladora | Encontrar vestígios recentes de sangue e saliva |
+
+Todas são C1, com CD 9 e tempo normal de fabricação de um minuto. Consulte as descrições dos produtos para as regras completas de uso e suas limitações. O pacote C1 completo contém 25 fórmulas; o livro reúne 125 fórmulas C1–C5.
 
 O forrageamento e os pacotes comerciais C1–C5 permanecem produtos separados. O conteúdo completo do PDF não é distribuído neste módulo.
 
@@ -45,9 +55,9 @@ Os arquivos de instalação estão hospedados no repositório público. A homolo
 ## Primeira demonstração
 
 1. Use um mundo de testes dnd5e no seu servidor atual.
-2. Execute **Alquimia — Gerenciar** e escolha **Instalar kit → Demonstração C1 — Conservante de Água**.
+2. Execute **Alquimia — Gerenciar** e escolha **Instalar kit → Demonstração C1 — Cinco Fórmulas**.
 3. Crie um personagem de teste com Inteligência definida.
-4. Arraste para sua ficha o livro do Conservante de Água e uma porção de cada ingrediente das pastas de Itens.
+4. Para começar pelo Conservante de Água, arraste seu livro e uma porção de Besouro de Sal e de Madeira Encharcada das pastas de Itens para a ficha. Para outra fórmula, entregue seu próprio livro e os ingredientes listados nela.
 5. Acrescente Suprimentos de Alquimista à ficha. Se a ferramenta vier de uma importação antiga ou representar equipamento emprestado, o mestre pode registrar o acesso físico no gerenciador.
 6. Selecione o token do personagem ou vincule-o ao usuário. Execute **Alquimia — Fabricar Item**.
 7. Consulte o livro e registre a hora de estudo combinada com o mestre.
@@ -56,6 +66,10 @@ Os arquivos de instalação estão hospedados no repositório público. A homolo
 10. Use Progresso para conferir memorização. Depois que a fórmula estiver memorizada, retire o livro da ficha e verifique a opção **Usar receita memorizada**.
 
 Um mestre precisa estar conectado para atender os pedidos. Os jogadores só precisam ser proprietários das suas fichas e ter acesso normal às macros. Os pedidos usam documentos privados do chat, e o mestre conectado os processa em sequência. Não é necessário Socketlib, Item Macro, Midi-QOL ou Item Piles para este motor.
+
+## Atualizar uma demonstração já instalada
+
+Atualize o motor no Foundry e instale novamente **Demonstração C1 — Cinco Fórmulas** no gerenciador. O identificador do kit permanece igual: os documentos do Conservante de Água são reutilizados, e as quatro novas fórmulas são acrescentadas. A opção explícita de atualizar modelos aplica os textos, preços e ícones ampliados aos modelos existentes do mundo. Cópias nas fichas e o progresso de estudo e memorização são preservados. Os identificadores também são os mesmos do pacote C1 completo, permitindo reaproveitar o conteúdo ao importá-lo.
 
 ## Regras e decisões do mestre
 

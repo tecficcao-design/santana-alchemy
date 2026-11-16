@@ -1,16 +1,29 @@
 {
-  "version": "0.1.4",
+  "version": "0.1.5",
   "date": "2026-11-15",
   "automated_tests": {
-    "engine": 51
+    "engine": 66
   },
   "result": "passed",
   "test_environment": "Node.js 24.22.1; Foundry document/API mocks",
-  "automated_evidence": "51 tests passed on the 0.1.3 runtime; all runtime, locale, demo and asset bytes verified unchanged for 0.1.4.",
-  "original_archive_sha256": "6d546fbca5992dc3bf438bc95553408d058f9eb5cef476b1df79409aa29d92fd",
-  "local_package_checks": "passed: JSON, manifest paths, locale key parity, demo-only content, archive integrity and matching module/package versions",
+  "coverage": [
+    "All five formulas studied and crafted with exact stock in English and Portuguese",
+    "Approved alternative tools",
+    "Upgrade from original one-formula demo: permanent IDs, no duplicates, preserved actor inventory and memorization",
+    "Unrelated stock not consumed",
+    "Core rules, permissions, serialized requests and error recovery"
+  ],
+  "content_kit": {
+    "id": "base-c1-demo",
+    "version": "1.1.0",
+    "recipes": 5,
+    "ingredients": 10,
+    "products": 5,
+    "generated_books": 5
+  },
+  "runtime_code": "unchanged from 0.1.4",
+  "local_package_checks": "passed: reference C1 subset, matching quantities/descriptions, local SVG assets, locale key parity, JSON, manifest files and archive integrity",
   "live_foundry_validation": "full live crafting validation pending; no verified compatibility claim",
-  "molten_installation_of_this_release": "not performed",
   "official_foundry_catalog_publication": "not performed",
   "public_download_validation": "performed after publication; not included in this build-time record"
 }

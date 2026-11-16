@@ -43,4 +43,4 @@ Only the engine and the C1 demonstration belong in this public repository. Do no
 - Foundry 14 scene controls: https://foundryvtt.com/api/v14/functions/hookEvents.getSceneControlButtons.html
 - Official dnd5e tool guide: https://github.com/foundryvtt/dnd5e/wiki/Active-Effect-Guide
 
-Rule authority: the project's `Compendio_de_Alquimia_FINAL_PT-BR.pdf`, checked during implementation. The demo is the C1 Water Preservative recipe. Only this demo and the general engine rules are included, preserving the separation from paid content packs.
+Rule authority: the project's `Compendio_de_Alquimia_FINAL_PT-BR.pdf`, checked during implementation. The five-formula C1 demo includes Water Preservative, Rustic Antiseptic, Unstable Fire, Distracting Smoke and Revealing Ink (source pages 66, 64, 67, 68 and 74). Only the selected formulas, their ten ingredients and the general engine rules are included. Recipe and ingredient IDs match the complete C1 pack.

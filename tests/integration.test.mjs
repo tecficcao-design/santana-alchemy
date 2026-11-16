@@ -1,13 +1,14 @@
 import test,{beforeEach} from "node:test";
 import assert from "node:assert/strict";
-import {readFile} from "node:fs/promises";
-import {MODULE_ID} from "../scripts/core.mjs";
+import {readFile,access} from "node:fs/promises";
+import {MODULE_ID,validateKit} from "../scripts/core.mjs";
 import {KitManager} from "../scripts/kits.mjs";
 import {ensureFolders,ensureMacros,worldIndex,toActorItem,toolInfo} from "../scripts/foundry-adapter.mjs";
 import {request,initializeService} from "../scripts/service.mjs";
 import {openAlchemy} from "../scripts/ui.mjs";
 
 const kit=JSON.parse(await readFile(new URL("../examples/demo-kit.json",import.meta.url),"utf8"));
+const legacyKit=JSON.parse(await readFile(new URL("fixtures/demo-kit-1.0.0.json",import.meta.url),"utf8"));
 const labels=JSON.parse(await readFile(new URL("../lang/en.json",import.meta.url),"utf8")).SAA;
 let sequence=0,handlers;
 const copy=x=>structuredClone(x);
@@ -61,15 +62,85 @@ async function populated(){
   await actor.createEmbeddedDocuments("Item",inventory);
   return {manager,actor,index};
 }
+test("the public demo is exactly five bilingual C1 formulas with complete local ingredients and art",async()=>{
+  validateKit(kit);
+  assert.equal(kit.id,legacyKit.id);assert.equal(kit.version,"1.1.0");
+  assert.deepEqual(new Set(kit.recipes.map(r=>r.id)),new Set([
+    "base:water-preservative","base:rustic-antiseptic","base:unstable-fire","base:distracting-smoke","base:revealing-ink"
+  ]));
+  assert.equal(kit.ingredients.length,10);assert.equal(kit.products.length,5);
+  assert.deepEqual(new Set(kit.ingredients.map(i=>i.id)),new Set(kit.recipes.flatMap(r=>r.ingredients.map(i=>i.id))));
+  assert.deepEqual(new Set(kit.products.map(p=>p.id)),new Set(kit.recipes.map(r=>r.product.id)));
+  for(const recipe of kit.recipes){
+    assert.equal(recipe.complexity,1);assert.equal(recipe.dc,9);assert.equal(recipe.timeMinutes,1);
+    assert.equal(recipe.bookPrice,25);assert.equal(recipe.product.quantity,1);
+  }
+  for(const entry of [...kit.ingredients,...kit.products,...kit.recipes]){
+    for(const language of ["en","pt-BR"]){
+      assert.ok(entry.name[language]?.trim());assert.ok(entry.description[language]?.length>80);
+    }
+    for(const path of [entry.img,entry.bookImg].filter(Boolean)){
+      assert.ok(path.startsWith("modules/santana-alchemy/"));
+      await access(new URL("../"+path.replace("modules/santana-alchemy/",""),import.meta.url));
+    }
+  }
+});
+test("upgrading the original demo adds four formulas without duplicating documents or rewriting character progress",async()=>{
+  const manager=new KitManager();manager.register(legacyKit);await manager.install(legacyKit.id);
+  const before=worldIndex();
+  const actor=new Actor();game.actors.push(actor);
+  await actor.createEmbeddedDocuments("Item",[...before.ingredient.values(),...before.book.values()].map(d=>toActorItem(d)));
+  await actor.setFlag(MODULE_ID,"state",{level:1,recipes:{"base:water-preservative":{studied:true,successes:2,memorized:true}}});
+  const snapshot=JSON.stringify({items:actor.items.map(i=>i.toObject()),state:actor.getFlag(MODULE_ID,"state")});
+  manager.register(kit);const upgraded=await manager.install(kit.id,{update:true});
+  assert.equal(upgraded.created,20);assert.equal(upgraded.updated,5);
+  const after=worldIndex();
+  for(const kind of ["ingredient","product","book","recipe"])for(const [id,doc]of before[kind])assert.equal(after[kind].get(id).id,doc.id);
+  assert.equal(after.ingredient.size,10);assert.equal(after.product.size,5);assert.equal(after.book.size,5);assert.equal(after.recipe.size,5);
+  assert.equal(JSON.stringify({items:actor.items.map(i=>i.toObject()),state:actor.getFlag(MODULE_ID,"state")}),snapshot);
+  const repeat=await manager.install(kit.id);assert.equal(repeat.created,0);assert.equal(repeat.reused,25);
+});
+for(const language of ["en","pt-BR"])for(const recipe of kit.recipes){
+  test(`${language}: ${recipe.name.en} can be studied and crafted using only its book and required ingredients`,async()=>{
+    await game.settings.set(MODULE_ID,"contentLanguage",language);game.i18n.lang=language;
+    const manager=new KitManager();manager.register(kit);await manager.install(kit.id);const index=worldIndex();
+    const actor=new Actor();game.actors.push(actor);
+    await actor.createEmbeddedDocuments("Item",[
+      toActorItem(index.book.get(recipe.id)),
+      ...recipe.ingredients.map(i=>toActorItem(index.ingredient.get(i.id),i.quantity)),
+      {name:"Tools",type:"tool",system:{quantity:1,type:{baseItem:"alchemist"}}}
+    ]);
+    const args={recipeId:recipe.id,tool:"alchemist",timeAcknowledged:true};
+    await request("study",actor,args);const result=await request("craft",actor,args);
+    assert.equal(result.success,true);assert.equal(result.quantity,1);assert.equal(result.recipeId,recipe.id);
+    assert.equal(index.recipe.get(recipe.id).name,recipe.name[language]);
+    const product=actor.items.find(i=>i.flags?.[MODULE_ID]?.crafted);
+    assert.equal(product.flags[MODULE_ID].id,recipe.product.id);
+    assert.equal(product.name,kit.products.find(p=>p.id===recipe.product.id).name[language]);
+    assert.ok(actor.items.filter(i=>i.flags?.[MODULE_ID]?.kind==="ingredient").every(i=>i.system.quantity===0));
+    assert.equal(actor.items.find(i=>i.flags?.[MODULE_ID]?.kind==="book").system.quantity,1);
+    await assert.rejects(request("craft",actor,args),{code:"ingredientsMissing"});
+  });
+}
+for(const [recipeId,tool]of [["base:water-preservative","brewer"],["base:rustic-antiseptic","herb"],["base:revealing-ink","painter"]]){
+  test(`${recipeId} accepts its approved alternative tool ${tool}`,async()=>{
+    const {actor}=await populated();
+    actor.items=collection(actor.items.filter(i=>i.type!=="tool"));
+    actor.system.tools={[tool]:{value:1}};
+    await actor.createEmbeddedDocuments("Item",[{name:tool,type:"tool",system:{quantity:1,type:{baseItem:tool}}}]);
+    const args={recipeId,tool,timeAcknowledged:true};
+    await request("study",actor,args);assert.equal((await request("craft",actor,args)).success,true);
+  });
+}
 test("setup and repeated kit installation reuse folders, macros, ingredients and recipe books",async()=>{
   const {manager}=await populated();const before={folders:game.folders.length,items:game.items.length,journal:game.journal.length,macros:game.macros.length};
   const result=await manager.install(kit.id);await ensureMacros(await ensureFolders());
   assert.deepEqual({folders:game.folders.length,items:game.items.length,journal:game.journal.length,macros:game.macros.length},before);
-  assert.equal(result.created,0);assert.equal(result.reused,5);assert.equal(game.folders.length,5);assert.equal(game.macros.length,2);
+  assert.equal(result.created,0);assert.equal(result.reused,25);assert.equal(game.folders.length,5);assert.equal(game.macros.length,2);
 });
 test("world recipes are journals and never stockable recipe items",async()=>{
-  await populated();assert.equal(game.journal.length,1);assert.equal(game.items.filter(i=>i.flags[MODULE_ID].kind==="recipe").length,0);
-  assert.equal(worldIndex().book.size,1);
+  await populated();assert.equal(game.journal.length,5);assert.equal(game.items.filter(i=>i.flags[MODULE_ID].kind==="recipe").length,0);
+  assert.equal(worldIndex().book.size,5);
 });
 test("content kits may specify physical book prices and preserve ingredient metadata",async()=>{
   const priced=copy(kit);priced.recipes[0].bookPrice=25;priced.ingredients[0].metadata={foragingDC:11,biomes:["Desert"]};
@@ -96,7 +167,9 @@ test("studying, crafting, consuming ingredients and memorizing form a complete f
   await request("study",actor,{recipeId:id,timeAcknowledged:true});
   const result=await request("craft",actor,{recipeId:id,tool:"alchemist",timeAcknowledged:true});
   assert.equal(result.success,true);assert.equal(result.memorized,true);
-  const ingredients=actor.items.filter(i=>i.flags?.[MODULE_ID]?.kind==="ingredient");assert.ok(ingredients.every(i=>i.system.quantity===0));
+  const spent=new Set(kit.recipes[0].ingredients.map(i=>i.id));
+  const ingredients=actor.items.filter(i=>i.flags?.[MODULE_ID]?.kind==="ingredient");
+  for(const item of ingredients)assert.equal(item.system.quantity,spent.has(item.flags[MODULE_ID].id)?0:1);
   assert.equal(actor.items.find(i=>i.flags?.[MODULE_ID]?.kind==="book").system.quantity,1);
   assert.equal(actor.items.filter(i=>i.flags?.[MODULE_ID]?.crafted).length,1);
   actor.items=collection(actor.items.filter(i=>i.flags?.[MODULE_ID]?.kind!=="book"));
