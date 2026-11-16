@@ -1,22 +1,66 @@
-# Sant Ana Alchemy — Free Crafting Engine
+# Sant Ana Alchemy — Alchemy Crafting for Foundry VTT
 
-Version 0.1.5 • Marcelo Sant Ana / Sant Ana RPG Press
+**Free crafting engine with five C1 formulas · Foundry VTT 14 + dnd5e · English and Brazilian Portuguese**
 
-For Foundry VTT 14 and the dnd5e system. English and Brazilian Portuguese UI. This is a public test build; complete live crafting validation remains pending.
+[Português (Brasil)](README_PT-BR.md) · [Installation](#install) · [The complete compendium](#the-complete-alchemy-compendium)
 
-**Português (Brasil):** motor gratuito de Alquimia para Foundry 14/dnd5e, com interface em português e inglês. Inclui cinco fórmulas C1, dez ingredientes, cinco livros e os cinco produtos prontos. [Instruções completas em português](README_PT-BR.md). Os pacotes completos C1–C5 e o forrageamento continuam como bônus dos compradores do livro.
+Give alchemy a place in your adventures: books to discover, formulas to study, ingredients to manage, and useful preparations to craft.
 
-The free package contains the engine and five complete C1 formulas, with ten ingredients, five physical recipe books and five finished-product templates. The complete C1–C5 content packs and foraging module are separate book bonuses. [Book and complete content / Livro e conteúdo completo](https://payhip.com/SantAnaRPGPress).
+**Sant Ana Alchemy** brings the crafting rules from Marcelo Sant Ana's *The Alchemy Compendium* to Foundry VTT. Characters learn from physical recipe books, prepare their ingredients, resolve crafting checks, and work toward memorizing formulas they can use without carrying the book.
 
-| English | Português | Try it for |
+## What you can do
+
+- **Learn from alchemy books.** Each physical book holds a formula; study it before the first attempt and consult it until the formula is memorized.
+- **Craft from your character's inventory.** The engine checks access to the formula, tools and ingredient quantities, resolves the crafting check, consumes ingredients and creates the product on a success.
+- **Build lasting knowledge.** Successful crafting advances memorization, while the GM manages alchemical levels and narrative requirements.
+- **Play in English or Portuguese.** The interface and included content support both languages.
+- **Expand the collection.** The same free engine powers the complete C1–C5 content packs supplied with the book.
+
+## Five free C1 formulas
+
+The demonstration includes five different ways to use alchemy at the table:
+
+| Formula | Português | Use in an adventure |
 |---|---|---|
-| Water Preservative | Conservante de Água | Keeping drinking water on expeditions |
-| Rustic Antiseptic | Antisséptico Rústico | Stabilizing a creature at 0 Hit Points |
-| Unstable Fire | Fogo Instável | A thrown preparation dealing Fire damage |
-| Distracting Smoke | Fumaça Distrativa | Interfering with sight-based Perception |
-| Revealing Ink | Tinta Reveladora | Finding recent traces of blood or saliva |
+| **Unstable Fire** | Fogo Instável | Throw an alchemical preparation that deals Fire damage. |
+| **Distracting Smoke** | Fumaça Distrativa | Create light obscurement that hinders sight-based Perception. |
+| **Rustic Antiseptic** | Antisséptico Rústico | Stabilize a creature at 0 Hit Points. |
+| **Revealing Ink** | Tinta Reveladora | Reveal recent organic traces such as blood or saliva. |
+| **Water Preservative** | Conservante de Água | Preserve drinking water for an expedition. |
 
-Every included formula is C1, DC 9, with a normal crafting time of one minute. The product descriptions contain the full use rules and limits; product effects are applied by the table.
+Included: **10 ingredients, five physical recipe books, five recipe Journals and five finished-product templates**, with bilingual descriptions and local icons. All five formulas are C1, with a normal crafting time of one minute and DC 9.
+
+The product descriptions contain the complete use rules and limits. Applying damage, conditions and other product effects remains a table decision; the free demo handles crafting and inventory.
+
+## The complete Alchemy Compendium
+
+The complete book expands your collection to:
+
+- **125 formulas** across complexities C1–C5.
+- **110 ingredients** for your alchemical adventures.
+- **Complete C1–C5 Foundry content packs and a foraging module**, supplied as bonuses with the book.
+
+The complete packs use this same crafting engine. Your demo formulas and their permanent identifiers are reused when you import the full C1 pack.
+
+**[Get the English book and Foundry bonus](https://payhip.com/b/6Z0ru)** · **[Edição em português com bônus para Foundry](https://payhip.com/b/sUa8I)**
+
+By **Marcelo Sant Ana · Sant Ana RPG Press**. [Visit the store](https://payhip.com/SantAnaRPGPress).
+
+## Português (Brasil)
+
+**Leve a alquimia para as suas aventuras:** encontre livros, estude fórmulas, reúna ingredientes e fabrique preparações úteis.
+
+O **Sant Ana Alchemy** é um motor gratuito para Foundry VTT 14 e dnd5e, com interface e conteúdo em português e inglês. A demonstração inclui **cinco fórmulas C1 e dez ingredientes**, além dos livros e modelos dos produtos. O sistema acompanha fabricação, consumo de ingredientes e memorização.
+
+O livro completo reúne **125 fórmulas C1–C5 e 110 ingredientes**, com os pacotes completos para Foundry e o módulo de forrageamento como bônus. Todos utilizam este mesmo motor gratuito.
+
+**[Instruções completas em português](README_PT-BR.md)** · **[Conheça o livro e os bônus](https://payhip.com/b/sUa8I)**
+
+## Current status and requirements
+
+**Version 0.1.5 is a public test build.** Requires Foundry VTT 14, the dnd5e system and a connected GM to process crafting requests. No Socketlib, Item Macro, Midi-QOL or Item Piles dependency is required.
+
+**66 automated tests passed**, including crafting all five formulas in both languages and upgrading the original demo without duplicates. Complete live crafting validation in Foundry remains pending, and the module has not yet been submitted to the official catalog.
 
 ## Install
 
