@@ -8,9 +8,11 @@ node --test tests/*.test.mjs
 
 Pure rule tests are in `tests/core.test.mjs`; recoverable writes in `tests/transaction.test.mjs`; mocked Foundry document/API integration in `tests/integration.test.mjs`. The integration harness intentionally does not claim to emulate Foundry's DataModel validation, native dialog rendering, HTML sanitizer DOM behavior or the complete native dice implementation.
 
-## Real-world release gate
+## Live validation scope
 
-Before declaring a verified release, install in a clean Foundry 14/dnd5e world and verify:
+Version 0.1.6 records a native GM workflow check on Foundry 14 build 370 with dnd5e 6.1.0. The runtime, data and assets tested were those of 0.1.5 and remain byte-identical in 0.1.6. All five demo formulas passed study, successful production and memorization. Stock deductions, retained books, a mild-failure product and crafting from memory without book access were checked. See VALIDATION.json for controlled test parameters and limitations.
+
+Keep the following broader checklist when extending live coverage. A verified core-version declaration does not claim every item below has passed:
 
 1. Module discovery, activation and setup with a GM.
 2. Demo import twice, with no duplicate folders, recipes or items.
@@ -22,7 +24,7 @@ Before declaring a verified release, install in a clean Foundry 14/dnd5e world a
 8. Portuguese and English dialogs and kit import.
 9. The supported dnd5e version's native item/weight/tool data models.
 
-The package intentionally omits `compatibility.verified` until live validation is complete. Version 0.1.4 adds public `manifest`/`download` URLs for direct installation as a public test build. Public hosting is not evidence of successful live crafting validation.
+The live check used an existing world with 38 active modules, including the full content packs, the Portuguese interface and manual approved alchemist tool access. Checklist items involving clean-world isolation, a real tool item, non-GM ownership, simultaneous players and native English dialogs remain outstanding. Automated permission, concurrency and bilingual data tests are separate evidence. Public hosting and catalog registration are not evidence of live behavior.
 
 ## Public distribution
 

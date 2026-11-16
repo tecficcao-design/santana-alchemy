@@ -2,11 +2,11 @@
 
 **Livros para descobrir. Fórmulas para aprender. Preparações para usar nas suas aventuras.**
 
-Versão 0.1.5 • Marcelo Sant Ana / Sant Ana RPG Press · [English](README.md)
+Versão 0.1.6 • Marcelo Sant Ana / Sant Ana RPG Press · [English](README.md)
 
 O Sant Ana Alchemy leva as regras de fabricação do *Compêndio de Alquimia* para o Foundry: o personagem estuda um livro físico, reúne os ingredientes, resolve o teste de fabricação e avança na memorização da fórmula. A demonstração é gratuita e usa o mesmo motor dos pacotes completos do livro.
 
-Motor de fabricação alquímica para Foundry VTT 14 e o sistema dnd5e. A interface está disponível em português e inglês. Esta é uma versão pública de testes; a homologação completa da fabricação em mesa real permanece pendente.
+Motor de fabricação alquímica para Foundry VTT 14 e o sistema dnd5e. A interface está disponível em português e inglês. O fluxo do mestre foi conferido em uma instalação real de Foundry 14, build 370, com dnd5e 6.1.0. O escopo e as verificações adicionais estão registrados abaixo.
 
 ## O que está incluído
 
@@ -52,7 +52,7 @@ A compra do livro inclui os **pacotes completos C1–C5 para Foundry VTT e o mó
 https://raw.githubusercontent.com/tecficcao-design/santana-alchemy/main/module.json
 ```
 
-O mesmo endereço permite que o Foundry consulte futuras atualizações. Esta versão é distribuída por link direto; o cadastro no catálogo oficial ainda não foi solicitado. Comece em um mundo de testes.
+O mesmo endereço permite que o Foundry consulte futuras atualizações e funciona independentemente da disponibilidade no catálogo. As versões exibidas na [página oficial do pacote](https://foundryvtt.com/packages/santana-alchemy) confirmam sua disponibilidade no catálogo. Comece em um mundo de testes.
 
 ## Alternativa: instalar manualmente
 
@@ -128,7 +128,9 @@ O mestre abre **Gerenciar → Configurar personagem**, confere o registro e o in
 
 - 66 testes automatizados em Node passaram, cobrindo regras, fabricação das cinco fórmulas em português e inglês, atualização da demonstração antiga, importação repetida, permissões, concorrência e recuperação de falhas.
 - As APIs usadas foram conferidas na documentação pública do Foundry 14.
-- A execução em uma instalação real de Foundry 14/dnd5e ainda precisa ser homologada. O manifesto não declara uma versão como `verified` antes desse teste.
+- Em 16/11/2026, as cinco fórmulas da demonstração foram estudadas, fabricadas e memorizadas pela interface nativa em português, como mestre, no Foundry 14 build 370 com dnd5e 6.1.0. Foram conferidos o consumo dos ingredientes, produtos de sucesso e de falha leve, permanência dos livros e fabricação por memória sem acesso ao livro.
+- O teste usou um personagem separado em um mundo existente com outros módulos e os pacotes completos ativos, acesso manual autorizado às ferramentas de alquimista, bônus de teste +10 nas tentativas de sucesso e ajuste de INT permanente +3 para a meta de memória. A versão 0.1.6 registra a compatibilidade; código executável, demonstração e imagens permanecem idênticos aos da 0.1.5 testada.
+- Pedidos de jogadores, clientes simultâneos, interface nativa em inglês, isolamento em mundo limpo e detecção de um item físico de ferramenta continuam como verificações adicionais em mesa. A cobertura automatizada não substitui esses testes. Consulte [VALIDATION.json](VALIDATION.json) e [DEVELOPMENT.md](DEVELOPMENT.md).
 
 Para repetir os testes: `node --test tests/*.test.mjs` na pasta do módulo. Não é preciso instalar dependências de desenvolvimento.
 

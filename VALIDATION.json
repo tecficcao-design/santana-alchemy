@@ -1,6 +1,6 @@
 {
-  "version": "0.1.5",
-  "date": "2026-11-15",
+  "version": "0.1.6",
+  "date": "2026-11-16",
   "automated_tests": {
     "engine": 66
   },
@@ -21,9 +21,49 @@
     "products": 5,
     "generated_books": 5
   },
-  "runtime_code": "unchanged from 0.1.4",
+  "runtime_code": "byte-identical to 0.1.5; compatibility metadata and documentation only",
   "local_package_checks": "passed: reference C1 subset, matching quantities/descriptions, local SVG assets, locale key parity, JSON, manifest files and archive integrity",
-  "live_foundry_validation": "full live crafting validation pending; no verified compatibility claim",
-  "official_foundry_catalog_publication": "not performed",
+  "live_foundry_validation": {
+    "result": "passed within the GM workflow scope below",
+    "date": "2026-11-16",
+    "tested_runtime_version": "0.1.5",
+    "same_runtime_in_release": "0.1.6",
+    "core": {
+      "version": "14",
+      "build": "370"
+    },
+    "system": {
+      "id": "dnd5e",
+      "version": "6.1.0"
+    },
+    "client_language": "pt-BR",
+    "user_role": "Gamemaster",
+    "actor_type": "character",
+    "environment": "Existing world with 38 active modules, including full C1-C5 content packs and foraging. Imported the free demo without overwriting existing templates. No clean-world isolation claim.",
+    "controlled_setup": {
+      "tool": "GM manual alchemist access and proficiency multiplier 1",
+      "success_check_bonus": 10,
+      "memory_permanent_intelligence_modifier_override": 3,
+      "time": "Acknowledged as authorized test time; world calendar not advanced"
+    },
+    "checks": [
+      "All five demo formulas studied, successfully crafted and memorized through native dialogs",
+      "Mild failure at total 6 versus DC 9 consumed one portion of each Water Preservative ingredient, retained the book and created one flawed product",
+      "Successful crafting totals: Water Preservative 17, Rustic Antiseptic 17, Unstable Fire 30, Distracting Smoke 19, Revealing Ink 17; all versus DC 9",
+      "Inventory confirmed one normal product per successful attempt, one portion deducted from each required ingredient, all five books retained at quantity 1",
+      "All five formulas appeared in the memorized-recipe picker",
+      "Water Preservative crafted successfully at total 14 versus DC 9 after its book quantity was reduced to 0; book restored to 1 afterwards",
+      "Missing ingredients were shown in the crafting review before stock was supplied"
+    ],
+    "remaining_live_checks": [
+      "Clean world with only the free engine",
+      "Non-GM owner request and ownership enforcement",
+      "Simultaneous clients",
+      "Native English interface and imports",
+      "Native physical tool-item detection",
+      "Other Foundry builds or dnd5e versions"
+    ]
+  },
+  "official_foundry_catalog_publication": "Package exists; version registration is a separate post-build operation. Consult the official package page for current availability.",
   "public_download_validation": "performed after publication; not included in this build-time record"
 }

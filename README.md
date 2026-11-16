@@ -58,9 +58,9 @@ O livro completo reúne **125 fórmulas C1–C5 e 110 ingredientes**, com os pac
 
 ## Current status and requirements
 
-**Version 0.1.5 is a public test build.** Requires Foundry VTT 14, the dnd5e system and a connected GM to process crafting requests. No Socketlib, Item Macro, Midi-QOL or Item Piles dependency is required.
+**Version 0.1.6 has a live GM crafting check on Foundry VTT 14 (build 370) and dnd5e 6.1.0.** Requires Foundry VTT 14, the dnd5e system and a connected GM to process crafting requests. No Socketlib, Item Macro, Midi-QOL or Item Piles dependency is required.
 
-**66 automated tests passed**, including crafting all five formulas in both languages and upgrading the original demo without duplicates. Complete live crafting validation in Foundry remains pending, and the module has not yet been submitted to the official catalog.
+**66 automated tests passed**, including crafting all five formulas in both languages and upgrading the original demo without duplicates. All five formulas were also studied, crafted and memorized through the native Portuguese interface as GM. Ingredient consumption, a mild failure, retained books and crafting from memory without book access were checked. See [VALIDATION.json](VALIDATION.json) for the test scope and remaining checks.
 
 ## Install
 
@@ -70,7 +70,7 @@ In Foundry's Setup screen, open **Add-on Modules → Install Module**, paste the
 https://raw.githubusercontent.com/tecficcao-design/santana-alchemy/main/module.json
 ```
 
-Enable **Sant Ana Alchemy — Crafting Engine** in a dnd5e world and join as GM. The same manifest address is used for future update checks. Catalog listing has not been requested; installation currently uses this direct URL. Use a test world for this public test build.
+Enable **Sant Ana Alchemy — Crafting Engine** in a dnd5e world and join as GM. The same manifest address is used for future update checks. This direct installation URL works independently of catalog availability. Try the module in a test world first.
 
 ### Manual alternative
 
@@ -78,7 +78,7 @@ Extract `santana-alchemy/` into your Foundry user data `Data/modules/` directory
 
 The module creates Ingredient, Book and Finished Product Item folders, a Recipe Journal folder, and two macro shortcuts. You can also use the flask buttons in token controls or open its manager from Module Settings.
 
-Installation files are hosted in this public repository. Full live validation and the official submission process are still required before catalog publication.
+Installation files are hosted in this public repository. The official package page is [Sant Ana Alchemy](https://foundryvtt.com/packages/santana-alchemy); its displayed versions are the authority for catalog availability.
 
 ## Try it
 
@@ -114,7 +114,9 @@ Interrupted writes are compensated when safe. If reconciliation is uncertain, an
 
 ## Validation
 
-Automated Node tests cover rules, idempotent import, complete crafting flow, permission checks, simultaneous requests and error recovery. **A real Foundry 14/dnd5e session remains to be validated.** The manifest intentionally omits a `verified` claim until that step is complete.
+Automated Node tests cover rules, idempotent import, complete crafting flow, permission checks, simultaneous requests and error recovery. On 2026-11-16, the unchanged 0.1.5 runtime passed native GM workflow checks on Foundry 14 build 370 with dnd5e 6.1.0: all five demo formulas, study, stock consumption, success and mild failure, products, retained books, memorization and crafting without book access. Version 0.1.6 records this compatibility and validation; its runtime, demo data and assets are unchanged from 0.1.5.
+
+The live check used Portuguese, approved manual alchemist tool access, and a separate test character in an existing world with other modules, including the full content packs. Success-path checks used a +10 test bonus and a permanent Intelligence modifier override of +3 for the memory target. Non-GM requests, simultaneous clients, native English dialogs, clean-world isolation and native tool-item detection remain additional live checks; their automated coverage does not replace those checks. See [DEVELOPMENT.md](DEVELOPMENT.md) and [VALIDATION.json](VALIDATION.json).
 
 Run `node --test tests/*.test.mjs`; no npm dependencies are required. Source and tests are included.
 
