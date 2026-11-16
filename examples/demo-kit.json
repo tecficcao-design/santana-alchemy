@@ -1,0 +1,94 @@
+{
+  "formatVersion": 1,
+  "id": "base-c1-demo",
+  "version": "1.0.0",
+  "title": {
+    "pt-BR": "Demonstração C1 — Conservante de Água",
+    "en": "C1 Demo — Water Preservative"
+  },
+  "ingredients": [
+    {
+      "id": "base:salt-beetle",
+      "name": {
+        "pt-BR": "Besouro de Sal",
+        "en": "Salt Beetle"
+      },
+      "description": {
+        "pt-BR": "<p>Porção utilizável de ingrediente alquímico: Besouro de Sal.</p>",
+        "en": "<p>A usable portion of the Salt Beetle alchemical ingredient.</p>"
+      },
+      "weight": 0.01,
+      "img": "modules/santana-alchemy/assets/ingredient.svg"
+    },
+    {
+      "id": "base:waterlogged-wood",
+      "name": {
+        "pt-BR": "Madeira Encharcada",
+        "en": "Waterlogged Wood"
+      },
+      "description": {
+        "pt-BR": "<p>Porção utilizável de ingrediente alquímico: Madeira Encharcada.</p>",
+        "en": "<p>A usable portion of the Waterlogged Wood alchemical ingredient.</p>"
+      },
+      "weight": 0.01,
+      "img": "modules/santana-alchemy/assets/ingredient.svg"
+    }
+  ],
+  "products": [
+    {
+      "id": "base:water-preservative",
+      "name": {
+        "pt-BR": "Conservante de Água",
+        "en": "Water Preservative"
+      },
+      "price": 10,
+      "weight": 0.1,
+      "description": {
+        "pt-BR": "<p><strong>Forma:</strong> solução conservante. <strong>Uso:</strong> 1 minuto, toque. Uma unidade trata até 4 litros de água potável por 7 dias.</p><p>A água permanece própria para consumo e não sofre deterioração ou contaminação natural durante o armazenamento. O produto não purifica água imprópria, não remove doenças, venenos ou magia, nem neutraliza substâncias adicionadas depois. O efeito termina após 7 dias ou quando a água é consumida.</p>",
+        "en": "<p><strong>Form:</strong> preservative solution. <strong>Use:</strong> 1 minute, touch. One unit treats up to 4 liters of potable water for 7 days.</p><p>The water remains drinkable and resists natural spoilage or contamination during storage. This does not purify unsafe water, remove diseases, poison or magic, or neutralize substances added afterward. The effect ends after 7 days or when the water is consumed.</p>"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "base:water-preservative",
+      "name": {
+        "pt-BR": "Conservante de Água",
+        "en": "Water Preservative"
+      },
+      "complexity": 1,
+      "dc": 9,
+      "timeMinutes": 1,
+      "tools": [
+        "alchemist",
+        "brewer"
+      ],
+      "ingredients": [
+        {
+          "id": "base:salt-beetle",
+          "quantity": 1
+        },
+        {
+          "id": "base:waterlogged-wood",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:water-preservative",
+        "quantity": 1
+      },
+      "description": {
+        "pt-BR": "<p>Mistura tópica C1. Cada tentativa exige 1 porção de Besouro de Sal e 1 porção de Madeira Encharcada. Use Suprimentos de Alquimista ou Suprimentos de Cervejeiro. Tempo: 1 minuto. CD: 9.</p><p>Um sucesso produz uma unidade de Conservante de Água. Consulte a descrição do produto para aplicação.</p>",
+        "en": "<p>C1 topical mixture. Each attempt requires 1 Salt Beetle portion and 1 Waterlogged Wood portion. Use Alchemist’s Supplies or Brewer’s Supplies. Time: 1 minute. DC: 9.</p><p>A success produces one Water Preservative unit. See the product description for application.</p>"
+      },
+      "heroicDescription": {
+        "pt-BR": "Uma unidade trata até 40 litros de água armazenada. O mestre confirma a aplicação.",
+        "en": "One unit treats up to 40 liters of stored water. The GM confirms its application."
+      }
+    }
+  ]
+}
