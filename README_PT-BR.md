@@ -1,6 +1,10 @@
 # Sant Ana Alchemy — Motor Gratuito
 
-Versão 0.1.5 • Marcelo Sant Ana / Sant Ana RPG Press
+**Livros para descobrir. Fórmulas para aprender. Preparações para usar nas suas aventuras.**
+
+Versão 0.1.5 • Marcelo Sant Ana / Sant Ana RPG Press · [English](README.md)
+
+O Sant Ana Alchemy leva as regras de fabricação do *Compêndio de Alquimia* para o Foundry: o personagem estuda um livro físico, reúne os ingredientes, resolve o teste de fabricação e avança na memorização da fórmula. A demonstração é gratuita e usa o mesmo motor dos pacotes completos do livro.
 
 Motor de fabricação alquímica para Foundry VTT 14 e o sistema dnd5e. A interface está disponível em português e inglês. Esta é uma versão pública de testes; a homologação completa da fabricação em mesa real permanece pendente.
 
@@ -27,6 +31,16 @@ Motor de fabricação alquímica para Foundry VTT 14 e o sistema dnd5e. A interf
 Todas são C1, com CD 9 e tempo normal de fabricação de um minuto. Consulte as descrições dos produtos para as regras completas de uso e suas limitações. O pacote C1 completo contém 25 fórmulas; o livro reúne 125 fórmulas C1–C5.
 
 O forrageamento e os pacotes comerciais C1–C5 permanecem produtos separados. O conteúdo completo do PDF não é distribuído neste módulo.
+
+## O livro completo e seus bônus
+
+O **Compêndio de Alquimia**, de Marcelo Sant Ana, amplia a coleção para **125 fórmulas distribuídas entre C1 e C5 e 110 ingredientes**.
+
+A compra do livro inclui os **pacotes completos C1–C5 para Foundry VTT e o módulo de forrageamento como bônus**. Eles utilizam este mesmo motor gratuito. Ao importar o C1 completo, as fórmulas e os ingredientes compartilhados com a demonstração são reaproveitados pelos mesmos identificadores.
+
+**[Livro em português e bônus para Foundry](https://payhip.com/b/sUa8I)** · **[English edition and Foundry bonus](https://payhip.com/b/6Z0ru)**
+
+[Sant Ana RPG Press na Payhip](https://payhip.com/SantAnaRPGPress)
 
 ## Instalar pelo endereço público
 
@@ -112,7 +126,7 @@ O mestre abre **Gerenciar → Configurar personagem**, confere o registro e o in
 
 ## Estado de validação
 
-- Testes automatizados em Node cobrem regras, importação repetida, fluxo de fabricação, permissões, concorrência e recuperação de falhas.
+- 66 testes automatizados em Node passaram, cobrindo regras, fabricação das cinco fórmulas em português e inglês, atualização da demonstração antiga, importação repetida, permissões, concorrência e recuperação de falhas.
 - As APIs usadas foram conferidas na documentação pública do Foundry 14.
 - A execução em uma instalação real de Foundry 14/dnd5e ainda precisa ser homologada. O manifesto não declara uma versão como `verified` antes desse teste.
 
