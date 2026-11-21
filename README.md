@@ -56,7 +56,7 @@ O livro completo reúne **125 fórmulas C1–C5 e 110 ingredientes**, com os pac
 
 ## Current status and requirements
 
-Version 0.1.7 expands the demo content. The engine and its five C1 formulas previously passed a live GM crafting check on Foundry VTT 14 (build 370) and dnd5e 6.1.0. Requires Foundry VTT 14, the dnd5e system and a connected GM to process crafting requests. No Socketlib, Item Macro, Midi-QOL or Item Piles dependency is required.
+Version 0.1.8 adds individual inventory icons and illustrated books for the C2 and C3 demo formulas. The engine and its five C1 formulas previously passed a live GM crafting check on Foundry VTT 14 (build 370) and dnd5e 6.1.0. Requires Foundry VTT 14, the dnd5e system and a connected GM to process crafting requests. No Socketlib, Item Macro, Midi-QOL or Item Piles dependency is required.
 
 The automated suite covers all 12 formulas in both languages, C1–C3 progression, and upgrades from the one- and five-formula demos. Native GM checks covered the original five C1 formulas. See [VALIDATION.json](VALIDATION.json).
 
@@ -100,7 +100,7 @@ Foraging and the complete C1–C5 content packs are separate. This free build co
 
 ## Updating an existing demo world
 
-Update the engine in Foundry and reinstall **C1–C3 Demo — Twelve Formulas** in the manager. The existing kit ID is retained. Reinstalling adds the missing templates and reuses documents already present. Choose the template-update option only if you wish to replace existing world templates. Character inventory and study progress are preserved. The complete C1, C2 and C3 packs use the same permanent identifiers.
+Update the engine in Foundry and reinstall **C1–C3 Demo — Twelve Formulas** in the manager. The existing kit ID is retained. Reinstalling adds the missing templates and reuses documents already present. To apply the new artwork to templates imported with 0.1.7, select the option to update existing templates. It also replaces any edits to those world templates. Character inventory and study progress are preserved. The complete C1, C2 and C3 packs use the same permanent identifiers.
 
 ## Kits and maintenance
 

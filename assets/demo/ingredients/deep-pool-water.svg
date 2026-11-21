@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Água de Poça Profunda</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="ingredient">
+      <path d="M64 17c-4 14-30 39-30 56 0 18 13 29 30 29s30-11 30-29c0-17-25-42-30-56Z" fill="#22647c" stroke="#243c40" stroke-width="4"/>
+      <path d="M40 73q11-13 25-4t23-2q4 26-23 29-21 0-25-23Z" fill="#439ab0"/>
+      <path d="M47 60q4-8 11-16" fill="none" stroke="#d8f5ea" stroke-width="5"/>
+      <path d="M20 91q7 11 19 13m50-1q10-4 17-13" fill="none" stroke="#628f92" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

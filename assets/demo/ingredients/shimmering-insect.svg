@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Inseto Cintilante</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="ingredient">
+      <path d="m50 52-13-8m12 19-15 2m16 9-11 12m38-33 12-10m-11 20 15 2m-15 9 12 12" fill="none" stroke="#243c40" stroke-width="3.5"/>
+      <path d="M64 49C50 30 27 28 24 41c-2 13 14 18 32 21m9-13c14-19 36-21 39-8 3 12-13 18-32 21Z" fill="#b3d7c6" stroke="#243c40" stroke-width="3"/>
+      <path d="M50 62c0-12 5-20 14-20s14 8 14 20c0 17-6 29-14 34-8-6-14-18-14-34Z" fill="#53745c" stroke="#243c40" stroke-width="4"/>
+      <path d="M53 72q12 7 23 0-2 16-12 23-8-5-11-23Z" fill="#ead36b" stroke="#243c40" stroke-width="2.5"/>
+      <circle cx="64" cy="42" r="8" fill="#354d43" stroke="#243c40" stroke-width="3"/>
+      <path d="m59 36-6-9m16 9 7-9m-24 70-4 5m28-6 5 4" fill="none" stroke="#68724e" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

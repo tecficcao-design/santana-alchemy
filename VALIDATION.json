@@ -1,8 +1,8 @@
 {
-  "version": "0.1.7",
+  "version": "0.1.8",
   "date": "2026-11-21",
   "automated_tests": {
-    "engine": 82
+    "engine": 83
   },
   "result": "passed",
   "test_environment": "Node.js 24.22.3; Foundry document/API mocks",
@@ -12,18 +12,19 @@
     "Upgrades from both the one- and five-recipe kits preserve IDs, actor inventory and progress",
     "Unrelated stock not consumed",
     "Core rules, permissions, serialized requests and error recovery",
-    "Study, distinct C1 and C2 successes, GM tier confirmation, and successful C3 crafting using only the free kit"
+    "Study, distinct C1 and C2 successes, GM tier confirmation, and successful C3 crafting using only the free kit",
+    "Upgrade from 0.1.7 world templates, distinct C2/C3 covers, ingredient and product icons, product illustrations in recipe journals and books, and newly crafted items."
   ],
   "content_kit": {
     "id": "base-c1-demo",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "recipes": 12,
     "ingredients": 24,
     "products": 12,
     "generated_books": 12
   },
-  "runtime_code": "Unchanged from 0.1.6; expanded demo content.",
-  "local_package_checks": "C2/C3 subset checked against the original 1.0.0 kits; exact identifiers, ingredient quantities, bilingual texts, local assets, release manifest and ZIP integrity.",
+  "runtime_code": "Same runtime as 0.1.7. This release adds vector inventory art and updates kit templates.",
+  "local_package_checks": "Validated SVG paths and standalone renders, exact C1-C3 rules and item identities, release manifest, archive integrity and checksums.",
   "live_foundry_validation": {
     "scope": "The five original C1 formulas were previously checked in native Foundry VTT 14 (build 370) with dnd5e 6.1.0. Native testing of the new C2/C3 kit remains pending."
   }

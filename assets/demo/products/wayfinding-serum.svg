@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Soro de Orientação</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="container">
+      <path d="M51 23h26v13h-5v12l18 14 8 15-7 24-14 10H51l-14-10-7-24 8-15 18-14V36h-5Z" fill="#dfebe2" stroke="#243c40" stroke-width="4"/>
+      <rect x="51" y="20" width="26" height="11" rx="2" fill="#a6774b" stroke="#243c40" stroke-width="3"/>
+      <path d="M52 38h24" fill="none" stroke="#ad874a" stroke-width="3"/>
+      <path d="m40 64-4 11" fill="none" stroke="#fffdf1" stroke-width="4"/>
+    </g>
+    <circle cx="64" cy="78" r="27" fill="#215e70" stroke="#243c40" stroke-width="3"/>
+    <g id="emblem" transform="translate(40 54)">
+      <circle cx="24" cy="24" r="18" fill="none" stroke="#efc16b" stroke-width="2.7"/>
+      <path d="m35 7-6 22-16 12 6-23Z" fill="#fff6d7"/>
+      <path d="m35 7-6 22-10-11Z" fill="#f1a658"/>
+      <circle cx="24" cy="24" r="2.7" fill="#215e70" stroke="none" stroke-width="0"/>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.8 — 2026-11-21
+
+- Seven C2/C3 books now have individual covers and show their finished product inside the book and recipe Journal. Each product and its cover share an emblem.
+- Added individual SVG icons for all seven C2/C3 products and their fourteen ingredients, including the existing C1 pack vectors for Qor Sap and Hive Chitin.
+- To refresh imported 0.1.7 world templates, reinstall the demo kit with the update-existing-templates option. This also replaces world template edits. Existing actor copies keep their original art.
+
 ## 0.1.7 — 2026-11-21
 
 - Expanded the free kit to 12 recipes (5 C1, 5 C2, 2 C3) and 24 ingredients. All recipes use the IDs of the full packs.

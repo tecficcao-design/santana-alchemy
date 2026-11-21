@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Pó de Alarme Químico</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="container">
+      <path d="M43 26h42l-9 17 3 7c12 14 25 32 22 47-2 10-14 14-37 14s-35-4-37-14c-3-15 10-33 22-47l3-7Z" fill="#d6b184" stroke="#243c40" stroke-width="4"/>
+      <path d="M48 44q16 5 32 0m-5 2 12 9m-14-9 8 13" fill="none" stroke="#875b32" stroke-width="4"/>
+      <path d="m38 84-3 10m56-26 5 14" fill="none" stroke="#b18a60" stroke-width="3"/>
+    </g>
+    <circle cx="64" cy="78" r="27" fill="#9e5133" stroke="#243c40" stroke-width="3"/>
+    <g id="emblem" transform="translate(40 54)">
+      <path d="M8 33c5-5 5-10 6-17 1-6 5-9 10-9s9 3 10 9c1 7 1 12 6 17Z" fill="#fff6d7"/>
+      <path d="M20 37q4 8 8 0" fill="none" stroke="#efc16b" stroke-width="4"/>
+      <path d="M9 10 5 17m34-7 4 7" fill="none" stroke="#efc16b" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Casulo Úmido</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="ingredient">
+      <path d="M65 31q0-12 11-16" fill="none" stroke="#557a64" stroke-width="4"/>
+      <path d="M67 28c22 8 27 24 23 45-3 15-16 24-29 31-14-7-25-21-24-36 0-20 12-34 30-40Z" fill="#94c7b5" stroke="#243c40" stroke-width="4"/>
+      <path d="M49 42q13 17 39 19M42 56q14 17 43 20M39 71q13 13 34 18m-17-47q10 6 19 8" fill="none" stroke="#457e73" stroke-width="4"/>
+      <path d="M95 80q-10 13-8 17 4 8 10 3 6-5-2-20Z" fill="#6bb6c6" stroke="#243c40" stroke-width="2.7"/>
+    </g>
+  </g>
+</svg>

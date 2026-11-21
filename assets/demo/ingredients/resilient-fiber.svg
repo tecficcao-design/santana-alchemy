@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Fibra Resiliente</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="ingredient">
+      <path d="M29 98C50 83 44 73 60 60s18-22 34-37M36 104c19-17 19-28 32-39s20-21 32-37" fill="none" stroke="#243c40" stroke-width="8"/>
+      <path d="M29 98C50 83 44 73 60 60s18-22 34-37M36 104c19-17 19-28 32-39s20-21 32-37" fill="none" stroke="#bb9757" stroke-width="4.5"/>
+      <path d="m41 88 10-1m0-15 10 1m2-15 11 1m0-15 11 1m-1-14 10 1" fill="none" stroke="#775f3e" stroke-width="2.8"/>
+      <path d="m26 98-6 3m14-1-1 9m55-82 1-9m10 7 7-3" fill="none" stroke="#243c40" stroke-width="3.5"/>
+    </g>
+  </g>
+</svg>

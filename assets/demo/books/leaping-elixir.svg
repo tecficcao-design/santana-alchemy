@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Livro · Elixir de Salto</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="binding">
+      <path d="M30 18h69q5 0 5 5v84H32c-7 0-12-5-12-12V32q0-14 10-14Z" fill="#284b69" stroke="#243c40" stroke-width="4"/>
+      <path d="M32 19h70v77H32c-5 0-8 3-10 7V32q0-13 10-13Z" fill="#3c7298" stroke="#243c40" stroke-width="3"/>
+      <path d="M34 22v69" fill="none" stroke="#efc16b" stroke-width="3"/>
+      <path d="M28 34h9m-9 45h9" fill="none" stroke="#efc16b" stroke-width="3"/>
+      <path d="M32 96h68v10H32c-8 0-8-10 0-10Z" fill="#fff4cc" stroke="#243c40" stroke-width="2"/>
+      <path d="M35 100h57" fill="none" stroke="#c1a779" stroke-width="1.6"/>
+      <path d="M85 22h12v12Z M97 78v12H85Z" fill="#efc16b"/>
+    </g>
+    <circle cx="67" cy="57" r="24.5" fill="#315f4b" stroke="#efc16b" stroke-width="2.5"/>
+    <g id="emblem" transform="translate(47 37) scale(0.8333)">
+      <path d="M8 32Q15 10 37 11m-9-6 10 6-7 10" fill="none" stroke="#fff6d7" stroke-width="4.5"/>
+      <path d="M6 40h13m7-5h8" fill="none" stroke="#efc16b" stroke-width="3.3"/>
+    </g>
+  </g>
+</svg>

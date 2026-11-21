@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Raiz Enroscada</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="ingredient">
+      <path d="M40 22q19 4 14 22c-6 21-21 20-20 35 0 13 20 14 29 1 11-13 1-28-11-20-12 9 4 23 25 21 14-2 17-16 14-26m-27 30q-3 14-14 22m27-25q7 8 21 10" fill="none" stroke="#243c40" stroke-width="11"/>
+      <path d="M40 22q19 4 14 22c-6 21-21 20-20 35 0 13 20 14 29 1 11-13 1-28-11-20-12 9 4 23 25 21 14-2 17-16 14-26m-27 30q-3 14-14 22m27-25q7 8 21 10" fill="none" stroke="#a47748" stroke-width="6"/>
+      <path d="m50 35 12-9m31 41 9-8m-62 26-9 5" fill="none" stroke="#775539" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

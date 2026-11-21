@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Pedra Solar</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="ingredient">
+      <path d="M26 79 37 48l27-19 31 13 9 33-27 26-38-4Z" fill="#c68036" stroke="#243c40" stroke-width="4"/>
+      <path d="m37 48 20 11 7-30 15 22 16-9-6 30 15 3-27 26-6-27-32 23 15-29L26 79Z" fill="#edb153"/>
+      <path d="m58 60 6-17 7 16 15 5-15 7-7 14-6-15-13-6Z" fill="#fff0b0"/>
+      <path d="m27 30-5-5m71-1 5-6m8 32 7-2" fill="none" stroke="#b2772d" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Cola Alquímica</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="container">
+      <path d="M40 27h48v13l-6 5 13 12v46l-7 7H40l-7-7V57l13-12-6-5Z" fill="#f5dbae" stroke="#243c40" stroke-width="4"/>
+      <rect x="42" y="22" width="44" height="11" rx="2" fill="#a6774b" stroke="#243c40" stroke-width="3"/>
+      <path d="M48 42h32" fill="none" stroke="#ad874a" stroke-width="3"/>
+      <path d="m40 64-4 11" fill="none" stroke="#fffdf1" stroke-width="4"/>
+    </g>
+    <circle cx="64" cy="78" r="27" fill="#8c572c" stroke="#243c40" stroke-width="3"/>
+    <g id="emblem" transform="translate(40 54)">
+      <path d="M21 30 13 38a7 7 0 0 1-10-10l11-11a7 7 0 0 1 10 0" fill="none" stroke="#fff6d7" stroke-width="5"/>
+      <path d="M27 18 35 10a7 7 0 0 1 10 10L34 31a7 7 0 0 1-10 0" fill="none" stroke="#fff6d7" stroke-width="5"/>
+      <path d="m17 30 14-14" fill="none" stroke="#efc16b" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Frasco de Resina Restritiva</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="container">
+      <path d="M48 24h32v13h-7v10l21 16 8 23-11 20-14 5H51l-14-5-11-20 8-23 21-16V37h-7Z" fill="#dfebe2" stroke="#243c40" stroke-width="4"/>
+      <rect x="51" y="20" width="26" height="11" rx="2" fill="#a6774b" stroke="#243c40" stroke-width="3"/>
+      <path d="M52 38h24" fill="none" stroke="#ad874a" stroke-width="3"/>
+      <path d="m40 64-4 11" fill="none" stroke="#fffdf1" stroke-width="4"/>
+    </g>
+    <circle cx="64" cy="78" r="27" fill="#735588" stroke="#243c40" stroke-width="3"/>
+    <g id="emblem" transform="translate(40 54)">
+      <path d="M5 13 14 5l27 27-9 9ZM7 32 32 7l9 9-25 25Z" fill="#fff6d7"/>
+      <path d="m17 19 12 12m-10-1 11-11" fill="none" stroke="#735588" stroke-width="3.1"/>
+      <circle cx="8" cy="40" r="3" fill="#efc16b" stroke="none" stroke-width="0"/>
+      <circle cx="40" cy="8" r="3" fill="#efc16b" stroke="none" stroke-width="0"/>
+    </g>
+  </g>
+</svg>

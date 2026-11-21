@@ -2,7 +2,7 @@
 
 **Livros para descobrir. Fórmulas para aprender. Preparações para usar nas suas aventuras.**
 
-Versão 0.1.7 • Marcelo Sant Ana / Sant Ana RPG Press · [English](README.md)
+Versão 0.1.8 • Marcelo Sant Ana / Sant Ana RPG Press · [English](README.md)
 
 O Sant Ana Alchemy leva as regras de fabricação do *Compêndio de Alquimia* para o Foundry: o personagem estuda um livro físico, reúne os ingredientes, resolve o teste de fabricação e avança na memorização da fórmula. A demonstração é gratuita e usa o mesmo motor dos pacotes completos do livro.
 
@@ -77,7 +77,7 @@ Um mestre precisa estar conectado para atender os pedidos. Os jogadores só prec
 
 ## Atualizar uma demonstração já instalada
 
-Atualize o motor no Foundry e instale novamente **Demonstração C1–C3 — Doze Fórmulas** no gerenciador. A instalação reaproveita os documentos já existentes e acrescenta as fórmulas e ingredientes que faltam. Marque a opção de atualizar modelos somente se desejar substituir os modelos existentes no mundo. As cópias nas fichas e o progresso de estudo e memorização são preservados. Os pacotes completos C1, C2 e C3 utilizam os mesmos identificadores.
+Atualize o motor no Foundry e instale novamente **Demonstração C1–C3 — Doze Fórmulas** no gerenciador. A instalação reaproveita os documentos já existentes e acrescenta as fórmulas e ingredientes que faltam. Para aplicar as novas imagens aos modelos da 0.1.7, marque a opção de atualizar também os modelos já existentes. Isso substitui eventuais edições feitas nesses modelos. As cópias nas fichas e o progresso de estudo e memorização são preservados. Os pacotes completos C1, C2 e C3 utilizam os mesmos identificadores.
 
 ## Regras e decisões do mestre
 

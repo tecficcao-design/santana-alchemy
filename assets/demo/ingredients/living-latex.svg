@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Látex Vivo</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="ingredient">
+      <path d="M37 25h25l-3 34-12 8-14-5Z" fill="#977554" stroke="#243c40" stroke-width="3.5"/>
+      <path d="m38 42 16-7m-15 17 10-4" fill="none" stroke="#624e37" stroke-width="3"/>
+      <path d="M37 58q7 5 18-2l-4 9c-4 18 25 5 37 9 19 5 12 25-1 29-17 5-39 3-47-3-8-7-2-14 8-15-10-6-12-10-11-27Z" fill="#fff8e1" stroke="#243c40" stroke-width="3.8"/>
+      <path d="M51 93q12 4 29 1 10-1 10-7" fill="none" stroke="#bfb899" stroke-width="3.2"/>
+    </g>
+  </g>
+</svg>

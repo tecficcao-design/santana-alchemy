@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Alga Sussurrante</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="122" height="122" rx="21" fill="#f7edce" stroke="#b18a48" stroke-width="4"/>
+    <g id="ingredient">
+      <path d="M50 99C27 75 54 62 36 42c-4 29-21 39 14 57Zm13 1c-28-30 21-49 4-82 2 30-38 46-4 82Zm11-1c-10-26 27-30 18-64 1 26-37 35-18 64Z" fill="#548c72" stroke="#243c40" stroke-width="3.5"/>
+      <path d="M32 104q12-9 26-5t34 1" fill="none" stroke="#476f70" stroke-width="3.5"/>
+      <circle cx="32" cy="31" r="3" fill="#8cbab3" stroke="none" stroke-width="0"/>
+      <circle cx="88" cy="21" r="2" fill="#8cbab3" stroke="none" stroke-width="0"/>
+    </g>
+  </g>
+</svg>

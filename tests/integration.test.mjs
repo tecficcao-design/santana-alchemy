@@ -65,7 +65,7 @@ async function populated(){
 }
 test("the public demo is twelve bilingual C1–C3 formulas with complete local ingredients and art",async()=>{
   validateKit(kit);
-  assert.equal(kit.id,legacyKit.id);assert.equal(kit.version,"1.2.0");
+  assert.equal(kit.id,legacyKit.id);assert.equal(kit.version,"1.2.1");
   assert.deepEqual(new Set(kit.recipes.map(r=>r.id)),new Set([
     "base:water-preservative","base:rustic-antiseptic","base:unstable-fire","base:distracting-smoke","base:revealing-ink",
     "base:bottled-light","base:lesser-healing-potion","base:alchemical-adhesive","base:chemical-alarm-powder",
@@ -99,6 +99,54 @@ test("the public demo is twelve bilingual C1–C3 formulas with complete local i
     }
   }
 });
+test("0.1.7 templates receive distinct C2 and C3 artwork when the GM updates the demo", async () => {
+  const oldKit = copy(kit);
+  oldKit.version = "1.2.0";
+  const advancedRecipes = kit.recipes.filter(recipe => recipe.complexity > 1);
+  const productIds = new Set(advancedRecipes.map(recipe => recipe.product.id));
+  const ingredientIds = new Set(advancedRecipes.flatMap(recipe => recipe.ingredients.map(entry => entry.id)));
+  for (const recipe of oldKit.recipes.filter(recipe => recipe.complexity > 1)) {
+    delete recipe.img;
+    delete recipe.bookImg;
+  }
+  for (const product of oldKit.products.filter(product => productIds.has(product.id))) {
+    product.img = "modules/santana-alchemy/assets/flask.svg";
+  }
+  for (const ingredient of oldKit.ingredients.filter(ingredient => ingredientIds.has(ingredient.id))) {
+    ingredient.img = "modules/santana-alchemy/assets/ingredient.svg";
+  }
+  const manager = new KitManager();
+  manager.register(oldKit);
+  await manager.install(oldKit.id);
+  const originals = worldIndex();
+  manager.register(kit);
+  const upgrade = await manager.install(kit.id, {update:true});
+  assert.deepEqual(upgrade, {created:0, reused:0, updated:60});
+  const updated = worldIndex();
+  const icons = new Set();
+  for (const ingredient of kit.ingredients.filter(entry => ingredientIds.has(entry.id))) {
+    const template = updated.ingredient.get(ingredient.id);
+    assert.equal(template.id, originals.ingredient.get(ingredient.id).id);
+    assert.equal(template.img, ingredient.img);
+    icons.add(template.img);
+  }
+  for (const recipe of advancedRecipes) {
+    const book = updated.book.get(recipe.id);
+    const journal = updated.recipe.get(recipe.id);
+    const product = updated.product.get(recipe.product.id);
+    assert.equal(book.id, originals.book.get(recipe.id).id);
+    assert.equal(book.img, recipe.bookImg);
+    assert.equal(book.flags[MODULE_ID].cover, recipe.complexity === 2 ? "green" : "blue");
+    assert.equal(product.img, recipe.img);
+    assert.ok(book.system.description.value.includes(`src="${product.img}"`));
+    assert.ok(journal.pages[0].text.content.includes(`src="${product.img}"`));
+    icons.add(book.img);
+    icons.add(product.img);
+  }
+  assert.equal(icons.size, 28);
+  for (const icon of icons) assert.match(icon, /^modules\/santana-alchemy\/assets\/demo\/(books|ingredients|products)\/.+\.svg$/);
+});
+
 for (const previous of [legacyKit, fiveFormulaKit]) {
   test(`upgrading kit ${previous.version} preserves documents, inventory and character progress`, async () => {
     const manager=new KitManager();manager.register(previous);await manager.install(previous.id);
@@ -134,6 +182,7 @@ for(const language of ["en","pt-BR"])for(const recipe of kit.recipes){
     assert.equal(index.recipe.get(recipe.id).name,recipe.name[language]);
     const product=actor.items.find(i=>i.flags?.[MODULE_ID]?.crafted);
     assert.equal(product.flags[MODULE_ID].id,recipe.product.id);
+    assert.equal(product.img,recipe.img);
     assert.equal(product.name,kit.products.find(p=>p.id===recipe.product.id).name[language]);
     assert.ok(actor.items.filter(i=>i.flags?.[MODULE_ID]?.kind==="ingredient").every(i=>i.system.quantity===0));
     assert.equal(actor.items.find(i=>i.flags?.[MODULE_ID]?.kind==="book").system.quantity,1);
