@@ -10,7 +10,7 @@ Pure rule tests are in `tests/core.test.mjs`; recoverable writes in `tests/trans
 
 ## Live validation scope
 
-Version 0.1.6 records a native GM workflow check on Foundry 14 build 370 with dnd5e 6.1.0. The runtime, data and assets tested were those of 0.1.5 and remain byte-identical in 0.1.6. All five demo formulas passed study, successful production and memorization. Stock deductions, retained books, a mild-failure product and crafting from memory without book access were checked. See VALIDATION.json for controlled test parameters and limitations.
+Version 0.1.6 records a native GM workflow check on Foundry 14 build 370 with dnd5e 6.1.0. The runtime, data and assets tested were those of 0.1.5 and remain byte-identical in 0.1.6. All five demo formulas passed study, successful production and memorization. Stock deductions, retained books, a mild-failure product and crafting from memory without book access were checked. See VALIDATION.json for the test scope.
 
 Keep the following broader checklist when extending live coverage. A verified core-version declaration does not claim every item below has passed:
 
@@ -24,7 +24,7 @@ Keep the following broader checklist when extending live coverage. A verified co
 8. Portuguese and English dialogs and kit import.
 9. The supported dnd5e version's native item/weight/tool data models.
 
-The live check used an existing world with 38 active modules, including the full content packs, the Portuguese interface and manual approved alchemist tool access. Checklist items involving clean-world isolation, a real tool item, non-GM ownership, simultaneous players and native English dialogs remain outstanding. Automated permission, concurrency and bilingual data tests are separate evidence. Public hosting and catalog registration are not evidence of live behavior.
+See VALIDATION.json for the scope of the native and automated tests.
 
 ## Public distribution
 
@@ -32,7 +32,7 @@ The repository root contains the module source. Versioned installation files are
 
 Keep each published `releases/<version>/` directory unchanged. For a future update, increment the version in `module.json` and `package.json`, prepare a new version directory, test it, then update the root manifest. Preserve old version directories so previous installation URLs continue to work. If catalog submission is later approved, provide that release's version-specific `releases/<version>/module.json` URL.
 
-Only the engine and the C1 demonstration belong in this public repository. Do not upload the complete book, the commercial C1–C5 packs, or foraging. Review actual authorship and maintenance requirements in Foundry's current policies before official catalog submission; this publication does not make a catalog-compliance claim.
+Only the engine and the twelve-formula C1–C3 demonstration belong in this public repository. Do not upload the complete book, the commercial C1–C5 packs, or foraging. Review actual authorship and maintenance requirements in Foundry's current policies before official catalog submission; this publication does not make a catalog-compliance claim.
 
 ## Primary technical references
 
@@ -45,4 +45,4 @@ Only the engine and the C1 demonstration belong in this public repository. Do no
 - Foundry 14 scene controls: https://foundryvtt.com/api/v14/functions/hookEvents.getSceneControlButtons.html
 - Official dnd5e tool guide: https://github.com/foundryvtt/dnd5e/wiki/Active-Effect-Guide
 
-Rule authority: the project's `Compendio_de_Alquimia_FINAL_PT-BR.pdf`, checked during implementation. The five-formula C1 demo includes Water Preservative, Rustic Antiseptic, Unstable Fire, Distracting Smoke and Revealing Ink (source pages 66, 64, 67, 68 and 74). Only the selected formulas, their ten ingredients and the general engine rules are included. Recipe and ingredient IDs match the complete C1 pack.
+The original five demo recipes use the Compêndio de Alquimia C1 identifiers. The C2 and C3 entries come from the bilingual 1.0.0 content packs. The demo uses the engine’s bundled item icons and tier-colored book covers and imports only ingredients needed by its twelve recipes. The engine and distinct-success thresholds are unchanged in 0.1.7.

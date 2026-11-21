@@ -1,10 +1,16 @@
 # Changelog
 
+## 0.1.7 — 2026-11-21
+
+- Expanded the free kit to 12 recipes (5 C1, 5 C2, 2 C3) and 24 ingredients. All recipes use the IDs of the full packs.
+- Added Chemical Alarm Powder and Wayfinding Serum alongside the ten recipes in the printed sampler, so a character can meet the five distinct C2 successes required for C3 within the free kit. The GM confirms advancement.
+- Kept the existing kit ID and added automated tests for the five-formula upgrade and C1-to-C3 progression. The engine rules are unchanged.
+
 ## 0.1.6 — 2026-11-16
 
 - Recorded native GM workflow validation on Foundry VTT 14 build 370 with dnd5e 6.1.0 and declared verified core version 14.
 - Checked study, successful production and memorization of all five demo formulas, exact ingredient consumption, retained books, a mild-failure product, and successful crafting from memory without book access.
-- Documented the controlled test setup and remaining live checks in VALIDATION.json and the bilingual guides. This was a Portuguese GM check in an existing world with other modules, manual tool access and a test bonus; it does not claim live non-GM, multi-client, clean-world, native English or native tool-item validation.
+- Documented the scope of the native GM checks and the automated tests.
 - Runtime code, demo data and assets are unchanged from 0.1.5. This release changes compatibility metadata and documentation only; previous versioned downloads remain unchanged.
 
 ## 0.1.5 — 2026-11-15

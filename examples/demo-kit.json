@@ -1,10 +1,10 @@
 {
   "formatVersion": 1,
   "id": "base-c1-demo",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": {
-    "pt-BR": "Demonstração C1 — Cinco Fórmulas",
-    "en": "C1 Demo — Five Formulas"
+    "pt-BR": "Demonstração C1–C3 — Doze Fórmulas",
+    "en": "C1–C3 Demo — Twelve Formulas"
   },
   "ingredients": [
     {
@@ -474,6 +474,658 @@
         },
         "unit": "portion"
       }
+    },
+    {
+      "id": "base:deep-pool-water",
+      "name": {
+        "pt-BR": "Água de Poça Profunda",
+        "en": "Deep-Pool Water"
+      },
+      "description": {
+        "pt-BR": "<p>Esta água escura e imóvel vem de poças sombreadas cujo fundo não pode ser visto da superfície. Concede profundidade, paciência, ocultação e difusão lenta a um preparado.</p><table><tbody><tr><th>Tipo</th><td>Recurso Natural</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>1 po · Vilarejo</td></tr><tr><th>Ambientes</th><td>Floresta, Pântano, Subterrâneo</td></tr><tr><th>CD de coleta</th><td>10</td></tr><tr><th>Características opcionais</th><td>Nenhuma</td></tr></tbody></table>",
+        "en": "<p>This dark, still water comes from shaded pools whose bottoms cannot be seen from the surface. It lends depth, patience, concealment, and slow diffusion to a preparation.</p><table><tbody><tr><th>Type</th><td>Natural Resource</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>1 gp · Hamlet</td></tr><tr><th>Environments</th><td>Forest, Swamp, Underground</td></tr><tr><th>Gathering DC</th><td>10</td></tr><tr><th>Optional traits</th><td>None</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 1.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 24,
+        "type": {
+          "pt-BR": "Recurso Natural",
+          "en": "Natural Resource"
+        },
+        "foragingDC": 10,
+        "biomes": {
+          "pt-BR": [
+            "Floresta",
+            "Pântano",
+            "Subterrâneo"
+          ],
+          "en": [
+            "Forest",
+            "Swamp",
+            "Underground"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Nenhuma"
+          ],
+          "en": [
+            "None"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vilarejo",
+          "en": "Hamlet"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:sunstone",
+      "name": {
+        "pt-BR": "Pedra Solar",
+        "en": "Sunstone"
+      },
+      "description": {
+        "pt-BR": "<p>Inclusões douradas e mornas brilham depois de horas sob luz solar e desvanecem lentamente à noite. Favorece radiância armazenada, calor, vigilância e liberação ativada pelo sol.</p><table><tbody><tr><th>Tipo</th><td>Mineral</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>4 po · Vila</td></tr><tr><th>Ambientes</th><td>Campos, Deserto, Colinas</td></tr><tr><th>CD de coleta</th><td>12</td></tr><tr><th>Características opcionais</th><td>Nenhuma</td></tr></tbody></table>",
+        "en": "<p>Warm golden inclusions brighten after hours in direct sunlight and fade slowly at night. It supports stored radiance, warmth, vigilance, and sun-triggered release.</p><table><tbody><tr><th>Type</th><td>Mineral</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>4 gp · Village</td></tr><tr><th>Environments</th><td>Grasslands, Desert, Hills</td></tr><tr><th>Gathering DC</th><td>12</td></tr><tr><th>Optional traits</th><td>None</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 4.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 35,
+        "type": {
+          "pt-BR": "Mineral",
+          "en": "Mineral"
+        },
+        "foragingDC": 12,
+        "biomes": {
+          "pt-BR": [
+            "Campos",
+            "Deserto",
+            "Colinas"
+          ],
+          "en": [
+            "Grasslands",
+            "Desert",
+            "Hills"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Nenhuma"
+          ],
+          "en": [
+            "None"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:damp-cocoon",
+      "name": {
+        "pt-BR": "Casulo Úmido",
+        "en": "Damp Cocoon"
+      },
+      "description": {
+        "pt-BR": "<p>Este casulo translúcido permanece coberto por um gel nutritivo muito depois de abandonado. Favorece transformação, selamento, reparação de tecidos e desenvolvimento protegido.</p><table><tbody><tr><th>Tipo</th><td>Animal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>3 po · Vila</td></tr><tr><th>Ambientes</th><td>Floresta, Pântano</td></tr><tr><th>CD de coleta</th><td>12</td></tr><tr><th>Características opcionais</th><td>Perecível, Cultivável</td></tr></tbody></table>",
+        "en": "<p>This translucent cocoon remains slick with nutrient gel long after it is abandoned. It supports transformation, sealing, tissue repair, and protected development.</p><table><tbody><tr><th>Type</th><td>Animal</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>3 gp · Village</td></tr><tr><th>Environments</th><td>Forest, Swamp</td></tr><tr><th>Gathering DC</th><td>12</td></tr><tr><th>Optional traits</th><td>Perishable, Cultivable</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 3.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 26,
+        "type": {
+          "pt-BR": "Animal",
+          "en": "Animal"
+        },
+        "foragingDC": 12,
+        "biomes": {
+          "pt-BR": [
+            "Floresta",
+            "Pântano"
+          ],
+          "en": [
+            "Forest",
+            "Swamp"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Perecível",
+            "Cultivável"
+          ],
+          "en": [
+            "Perishable",
+            "Cultivable"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:qor-sap",
+      "name": {
+        "pt-BR": "Seiva de Qor",
+        "en": "Qor Sap"
+      },
+      "description": {
+        "pt-BR": "<p>Qor é uma espécie genérica de árvore resinosa que pode existir em qualquer cenário; sua seiva âmbar permanece maleável por horas. Favorece ligação, estabilização, liberação lenta e catálise orgânica.</p><table><tbody><tr><th>Tipo</th><td>Vegetal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>1 po · Vila</td></tr><tr><th>Ambientes</th><td>Ampla ocorrência</td></tr><tr><th>CD de coleta</th><td>10</td></tr><tr><th>Características opcionais</th><td>Cultivável</td></tr></tbody></table>",
+        "en": "<p>Qor is a generic resinous tree species that can exist in any setting; its amber sap stays pliable for hours. It favors binding, stabilization, slow release, and organic catalysis.</p><table><tbody><tr><th>Type</th><td>Plant</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>1 gp · Village</td></tr><tr><th>Environments</th><td>Widespread</td></tr><tr><th>Gathering DC</th><td>10</td></tr><tr><th>Optional traits</th><td>Cultivable</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 1.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 37,
+        "type": {
+          "pt-BR": "Vegetal",
+          "en": "Plant"
+        },
+        "foragingDC": 10,
+        "biomes": {
+          "pt-BR": [
+            "Ampla ocorrência"
+          ],
+          "en": [
+            "Widespread"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Cultivável"
+          ],
+          "en": [
+            "Cultivable"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:peat-pitch",
+      "name": {
+        "pt-BR": "Piche de Turfa",
+        "en": "Peat Pitch"
+      },
+      "description": {
+        "pt-BR": "<p>Refinado lentamente de turfa escura, este piche pegajoso queima com chama baixa e fumacenta. Favorece selamento, aderência, fumaça e combustão prolongada.</p><table><tbody><tr><th>Tipo</th><td>Processado</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>2 po · Vila</td></tr><tr><th>Ambientes</th><td>Pântano, Urbano</td></tr><tr><th>CD de coleta</th><td>10</td></tr><tr><th>Características opcionais</th><td>Volátil</td></tr></tbody></table>",
+        "en": "<p>Slowly refined from dark peat, this sticky pitch burns with a low smoky flame. It supports sealing, adhesion, smoke, and prolonged combustion.</p><table><tbody><tr><th>Type</th><td>Processed</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>2 gp · Village</td></tr><tr><th>Environments</th><td>Swamp, Urban</td></tr><tr><th>Gathering DC</th><td>10</td></tr><tr><th>Optional traits</th><td>Volatile</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 2.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 35,
+        "type": {
+          "pt-BR": "Processado",
+          "en": "Processed"
+        },
+        "foragingDC": 10,
+        "biomes": {
+          "pt-BR": [
+            "Pântano",
+            "Urbano"
+          ],
+          "en": [
+            "Swamp",
+            "Urban"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Volátil"
+          ],
+          "en": [
+            "Volatile"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:tangled-root",
+      "name": {
+        "pt-BR": "Raiz Enroscada",
+        "en": "Tangled Root"
+      },
+      "description": {
+        "pt-BR": "<p>Esta raiz se enrola em pedras e outras raízes, armazenando tensão em espirais apertadas. Favorece ligação, contenção, ancoragem e redirecionamento de força.</p><table><tbody><tr><th>Tipo</th><td>Vegetal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>2 po · Vila</td></tr><tr><th>Ambientes</th><td>Floresta, Pântano</td></tr><tr><th>CD de coleta</th><td>11</td></tr><tr><th>Características opcionais</th><td>Cultivável</td></tr></tbody></table>",
+        "en": "<p>This root knots around stone and other roots, storing tension in tight coils. It favors binding, restraint, anchoring, and the redirection of force.</p><table><tbody><tr><th>Type</th><td>Plant</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>2 gp · Village</td></tr><tr><th>Environments</th><td>Forest, Swamp</td></tr><tr><th>Gathering DC</th><td>11</td></tr><tr><th>Optional traits</th><td>Cultivable</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 2.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 36,
+        "type": {
+          "pt-BR": "Vegetal",
+          "en": "Plant"
+        },
+        "foragingDC": 11,
+        "biomes": {
+          "pt-BR": [
+            "Floresta",
+            "Pântano"
+          ],
+          "en": [
+            "Forest",
+            "Swamp"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Cultivável"
+          ],
+          "en": [
+            "Cultivable"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:singing-sand",
+      "name": {
+        "pt-BR": "Areia Cantante",
+        "en": "Singing Sand"
+      },
+      "description": {
+        "pt-BR": "<p>Quando derramados ou perturbados, estes grãos arredondados produzem um tom claro e prolongado. São valorizados por vibração, ritmo, harmonização e reações ativadas pelo som.</p><table><tbody><tr><th>Tipo</th><td>Mineral</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>3 po · Vila</td></tr><tr><th>Ambientes</th><td>Deserto, Costeiro</td></tr><tr><th>CD de coleta</th><td>11</td></tr><tr><th>Características opcionais</th><td>Nenhuma</td></tr></tbody></table>",
+        "en": "<p>When poured or disturbed, these rounded grains produce a clear, sustained tone. They are valued for vibration, rhythm, harmonization, and reactions triggered by sound.</p><table><tbody><tr><th>Type</th><td>Mineral</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>3 gp · Village</td></tr><tr><th>Environments</th><td>Desert, Coastal</td></tr><tr><th>Gathering DC</th><td>11</td></tr><tr><th>Optional traits</th><td>None</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 3.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 24,
+        "type": {
+          "pt-BR": "Mineral",
+          "en": "Mineral"
+        },
+        "foragingDC": 11,
+        "biomes": {
+          "pt-BR": [
+            "Deserto",
+            "Costeiro"
+          ],
+          "en": [
+            "Desert",
+            "Coastal"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Nenhuma"
+          ],
+          "en": [
+            "None"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:shimmering-insect",
+      "name": {
+        "pt-BR": "Inseto Cintilante",
+        "en": "Shimmering Insect"
+      },
+      "description": {
+        "pt-BR": "<p>Este pequeno inseto, encontrado em muitos lugares, pisca em padrões quando perturbado. Favorece luz, sinalização, atração e reações sensoriais rápidas.</p><table><tbody><tr><th>Tipo</th><td>Animal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>2 po · Vila</td></tr><tr><th>Ambientes</th><td>Ampla ocorrência</td></tr><tr><th>CD de coleta</th><td>11</td></tr><tr><th>Características opcionais</th><td>Sazonal</td></tr></tbody></table>",
+        "en": "<p>This small, broadly distributed insect flashes in patterned pulses when disturbed. It supports light, signaling, attraction, and quick sensory reactions.</p><table><tbody><tr><th>Type</th><td>Animal</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>2 gp · Village</td></tr><tr><th>Environments</th><td>Widespread</td></tr><tr><th>Gathering DC</th><td>11</td></tr><tr><th>Optional traits</th><td>Seasonal</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 2.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 31,
+        "type": {
+          "pt-BR": "Animal",
+          "en": "Animal"
+        },
+        "foragingDC": 11,
+        "biomes": {
+          "pt-BR": [
+            "Ampla ocorrência"
+          ],
+          "en": [
+            "Widespread"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Sazonal"
+          ],
+          "en": [
+            "Seasonal"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:whispering-algae",
+      "name": {
+        "pt-BR": "Alga Sussurrante",
+        "en": "Whispering Algae"
+      },
+      "description": {
+        "pt-BR": "<p>Fitas verdes e delicadas tremem como se respondessem a vozes distantes sempre que a água ao redor se move. Seus extratos favorecem ressonância, comunicação, percepção de correntes e influência sutil.</p><table><tbody><tr><th>Tipo</th><td>Vegetal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>4 po · Cidade pequena</td></tr><tr><th>Ambientes</th><td>Aquático, Costeiro, Pântano</td></tr><tr><th>CD de coleta</th><td>12</td></tr><tr><th>Características opcionais</th><td>Perecível, Cultivável</td></tr></tbody></table>",
+        "en": "<p>Fine green ribbons tremble as if answering distant voices whenever the water around them moves. Their extracts favor resonance, communication, current-sense, and subtle influence.</p><table><tbody><tr><th>Type</th><td>Plant</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>4 gp · Small Town</td></tr><tr><th>Environments</th><td>Aquatic, Coastal, Swamp</td></tr><tr><th>Gathering DC</th><td>12</td></tr><tr><th>Optional traits</th><td>Perishable, Cultivable</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 4.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 24,
+        "type": {
+          "pt-BR": "Vegetal",
+          "en": "Plant"
+        },
+        "foragingDC": 12,
+        "biomes": {
+          "pt-BR": [
+            "Aquático",
+            "Costeiro",
+            "Pântano"
+          ],
+          "en": [
+            "Aquatic",
+            "Coastal",
+            "Swamp"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Perecível",
+            "Cultivável"
+          ],
+          "en": [
+            "Perishable",
+            "Cultivable"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Cidade pequena",
+          "en": "Small Town"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:living-latex",
+      "name": {
+        "pt-BR": "Látex Vivo",
+        "en": "Living Latex"
+      },
+      "description": {
+        "pt-BR": "<p>Esta seiva leitosa continua se contraindo e selando cortes depois de deixar a planta. Favorece aderência, barreiras flexíveis, fechamento de feridas e materiais responsivos.</p><table><tbody><tr><th>Tipo</th><td>Vegetal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>4 po · Vila</td></tr><tr><th>Ambientes</th><td>Floresta, Pântano</td></tr><tr><th>CD de coleta</th><td>12</td></tr><tr><th>Características opcionais</th><td>Perecível</td></tr></tbody></table>",
+        "en": "<p>Milky sap continues to contract and seal cuts after leaving the parent plant. It favors adhesion, flexible barriers, wound closure, and responsive materials.</p><table><tbody><tr><th>Type</th><td>Plant</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>4 gp · Village</td></tr><tr><th>Environments</th><td>Forest, Swamp</td></tr><tr><th>Gathering DC</th><td>12</td></tr><tr><th>Optional traits</th><td>Perishable</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 4.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 32,
+        "type": {
+          "pt-BR": "Vegetal",
+          "en": "Plant"
+        },
+        "foragingDC": 12,
+        "biomes": {
+          "pt-BR": [
+            "Floresta",
+            "Pântano"
+          ],
+          "en": [
+            "Forest",
+            "Swamp"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Perecível"
+          ],
+          "en": [
+            "Perishable"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:hive-chitin",
+      "name": {
+        "pt-BR": "Quitina de Colmeia",
+        "en": "Hive Chitin"
+      },
+      "description": {
+        "pt-BR": "<p>Placas em camadas de criaturas que vivem em colmeias conservam sinais químicos da colônia. Favorecem coordenação, armadura, feromônios e respostas coletivas.</p><table><tbody><tr><th>Tipo</th><td>Animal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>3 po · Vila</td></tr><tr><th>Ambientes</th><td>Campos, Floresta, Urbano</td></tr><tr><th>CD de coleta</th><td>11</td></tr><tr><th>Características opcionais</th><td>Risco</td></tr></tbody></table>",
+        "en": "<p>Layered plates from hive-dwelling creatures retain the colony&#x27;s chemical signals. They favor coordination, armor, pheromones, and collective responses.</p><table><tbody><tr><th>Type</th><td>Animal</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>3 gp · Village</td></tr><tr><th>Environments</th><td>Grasslands, Forest, Urban</td></tr><tr><th>Gathering DC</th><td>11</td></tr><tr><th>Optional traits</th><td>Hazard</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 3.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 36,
+        "type": {
+          "pt-BR": "Animal",
+          "en": "Animal"
+        },
+        "foragingDC": 11,
+        "biomes": {
+          "pt-BR": [
+            "Campos",
+            "Floresta",
+            "Urbano"
+          ],
+          "en": [
+            "Grasslands",
+            "Forest",
+            "Urban"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Risco"
+          ],
+          "en": [
+            "Hazard"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:resilient-fiber",
+      "name": {
+        "pt-BR": "Fibra Resiliente",
+        "en": "Resilient Fiber"
+      },
+      "description": {
+        "pt-BR": "<p>Comum em plantas resistentes e ninhos, estas fibras tornam-se difíceis de romper quando trançadas. Oferecem ligação, reforço, suspensão e sustentação estrutural confiável.</p><table><tbody><tr><th>Tipo</th><td>Vegetal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>1 po · Vila</td></tr><tr><th>Ambientes</th><td>Ampla ocorrência</td></tr><tr><th>CD de coleta</th><td>10</td></tr><tr><th>Características opcionais</th><td>Nenhuma</td></tr></tbody></table>",
+        "en": "<p>Common across many hardy plants and nests, these fibers resist tearing once braided. They provide binding, reinforcement, suspension, and dependable structural support.</p><table><tbody><tr><th>Type</th><td>Plant</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>1 gp · Village</td></tr><tr><th>Environments</th><td>Widespread</td></tr><tr><th>Gathering DC</th><td>10</td></tr><tr><th>Optional traits</th><td>None</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 1.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 29,
+        "type": {
+          "pt-BR": "Vegetal",
+          "en": "Plant"
+        },
+        "foragingDC": 10,
+        "biomes": {
+          "pt-BR": [
+            "Ampla ocorrência"
+          ],
+          "en": [
+            "Widespread"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Nenhuma"
+          ],
+          "en": [
+            "None"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:leaping-insect",
+      "name": {
+        "pt-BR": "Inseto Saltador",
+        "en": "Leaping Insect"
+      },
+      "description": {
+        "pt-BR": "<p>Pernas traseiras enormes armazenam explosões repentinas de força antes do salto. Favorece propulsão, reflexo, impacto e movimento explosivo de curta distância.</p><table><tbody><tr><th>Tipo</th><td>Animal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>2 po · Vila</td></tr><tr><th>Ambientes</th><td>Campos, Colinas, Deserto</td></tr><tr><th>CD de coleta</th><td>11</td></tr><tr><th>Características opcionais</th><td>Nenhuma</td></tr></tbody></table>",
+        "en": "<p>Oversized hind limbs store sudden bursts of force before the insect launches itself. It favors propulsion, reflex, impact, and short explosive movement.</p><table><tbody><tr><th>Type</th><td>Animal</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>2 gp · Village</td></tr><tr><th>Environments</th><td>Grasslands, Hills, Desert</td></tr><tr><th>Gathering DC</th><td>11</td></tr><tr><th>Optional traits</th><td>None</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 2.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 32,
+        "type": {
+          "pt-BR": "Animal",
+          "en": "Animal"
+        },
+        "foragingDC": 11,
+        "biomes": {
+          "pt-BR": [
+            "Campos",
+            "Colinas",
+            "Deserto"
+          ],
+          "en": [
+            "Grasslands",
+            "Hills",
+            "Desert"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Nenhuma"
+          ],
+          "en": [
+            "None"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "unit": "portion"
+      }
+    },
+    {
+      "id": "base:wind-bone",
+      "name": {
+        "pt-BR": "Osso de Vento",
+        "en": "Wind Bone"
+      },
+      "description": {
+        "pt-BR": "<p>Osso oco e polido pelo vento que assobia quando movido pelo ar. Favorece elevação, som, velocidade e canalização de ar por espaços estreitos.</p><table><tbody><tr><th>Tipo</th><td>Animal</td></tr><tr><th>Unidade</th><td>Uma porção utilizável</td></tr><tr><th>Preço por porção</th><td>6 po · Cidade média</td></tr><tr><th>Ambientes</th><td>Ártico, Montanhas</td></tr><tr><th>CD de coleta</th><td>13</td></tr><tr><th>Características opcionais</th><td>Nenhuma</td></tr></tbody></table>",
+        "en": "<p>Hollow, wind-polished bone whistles when moved through the air. It favors lift, sound, speed, and the channeling of air through narrow spaces.</p><table><tbody><tr><th>Type</th><td>Animal</td></tr><tr><th>Unit</th><td>One usable portion</td></tr><tr><th>Price per portion</th><td>6 gp · Medium City</td></tr><tr><th>Environments</th><td>Arctic, Mountains</td></tr><tr><th>Gathering DC</th><td>13</td></tr><tr><th>Optional traits</th><td>None</td></tr></tbody></table>"
+      },
+      "img": "modules/santana-alchemy/assets/ingredient.svg",
+      "weight": 0.01,
+      "price": 6.0,
+      "metadata": {
+        "source": "Compêndio de Alquimia",
+        "sourcePage": 34,
+        "type": {
+          "pt-BR": "Animal",
+          "en": "Animal"
+        },
+        "foragingDC": 13,
+        "biomes": {
+          "pt-BR": [
+            "Ártico",
+            "Montanhas"
+          ],
+          "en": [
+            "Arctic",
+            "Mountains"
+          ]
+        },
+        "traits": {
+          "pt-BR": [
+            "Nenhuma"
+          ],
+          "en": [
+            "None"
+          ]
+        },
+        "availability": {
+          "pt-BR": "Cidade média",
+          "en": "Medium City"
+        },
+        "unit": "portion"
+      }
     }
   ],
   "products": [
@@ -643,6 +1295,251 @@
         "use": {
           "pt-BR": "1 minuto",
           "en": "1 minute"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
+    {
+      "id": "base:bottled-light",
+      "name": {
+        "pt-BR": "Luz Engarrafada",
+        "en": "Bottled Light"
+      },
+      "description": {
+        "pt-BR": "<h2>Luz Engarrafada</h2><table><tbody><tr><th>Forma</th><td>Frasco luminescente</td></tr><tr><th>Uso</th><td>Ação Utilizar</td></tr><tr><th>Alvo ou área</th><td>O próprio frasco</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>1 hora</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>O frasco emite luz plena em um raio de 6 m e luz fraca por mais 6 m. Como parte da ativação, pode ser segurado, apoiado ou preso a um objeto. Não produz chama, calor ou fumaça e funciona debaixo d&#x27;água. Uma cobertura totalmente opaca bloqueia a luz, mas não pausa a duração.</p><h3>Encerramento</h3><p>Ao fim da duração ou quando o frasco for destruído.</p><table><tbody><tr><th>Preço</th><td>40 po</td></tr><tr><th>Disponibilidade</th><td>Vila</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A duração aumenta para 8 horas.</p><p><strong>Qualidade Excepcional.</strong> O brilho permanece uniforme e não oscila, mesmo em movimento.</p><p><strong>Integridade do Produto.</strong> Sensível à luz - 8 horas de luz solar direta fora de recipiente opaco.</p>",
+        "en": "<h2>Bottled Light</h2><table><tbody><tr><th>Form</th><td>Luminescent flask</td></tr><tr><th>Use</th><td>Utilize action</td></tr><tr><th>Target or area</th><td>The flask itself</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>1 hour</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The flask sheds Bright Light in a 6-meter radius and Dim Light for an additional 6 m. As part of activating it, the flask can be held, set down, or attached to an object. It produces no flame, heat, or smoke and functions underwater. A completely opaque covering blocks the light but does not pause the duration.</p><h3>Ending</h3><p>When the duration ends or the flask is destroyed.</p><table><tbody><tr><th>Price</th><td>40 gp</td></tr><tr><th>Availability</th><td>Village</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The duration increases to 8 hours.</p><p><strong>Exceptional Quality.</strong> The light remains steady and does not flicker, even while moving.</p><p><strong>Product Integrity.</strong> Light-sensitive - 8 hours of direct sunlight outside an opaque container can compromise the product.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/flask.svg",
+      "price": 40.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Arremessáveis",
+          "en": "Thrown Preparations"
+        },
+        "sourcePage": 85,
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "use": {
+          "pt-BR": "Ação Utilizar",
+          "en": "Utilize action"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
+    {
+      "id": "base:lesser-healing-potion",
+      "name": {
+        "pt-BR": "Poção de Cura Menor",
+        "en": "Lesser Healing Potion"
+      },
+      "description": {
+        "pt-BR": "<h2>Poção de Cura Menor</h2><table><tbody><tr><th>Forma</th><td>Poção ingerível</td></tr><tr><th>Uso</th><td>Ação Bônus</td></tr><tr><th>Alvo ou área</th><td>Você ou uma criatura voluntária/incapacitada</td></tr><tr><th>Alcance</th><td>Pessoal ou 1,5 m</td></tr><tr><th>Duração</th><td>Instantânea</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>O alvo recupera 2d4 + 2 pontos de vida, sem ultrapassar seu máximo. A poção não afeta criaturas mortas e não remove condições, doenças, venenos ou níveis de Exaustão.</p><h3>Encerramento</h3><p>Depois de aplicar a recuperação.</p><table><tbody><tr><th>Preço</th><td>50 po</td></tr><tr><th>Disponibilidade</th><td>Cidade pequena</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> O alvo recupera 1d4 + 1 pontos de vida adicionais.</p><p><strong>Qualidade Excepcional.</strong> O alvo recupera 2 pontos de vida adicionais.</p>",
+        "en": "<h2>Lesser Healing Potion</h2><table><tbody><tr><th>Form</th><td>Ingestible potion</td></tr><tr><th>Use</th><td>Bonus Action</td></tr><tr><th>Target or area</th><td>You or 1 willing or Incapacitated creature</td></tr><tr><th>Range</th><td>Self or 1.5 m</td></tr><tr><th>Duration</th><td>Instantaneous</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The target regains 2d4 + 2 Hit Points, up to its Hit Point maximum. The potion has no effect on dead creatures and does not remove conditions, diseases, poisons, or levels of Exhaustion.</p><h3>Ending</h3><p>After the healing is resolved.</p><table><tbody><tr><th>Price</th><td>50 gp</td></tr><tr><th>Availability</th><td>Small Town</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The target regains an additional 1d4 + 1 Hit Points.</p><p><strong>Exceptional Quality.</strong> The target regains 2 additional Hit Points.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/flask.svg",
+      "price": 50.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Ingeríveis",
+          "en": "Ingestibles"
+        },
+        "sourcePage": 90,
+        "availability": {
+          "pt-BR": "Cidade pequena",
+          "en": "Small Town"
+        },
+        "use": {
+          "pt-BR": "Ação Bônus",
+          "en": "Bonus Action"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
+    {
+      "id": "base:alchemical-adhesive",
+      "name": {
+        "pt-BR": "Cola Alquímica",
+        "en": "Alchemical Adhesive"
+      },
+      "description": {
+        "pt-BR": "<h2>Cola Alquímica</h2><table><tbody><tr><th>Forma</th><td>Adesivo tópico</td></tr><tr><th>Uso</th><td>1 minuto de aplicação</td></tr><tr><th>Alvo ou área</th><td>um objeto Médio ou menor e um objeto ou superfície sólida</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>Até a união ser rompida</td></tr><tr><th>Salvaguarda</th><td>Força (Atletismo) CD 11 para separar</td></tr></tbody></table><h3>Efeito</h3><p>Ao final da aplicação, o objeto fica firmemente unido ao segundo objeto ou à superfície. A ligação suporta até 125 kg. Uma criatura pode usar uma Ação e realizar o teste indicado para separar os objetos. O produto não cola criaturas nem afeta equipamento vestido ou carregado por uma criatura involuntária.</p><h3>Encerramento</h3><p>Quando o teste de Força for bem-sucedido, um dos objetos for destruído ou a ligação exceder sua capacidade de carga.</p><table><tbody><tr><th>Preço</th><td>50 po</td></tr><tr><th>Disponibilidade</th><td>Vila</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A ligação suporta até 250 kg.</p><p><strong>Qualidade Excepcional.</strong> A ligação suporta 25% a mais de peso.</p>",
+        "en": "<h2>Alchemical Adhesive</h2><table><tbody><tr><th>Form</th><td>Topical adhesive</td></tr><tr><th>Use</th><td>1 minute of application</td></tr><tr><th>Target or area</th><td>1 Medium or smaller object and 1 solid object or surface</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>Until the bond is broken</td></tr><tr><th>Saving throw</th><td>DC 11 Strength (Athletics) check to separate</td></tr></tbody></table><h3>Effect</h3><p>At the end of the application, the object is firmly bonded to the second object or surface. The bond supports up to 125 kg. A creature can take an action and make the indicated check to separate the objects. The product cannot bond creatures and does not affect equipment worn or carried by an unwilling creature.</p><h3>Ending</h3><p>When the Strength check succeeds, either object is destroyed, or the bond exceeds its load capacity.</p><table><tbody><tr><th>Price</th><td>50 gp</td></tr><tr><th>Availability</th><td>Village</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The bond supports up to 250 kg.</p><p><strong>Exceptional Quality.</strong> The bond supports 25 percent more weight.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/flask.svg",
+      "price": 50.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Tópicos",
+          "en": "Topical Preparations"
+        },
+        "sourcePage": 81,
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "use": {
+          "pt-BR": "1 minuto de aplicação",
+          "en": "1 minute of application"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
+    {
+      "id": "base:chemical-alarm-powder",
+      "name": {
+        "pt-BR": "Pó de Alarme Químico",
+        "en": "Chemical Alarm Powder"
+      },
+      "description": {
+        "pt-BR": "<h2>Pó de Alarme Químico</h2><table><tbody><tr><th>Forma</th><td>Pó de vigilância</td></tr><tr><th>Uso</th><td>1 minuto</td></tr><tr><th>Alvo ou área</th><td>Quadrado de 1,5 m de lado em uma superfície firme</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>8 horas ou até ser ativado</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>A primeira criatura de tamanho Minúsculo ou maior que entrar na área ou perturbar fisicamente o pó ativa o produto. Ele produz um estalo audível a 30 m e uma nuvem colorida visível a 60 m em condições abertas. O alarme não identifica a criatura nem impede seu movimento. Uma criatura que examine ativamente a área percebe o pó com um teste bem-sucedido de Sabedoria (Percepção) ou Inteligência (Investigação) CD 11 e pode contorná-lo.</p><h3>Encerramento</h3><p>Depois de ser ativado, ao fim da duração ou quando dispersado por água ou vento forte.</p><table><tbody><tr><th>Preço</th><td>50 po</td></tr><tr><th>Disponibilidade</th><td>Cidade pequena</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A duração aumenta para 24 horas.</p><p><strong>Qualidade Excepcional.</strong> A cor da nuvem e o tom do estalo podem ser definidos durante a criação.</p><p><strong>Integridade do Produto.</strong> Sensível à umidade - contato direto com água ou armazenamento aberto em ambiente encharcado.</p>",
+        "en": "<h2>Chemical Alarm Powder</h2><table><tbody><tr><th>Form</th><td>Surveillance powder</td></tr><tr><th>Use</th><td>1 minute</td></tr><tr><th>Target or area</th><td>1.5-meter square on a firm surface</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>8 hours or until activated</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The first creature of Tiny size or larger to enter the area or physically disturb the powder activates the product. It produces a snap audible from 30 m away and a colored cloud visible from 60 m away in open conditions. The alarm does not identify the creature or hinder its movement. A creature actively examining the area notices the powder with a successful DC 11 Wisdom (Perception) or Intelligence (Investigation) check and can avoid it.</p><h3>Ending</h3><p>After the product activates, when the duration ends, or when water or a strong wind disperses the powder.</p><table><tbody><tr><th>Price</th><td>50 gp</td></tr><tr><th>Availability</th><td>Small Town</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The duration increases to 24 hours.</p><p><strong>Exceptional Quality.</strong> The cloud&#x27;s color and the snap&#x27;s tone can be chosen during crafting.</p><p><strong>Product Integrity.</strong> Moisture-sensitive - direct contact with water or open storage in a waterlogged environment can compromise the product.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/flask.svg",
+      "price": 50.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Pós e Vapores",
+          "en": "Powders and Vapors"
+        },
+        "sourcePage": 87,
+        "availability": {
+          "pt-BR": "Cidade pequena",
+          "en": "Small Town"
+        },
+        "use": {
+          "pt-BR": "1 minuto",
+          "en": "1 minute"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
+    {
+      "id": "base:wayfinding-serum",
+      "name": {
+        "pt-BR": "Soro de Orientação",
+        "en": "Wayfinding Serum"
+      },
+      "description": {
+        "pt-BR": "<h2>Soro de Orientação</h2><table><tbody><tr><th>Forma</th><td>Soro ingerível</td></tr><tr><th>Uso</th><td>Ação Bônus</td></tr><tr><th>Alvo ou área</th><td>Você ou uma criatura voluntária/incapacitada</td></tr><tr><th>Alcance</th><td>Pessoal ou 1,5 m</td></tr><tr><th>Duração</th><td>24 horas</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>O alvo tem vantagem em testes de Sabedoria (Sobrevivência) feitos para navegar, determinar uma direção, evitar se perder, escolher uma rota entre caminhos conhecidos ou refazer um trajeto percorrido enquanto o soro estava ativo. O benefício não se aplica a rastrear criaturas ou encontrar alimento. O produto não revela destinos, cria mapas, descobre passagens ocultas nem supera efeitos mágicos que impeçam orientação.</p><h3>Encerramento</h3><p>Ao fim de 24 horas.</p><table><tbody><tr><th>Preço</th><td>50 po</td></tr><tr><th>Disponibilidade</th><td>Vila</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A duração aumenta para 7 dias.</p>",
+        "en": "<h2>Wayfinding Serum</h2><table><tbody><tr><th>Form</th><td>Ingestible serum</td></tr><tr><th>Use</th><td>Bonus Action</td></tr><tr><th>Target or area</th><td>You or 1 willing or Incapacitated creature</td></tr><tr><th>Range</th><td>Self or 1.5 m</td></tr><tr><th>Duration</th><td>24 hours</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The target has advantage on Wisdom (Survival) checks made to navigate, determine a direction, avoid becoming lost, choose a route among known paths, or retrace a route traveled while the serum was active. This benefit does not apply to tracking creatures or finding food. The product does not reveal destinations, create maps, discover hidden passages, or overcome magical effects that prevent navigation.</p><h3>Ending</h3><p>After 24 hours.</p><table><tbody><tr><th>Price</th><td>50 gp</td></tr><tr><th>Availability</th><td>Village</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The duration increases to 7 days.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/flask.svg",
+      "price": 50.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Ingeríveis",
+          "en": "Ingestibles"
+        },
+        "sourcePage": 91,
+        "availability": {
+          "pt-BR": "Vila",
+          "en": "Village"
+        },
+        "use": {
+          "pt-BR": "Ação Bônus",
+          "en": "Bonus Action"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
+    {
+      "id": "base:restrictive-resin-flask",
+      "name": {
+        "pt-BR": "Frasco de Resina Restritiva",
+        "en": "Restrictive Resin Flask"
+      },
+      "description": {
+        "pt-BR": "<h2>Frasco de Resina Restritiva</h2><table><tbody><tr><th>Forma</th><td>Frasco arremessável</td></tr><tr><th>Uso</th><td>Ação Utilizar</td></tr><tr><th>Alvo ou área</th><td>uma criatura Grande ou menor</td></tr><tr><th>Alcance</th><td>12 m</td></tr><tr><th>Duração</th><td>1 minuto</td></tr><tr><th>Salvaguarda</th><td>Destreza CD 14; sucesso: nenhum efeito</td></tr></tbody></table><h3>Efeito</h3><p>Em uma falha, a criatura fica Restringida pela resina. A criatura afetada ou outra criatura ao alcance pode usar uma Ação para realizar um teste de Força (Atletismo) ou Destreza (Acrobacia) CD 14, encerrando o efeito em caso de sucesso. A resina adere somente à criatura atingida e não cria terreno difícil.</p><h3>Encerramento</h3><p>Depois de um teste bem-sucedido, quando a resina for destruída ou ao fim da duração.</p><table><tbody><tr><th>Preço</th><td>180 po</td></tr><tr><th>Disponibilidade</th><td>Cidade média</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A duração aumenta para 10 minutos.</p><p><strong>Produção em Lotes.</strong> Permitida; além do ajuste normal, aumente a CD em +1 por viscosidade.</p><p><strong>Qualidade Excepcional.</strong> A resina pode receber cor e odor distintos para facilitar identificação e treinamento.</p><p><strong>Integridade do Produto.</strong> Sensível ao calor - 1 hora de calor intenso pode comprometer o frasco.</p>",
+        "en": "<h2>Restrictive Resin Flask</h2><table><tbody><tr><th>Form</th><td>Throwable flask</td></tr><tr><th>Use</th><td>Utilize action</td></tr><tr><th>Target or area</th><td>1 Large or smaller creature</td></tr><tr><th>Range</th><td>12 m</td></tr><tr><th>Duration</th><td>1 minute</td></tr><tr><th>Saving throw</th><td>DC 14 Dexterity; success: no effect</td></tr></tbody></table><h3>Effect</h3><p>On a failed save, the creature has the Restrained condition. The affected creature or another creature within reach can take an action to make a DC 14 Strength (Athletics) or Dexterity (Acrobatics) check, ending the effect on a success. The resin adheres only to the creature it struck and does not create Difficult Terrain.</p><h3>Ending</h3><p>After a successful check, when the resin is destroyed, or when the duration ends.</p><table><tbody><tr><th>Price</th><td>180 gp</td></tr><tr><th>Availability</th><td>Medium City</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The duration increases to 10 minutes.</p><p><strong>Exceptional Quality.</strong> The resin can be given a distinctive color and scent to aid identification and training.</p><p><strong>Batch Production.</strong> Allowed. In addition to the normal adjustment, increase the Crafting DC by 1 because of the product&#x27;s viscosity.</p><p><strong>Product Integrity.</strong> Heat-sensitive - 1 hour of intense heat can compromise the flask.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/flask.svg",
+      "price": 180.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Arremessáveis",
+          "en": "Thrown Preparations"
+        },
+        "sourcePage": 103,
+        "availability": {
+          "pt-BR": "Cidade média",
+          "en": "Medium City"
+        },
+        "use": {
+          "pt-BR": "Ação Utilizar",
+          "en": "Utilize action"
+        },
+        "effectsApplication": "table-managed",
+        "unit": "dose"
+      },
+      "item": {
+        "type": "loot",
+        "system": {}
+      }
+    },
+    {
+      "id": "base:leaping-elixir",
+      "name": {
+        "pt-BR": "Elixir de Salto",
+        "en": "Leaping Elixir"
+      },
+      "description": {
+        "pt-BR": "<h2>Elixir de Salto</h2><table><tbody><tr><th>Forma</th><td>Elixir ingerível</td></tr><tr><th>Uso</th><td>Ação Bônus</td></tr><tr><th>Alvo ou área</th><td>Você ou uma criatura voluntária/incapacitada</td></tr><tr><th>Alcance</th><td>Pessoal ou 1,5 m</td></tr><tr><th>Duração</th><td>10 minutos</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>As distâncias de salto do alvo são triplicadas e dispensam corrida inicial. Além disso, reduza em 2d6 o dano de queda que ele sofrer, até o mínimo de 0.</p><h3>Encerramento</h3><p>Ao fim da duração.</p><table><tbody><tr><th>Preço</th><td>120 po</td></tr><tr><th>Disponibilidade</th><td>Cidade média</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A redução do dano de queda aumenta para 4d6.</p>",
+        "en": "<h2>Leaping Elixir</h2><table><tbody><tr><th>Form</th><td>Ingestible elixir</td></tr><tr><th>Use</th><td>Bonus Action</td></tr><tr><th>Target or area</th><td>You or 1 willing or Incapacitated creature</td></tr><tr><th>Range</th><td>Self or 1.5 m</td></tr><tr><th>Duration</th><td>10 minutes</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The target&#x27;s jump distances are tripled, and it need not move before making a jump. In addition, reduce any falling damage the target takes by 2d6, to a minimum of 0.</p><h3>Ending</h3><p>When the duration ends.</p><table><tbody><tr><th>Price</th><td>120 gp</td></tr><tr><th>Availability</th><td>Medium City</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The falling damage reduction increases to 4d6.</p>"
+      },
+      "img": "modules/santana-alchemy/assets/flask.svg",
+      "price": 120.0,
+      "weight": 0.1,
+      "metadata": {
+        "family": {
+          "pt-BR": "Ingeríveis",
+          "en": "Ingestibles"
+        },
+        "sourcePage": 102,
+        "availability": {
+          "pt-BR": "Cidade média",
+          "en": "Medium City"
+        },
+        "use": {
+          "pt-BR": "Ação Bônus",
+          "en": "Bonus Action"
         },
         "effectsApplication": "table-managed",
         "unit": "dose"
@@ -873,6 +1770,324 @@
       "heroicDescription": {
         "pt-BR": "Revela resíduos deixados nos últimos 7 dias, sem identificar origem ou idade exata.",
         "en": "It reveals residues left within the last 7 days, without identifying source or exact age."
+      }
+    },
+    {
+      "id": "base:bottled-light",
+      "name": {
+        "pt-BR": "Luz Engarrafada",
+        "en": "Bottled Light"
+      },
+      "complexity": 2,
+      "dc": 12,
+      "timeMinutes": 10,
+      "tools": [
+        "alchemist"
+      ],
+      "ingredients": [
+        {
+          "id": "base:deep-pool-water",
+          "quantity": 1
+        },
+        {
+          "id": "base:sunstone",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:bottled-light",
+        "quantity": 1
+      },
+      "bookPrice": 100,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C2 — Fundamental</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa verde — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>100 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista</td></tr><tr><th>CD de criação</th><td>12</td></tr><tr><th>Tempo normal</th><td>10 minutos</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Água de Poça Profunda</li><li>1 porção de Pedra Solar</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Luz Engarrafada</h2><table><tbody><tr><th>Forma</th><td>Frasco luminescente</td></tr><tr><th>Uso</th><td>Ação Utilizar</td></tr><tr><th>Alvo ou área</th><td>O próprio frasco</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>1 hora</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>O frasco emite luz plena em um raio de 6 m e luz fraca por mais 6 m. Como parte da ativação, pode ser segurado, apoiado ou preso a um objeto. Não produz chama, calor ou fumaça e funciona debaixo d&#x27;água. Uma cobertura totalmente opaca bloqueia a luz, mas não pausa a duração.</p><h3>Encerramento</h3><p>Ao fim da duração ou quando o frasco for destruído.</p><table><tbody><tr><th>Preço</th><td>40 po</td></tr><tr><th>Disponibilidade</th><td>Vila</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A duração aumenta para 8 horas.</p><p><strong>Qualidade Excepcional.</strong> O brilho permanece uniforme e não oscila, mesmo em movimento.</p><p><strong>Integridade do Produto.</strong> Sensível à luz - 8 horas de luz solar direta fora de recipiente opaco.</p>",
+        "en": "<h2>C2 Crafting — Fundamental</h2><table><tbody><tr><th>Source</th><td>Green-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>100 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies</td></tr><tr><th>Crafting DC</th><td>12</td></tr><tr><th>Normal time</th><td>10 minutes</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Deep-Pool Water</li><li>1 portion of Sunstone</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Bottled Light</h2><table><tbody><tr><th>Form</th><td>Luminescent flask</td></tr><tr><th>Use</th><td>Utilize action</td></tr><tr><th>Target or area</th><td>The flask itself</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>1 hour</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The flask sheds Bright Light in a 6-meter radius and Dim Light for an additional 6 m. As part of activating it, the flask can be held, set down, or attached to an object. It produces no flame, heat, or smoke and functions underwater. A completely opaque covering blocks the light but does not pause the duration.</p><h3>Ending</h3><p>When the duration ends or the flask is destroyed.</p><table><tbody><tr><th>Price</th><td>40 gp</td></tr><tr><th>Availability</th><td>Village</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The duration increases to 8 hours.</p><p><strong>Exceptional Quality.</strong> The light remains steady and does not flicker, even while moving.</p><p><strong>Product Integrity.</strong> Light-sensitive - 8 hours of direct sunlight outside an opaque container can compromise the product.</p>"
+      },
+      "metadata": {
+        "sourcePage": 85,
+        "family": {
+          "pt-BR": "Arremessáveis",
+          "en": "Thrown Preparations"
+        }
+      },
+      "heroicDescription": {
+        "pt-BR": "A duração aumenta para 8 horas.",
+        "en": "The duration increases to 8 hours."
+      }
+    },
+    {
+      "id": "base:lesser-healing-potion",
+      "name": {
+        "pt-BR": "Poção de Cura Menor",
+        "en": "Lesser Healing Potion"
+      },
+      "complexity": 2,
+      "dc": 12,
+      "timeMinutes": 10,
+      "tools": [
+        "alchemist",
+        "herb"
+      ],
+      "ingredients": [
+        {
+          "id": "base:damp-cocoon",
+          "quantity": 1
+        },
+        {
+          "id": "base:qor-sap",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:lesser-healing-potion",
+        "quantity": 1
+      },
+      "bookPrice": 100,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C2 — Fundamental</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa verde — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>100 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista; alternativa: Kit de Herbalismo</td></tr><tr><th>CD de criação</th><td>12</td></tr><tr><th>Tempo normal</th><td>10 minutos</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Casulo Úmido</li><li>1 porção de Seiva de Qor</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Poção de Cura Menor</h2><table><tbody><tr><th>Forma</th><td>Poção ingerível</td></tr><tr><th>Uso</th><td>Ação Bônus</td></tr><tr><th>Alvo ou área</th><td>Você ou uma criatura voluntária/incapacitada</td></tr><tr><th>Alcance</th><td>Pessoal ou 1,5 m</td></tr><tr><th>Duração</th><td>Instantânea</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>O alvo recupera 2d4 + 2 pontos de vida, sem ultrapassar seu máximo. A poção não afeta criaturas mortas e não remove condições, doenças, venenos ou níveis de Exaustão.</p><h3>Encerramento</h3><p>Depois de aplicar a recuperação.</p><table><tbody><tr><th>Preço</th><td>50 po</td></tr><tr><th>Disponibilidade</th><td>Cidade pequena</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> O alvo recupera 1d4 + 1 pontos de vida adicionais.</p><p><strong>Qualidade Excepcional.</strong> O alvo recupera 2 pontos de vida adicionais.</p>",
+        "en": "<h2>C2 Crafting — Fundamental</h2><table><tbody><tr><th>Source</th><td>Green-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>100 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies; Herbalism Kit</td></tr><tr><th>Crafting DC</th><td>12</td></tr><tr><th>Normal time</th><td>10 minutes</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Damp Cocoon</li><li>1 portion of Qor Sap</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Lesser Healing Potion</h2><table><tbody><tr><th>Form</th><td>Ingestible potion</td></tr><tr><th>Use</th><td>Bonus Action</td></tr><tr><th>Target or area</th><td>You or 1 willing or Incapacitated creature</td></tr><tr><th>Range</th><td>Self or 1.5 m</td></tr><tr><th>Duration</th><td>Instantaneous</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The target regains 2d4 + 2 Hit Points, up to its Hit Point maximum. The potion has no effect on dead creatures and does not remove conditions, diseases, poisons, or levels of Exhaustion.</p><h3>Ending</h3><p>After the healing is resolved.</p><table><tbody><tr><th>Price</th><td>50 gp</td></tr><tr><th>Availability</th><td>Small Town</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The target regains an additional 1d4 + 1 Hit Points.</p><p><strong>Exceptional Quality.</strong> The target regains 2 additional Hit Points.</p>"
+      },
+      "metadata": {
+        "sourcePage": 90,
+        "family": {
+          "pt-BR": "Ingeríveis",
+          "en": "Ingestibles"
+        }
+      },
+      "heroicDescription": {
+        "pt-BR": "O alvo recupera 1d4 + 1 pontos de vida adicionais.",
+        "en": "The target regains an additional 1d4 + 1 Hit Points."
+      }
+    },
+    {
+      "id": "base:alchemical-adhesive",
+      "name": {
+        "pt-BR": "Cola Alquímica",
+        "en": "Alchemical Adhesive"
+      },
+      "complexity": 2,
+      "dc": 12,
+      "timeMinutes": 10,
+      "tools": [
+        "alchemist"
+      ],
+      "ingredients": [
+        {
+          "id": "base:peat-pitch",
+          "quantity": 1
+        },
+        {
+          "id": "base:tangled-root",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:alchemical-adhesive",
+        "quantity": 1
+      },
+      "bookPrice": 100,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C2 — Fundamental</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa verde — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>100 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista</td></tr><tr><th>CD de criação</th><td>12</td></tr><tr><th>Tempo normal</th><td>10 minutos</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Piche de Turfa</li><li>1 porção de Raiz Enroscada</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Cola Alquímica</h2><table><tbody><tr><th>Forma</th><td>Adesivo tópico</td></tr><tr><th>Uso</th><td>1 minuto de aplicação</td></tr><tr><th>Alvo ou área</th><td>um objeto Médio ou menor e um objeto ou superfície sólida</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>Até a união ser rompida</td></tr><tr><th>Salvaguarda</th><td>Força (Atletismo) CD 11 para separar</td></tr></tbody></table><h3>Efeito</h3><p>Ao final da aplicação, o objeto fica firmemente unido ao segundo objeto ou à superfície. A ligação suporta até 125 kg. Uma criatura pode usar uma Ação e realizar o teste indicado para separar os objetos. O produto não cola criaturas nem afeta equipamento vestido ou carregado por uma criatura involuntária.</p><h3>Encerramento</h3><p>Quando o teste de Força for bem-sucedido, um dos objetos for destruído ou a ligação exceder sua capacidade de carga.</p><table><tbody><tr><th>Preço</th><td>50 po</td></tr><tr><th>Disponibilidade</th><td>Vila</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A ligação suporta até 250 kg.</p><p><strong>Qualidade Excepcional.</strong> A ligação suporta 25% a mais de peso.</p>",
+        "en": "<h2>C2 Crafting — Fundamental</h2><table><tbody><tr><th>Source</th><td>Green-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>100 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies</td></tr><tr><th>Crafting DC</th><td>12</td></tr><tr><th>Normal time</th><td>10 minutes</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Peat Pitch</li><li>1 portion of Tangled Root</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Alchemical Adhesive</h2><table><tbody><tr><th>Form</th><td>Topical adhesive</td></tr><tr><th>Use</th><td>1 minute of application</td></tr><tr><th>Target or area</th><td>1 Medium or smaller object and 1 solid object or surface</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>Until the bond is broken</td></tr><tr><th>Saving throw</th><td>DC 11 Strength (Athletics) check to separate</td></tr></tbody></table><h3>Effect</h3><p>At the end of the application, the object is firmly bonded to the second object or surface. The bond supports up to 125 kg. A creature can take an action and make the indicated check to separate the objects. The product cannot bond creatures and does not affect equipment worn or carried by an unwilling creature.</p><h3>Ending</h3><p>When the Strength check succeeds, either object is destroyed, or the bond exceeds its load capacity.</p><table><tbody><tr><th>Price</th><td>50 gp</td></tr><tr><th>Availability</th><td>Village</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The bond supports up to 250 kg.</p><p><strong>Exceptional Quality.</strong> The bond supports 25 percent more weight.</p>"
+      },
+      "metadata": {
+        "sourcePage": 81,
+        "family": {
+          "pt-BR": "Tópicos",
+          "en": "Topical Preparations"
+        }
+      },
+      "heroicDescription": {
+        "pt-BR": "A ligação suporta até 250 kg.",
+        "en": "The bond supports up to 250 kg."
+      }
+    },
+    {
+      "id": "base:chemical-alarm-powder",
+      "name": {
+        "pt-BR": "Pó de Alarme Químico",
+        "en": "Chemical Alarm Powder"
+      },
+      "complexity": 2,
+      "dc": 12,
+      "timeMinutes": 10,
+      "tools": [
+        "alchemist"
+      ],
+      "ingredients": [
+        {
+          "id": "base:singing-sand",
+          "quantity": 1
+        },
+        {
+          "id": "base:shimmering-insect",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:chemical-alarm-powder",
+        "quantity": 1
+      },
+      "bookPrice": 100,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C2 — Fundamental</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa verde — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>100 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista</td></tr><tr><th>CD de criação</th><td>12</td></tr><tr><th>Tempo normal</th><td>10 minutos</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Areia Cantante</li><li>1 porção de Inseto Cintilante</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Pó de Alarme Químico</h2><table><tbody><tr><th>Forma</th><td>Pó de vigilância</td></tr><tr><th>Uso</th><td>1 minuto</td></tr><tr><th>Alvo ou área</th><td>Quadrado de 1,5 m de lado em uma superfície firme</td></tr><tr><th>Alcance</th><td>Toque</td></tr><tr><th>Duração</th><td>8 horas ou até ser ativado</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>A primeira criatura de tamanho Minúsculo ou maior que entrar na área ou perturbar fisicamente o pó ativa o produto. Ele produz um estalo audível a 30 m e uma nuvem colorida visível a 60 m em condições abertas. O alarme não identifica a criatura nem impede seu movimento. Uma criatura que examine ativamente a área percebe o pó com um teste bem-sucedido de Sabedoria (Percepção) ou Inteligência (Investigação) CD 11 e pode contorná-lo.</p><h3>Encerramento</h3><p>Depois de ser ativado, ao fim da duração ou quando dispersado por água ou vento forte.</p><table><tbody><tr><th>Preço</th><td>50 po</td></tr><tr><th>Disponibilidade</th><td>Cidade pequena</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A duração aumenta para 24 horas.</p><p><strong>Qualidade Excepcional.</strong> A cor da nuvem e o tom do estalo podem ser definidos durante a criação.</p><p><strong>Integridade do Produto.</strong> Sensível à umidade - contato direto com água ou armazenamento aberto em ambiente encharcado.</p>",
+        "en": "<h2>C2 Crafting — Fundamental</h2><table><tbody><tr><th>Source</th><td>Green-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>100 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies</td></tr><tr><th>Crafting DC</th><td>12</td></tr><tr><th>Normal time</th><td>10 minutes</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Singing Sand</li><li>1 portion of Shimmering Insect</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Chemical Alarm Powder</h2><table><tbody><tr><th>Form</th><td>Surveillance powder</td></tr><tr><th>Use</th><td>1 minute</td></tr><tr><th>Target or area</th><td>1.5-meter square on a firm surface</td></tr><tr><th>Range</th><td>Touch</td></tr><tr><th>Duration</th><td>8 hours or until activated</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The first creature of Tiny size or larger to enter the area or physically disturb the powder activates the product. It produces a snap audible from 30 m away and a colored cloud visible from 60 m away in open conditions. The alarm does not identify the creature or hinder its movement. A creature actively examining the area notices the powder with a successful DC 11 Wisdom (Perception) or Intelligence (Investigation) check and can avoid it.</p><h3>Ending</h3><p>After the product activates, when the duration ends, or when water or a strong wind disperses the powder.</p><table><tbody><tr><th>Price</th><td>50 gp</td></tr><tr><th>Availability</th><td>Small Town</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The duration increases to 24 hours.</p><p><strong>Exceptional Quality.</strong> The cloud&#x27;s color and the snap&#x27;s tone can be chosen during crafting.</p><p><strong>Product Integrity.</strong> Moisture-sensitive - direct contact with water or open storage in a waterlogged environment can compromise the product.</p>"
+      },
+      "metadata": {
+        "sourcePage": 87,
+        "family": {
+          "pt-BR": "Pós e Vapores",
+          "en": "Powders and Vapors"
+        }
+      },
+      "heroicDescription": {
+        "pt-BR": "A duração aumenta para 24 horas.",
+        "en": "The duration increases to 24 hours."
+      }
+    },
+    {
+      "id": "base:wayfinding-serum",
+      "name": {
+        "pt-BR": "Soro de Orientação",
+        "en": "Wayfinding Serum"
+      },
+      "complexity": 2,
+      "dc": 12,
+      "timeMinutes": 10,
+      "tools": [
+        "alchemist",
+        "herb"
+      ],
+      "ingredients": [
+        {
+          "id": "base:whispering-algae",
+          "quantity": 1
+        },
+        {
+          "id": "base:singing-sand",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:wayfinding-serum",
+        "quantity": 1
+      },
+      "bookPrice": 100,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C2 — Fundamental</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa verde — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>100 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista; alternativa: Kit de Herbalismo</td></tr><tr><th>CD de criação</th><td>12</td></tr><tr><th>Tempo normal</th><td>10 minutos</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Alga Sussurrante</li><li>1 porção de Areia Cantante</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Soro de Orientação</h2><table><tbody><tr><th>Forma</th><td>Soro ingerível</td></tr><tr><th>Uso</th><td>Ação Bônus</td></tr><tr><th>Alvo ou área</th><td>Você ou uma criatura voluntária/incapacitada</td></tr><tr><th>Alcance</th><td>Pessoal ou 1,5 m</td></tr><tr><th>Duração</th><td>24 horas</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>O alvo tem vantagem em testes de Sabedoria (Sobrevivência) feitos para navegar, determinar uma direção, evitar se perder, escolher uma rota entre caminhos conhecidos ou refazer um trajeto percorrido enquanto o soro estava ativo. O benefício não se aplica a rastrear criaturas ou encontrar alimento. O produto não revela destinos, cria mapas, descobre passagens ocultas nem supera efeitos mágicos que impeçam orientação.</p><h3>Encerramento</h3><p>Ao fim de 24 horas.</p><table><tbody><tr><th>Preço</th><td>50 po</td></tr><tr><th>Disponibilidade</th><td>Vila</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A duração aumenta para 7 dias.</p>",
+        "en": "<h2>C2 Crafting — Fundamental</h2><table><tbody><tr><th>Source</th><td>Green-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>100 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies; Herbalism Kit</td></tr><tr><th>Crafting DC</th><td>12</td></tr><tr><th>Normal time</th><td>10 minutes</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Whispering Algae</li><li>1 portion of Singing Sand</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Wayfinding Serum</h2><table><tbody><tr><th>Form</th><td>Ingestible serum</td></tr><tr><th>Use</th><td>Bonus Action</td></tr><tr><th>Target or area</th><td>You or 1 willing or Incapacitated creature</td></tr><tr><th>Range</th><td>Self or 1.5 m</td></tr><tr><th>Duration</th><td>24 hours</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The target has advantage on Wisdom (Survival) checks made to navigate, determine a direction, avoid becoming lost, choose a route among known paths, or retrace a route traveled while the serum was active. This benefit does not apply to tracking creatures or finding food. The product does not reveal destinations, create maps, discover hidden passages, or overcome magical effects that prevent navigation.</p><h3>Ending</h3><p>After 24 hours.</p><table><tbody><tr><th>Price</th><td>50 gp</td></tr><tr><th>Availability</th><td>Village</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The duration increases to 7 days.</p>"
+      },
+      "metadata": {
+        "sourcePage": 91,
+        "family": {
+          "pt-BR": "Ingeríveis",
+          "en": "Ingestibles"
+        }
+      },
+      "heroicDescription": {
+        "pt-BR": "A duração aumenta para 7 dias.",
+        "en": "The duration increases to 7 days."
+      }
+    },
+    {
+      "id": "base:restrictive-resin-flask",
+      "name": {
+        "pt-BR": "Frasco de Resina Restritiva",
+        "en": "Restrictive Resin Flask"
+      },
+      "complexity": 3,
+      "dc": 15,
+      "timeMinutes": 60,
+      "tools": [
+        "alchemist"
+      ],
+      "ingredients": [
+        {
+          "id": "base:living-latex",
+          "quantity": 1
+        },
+        {
+          "id": "base:hive-chitin",
+          "quantity": 1
+        },
+        {
+          "id": "base:tangled-root",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:restrictive-resin-flask",
+        "quantity": 1
+      },
+      "bookPrice": 500,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C3 — Avançada</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa azul — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>500 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista</td></tr><tr><th>CD de criação</th><td>15</td></tr><tr><th>Tempo normal</th><td>1 hora</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Látex Vivo</li><li>1 porção de Quitina de Colmeia</li><li>1 porção de Raiz Enroscada</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Frasco de Resina Restritiva</h2><table><tbody><tr><th>Forma</th><td>Frasco arremessável</td></tr><tr><th>Uso</th><td>Ação Utilizar</td></tr><tr><th>Alvo ou área</th><td>uma criatura Grande ou menor</td></tr><tr><th>Alcance</th><td>12 m</td></tr><tr><th>Duração</th><td>1 minuto</td></tr><tr><th>Salvaguarda</th><td>Destreza CD 14; sucesso: nenhum efeito</td></tr></tbody></table><h3>Efeito</h3><p>Em uma falha, a criatura fica Restringida pela resina. A criatura afetada ou outra criatura ao alcance pode usar uma Ação para realizar um teste de Força (Atletismo) ou Destreza (Acrobacia) CD 14, encerrando o efeito em caso de sucesso. A resina adere somente à criatura atingida e não cria terreno difícil.</p><h3>Encerramento</h3><p>Depois de um teste bem-sucedido, quando a resina for destruída ou ao fim da duração.</p><table><tbody><tr><th>Preço</th><td>180 po</td></tr><tr><th>Disponibilidade</th><td>Cidade média</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A duração aumenta para 10 minutos.</p><p><strong>Produção em Lotes.</strong> Permitida; além do ajuste normal, aumente a CD em +1 por viscosidade.</p><p><strong>Qualidade Excepcional.</strong> A resina pode receber cor e odor distintos para facilitar identificação e treinamento.</p><p><strong>Integridade do Produto.</strong> Sensível ao calor - 1 hora de calor intenso pode comprometer o frasco.</p>",
+        "en": "<h2>C3 Crafting — Advanced</h2><table><tbody><tr><th>Source</th><td>Blue-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>500 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies</td></tr><tr><th>Crafting DC</th><td>15</td></tr><tr><th>Normal time</th><td>1 hour</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Living Latex</li><li>1 portion of Hive Chitin</li><li>1 portion of Tangled Root</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Restrictive Resin Flask</h2><table><tbody><tr><th>Form</th><td>Throwable flask</td></tr><tr><th>Use</th><td>Utilize action</td></tr><tr><th>Target or area</th><td>1 Large or smaller creature</td></tr><tr><th>Range</th><td>12 m</td></tr><tr><th>Duration</th><td>1 minute</td></tr><tr><th>Saving throw</th><td>DC 14 Dexterity; success: no effect</td></tr></tbody></table><h3>Effect</h3><p>On a failed save, the creature has the Restrained condition. The affected creature or another creature within reach can take an action to make a DC 14 Strength (Athletics) or Dexterity (Acrobatics) check, ending the effect on a success. The resin adheres only to the creature it struck and does not create Difficult Terrain.</p><h3>Ending</h3><p>After a successful check, when the resin is destroyed, or when the duration ends.</p><table><tbody><tr><th>Price</th><td>180 gp</td></tr><tr><th>Availability</th><td>Medium City</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The duration increases to 10 minutes.</p><p><strong>Exceptional Quality.</strong> The resin can be given a distinctive color and scent to aid identification and training.</p><p><strong>Batch Production.</strong> Allowed. In addition to the normal adjustment, increase the Crafting DC by 1 because of the product&#x27;s viscosity.</p><p><strong>Product Integrity.</strong> Heat-sensitive - 1 hour of intense heat can compromise the flask.</p>"
+      },
+      "metadata": {
+        "sourcePage": 103,
+        "family": {
+          "pt-BR": "Arremessáveis",
+          "en": "Thrown Preparations"
+        }
+      },
+      "heroicDescription": {
+        "pt-BR": "A duração aumenta para 10 minutos.",
+        "en": "The duration increases to 10 minutes."
+      }
+    },
+    {
+      "id": "base:leaping-elixir",
+      "name": {
+        "pt-BR": "Elixir de Salto",
+        "en": "Leaping Elixir"
+      },
+      "complexity": 3,
+      "dc": 15,
+      "timeMinutes": 60,
+      "tools": [
+        "alchemist"
+      ],
+      "ingredients": [
+        {
+          "id": "base:resilient-fiber",
+          "quantity": 1
+        },
+        {
+          "id": "base:leaping-insect",
+          "quantity": 1
+        },
+        {
+          "id": "base:wind-bone",
+          "quantity": 1
+        }
+      ],
+      "product": {
+        "id": "base:leaping-elixir",
+        "quantity": 1
+      },
+      "bookPrice": 500,
+      "bookWeight": 1,
+      "description": {
+        "pt-BR": "<h2>Produção C3 — Avançada</h2><table><tbody><tr><th>Fonte</th><td>Livro de Alquimia de capa azul — uma fórmula por livro</td></tr><tr><th>Preço do livro</th><td>500 po</td></tr><tr><th>Ferramenta</th><td>Suprimentos de Alquimista</td></tr><tr><th>CD de criação</th><td>15</td></tr><tr><th>Tempo normal</th><td>1 hora</td></tr><tr><th>Resultado</th><td>Uma unidade do produto por sucesso</td></tr></tbody></table><h3>Ingredientes por tentativa</h3><ul><li>1 porção de Fibra Resiliente</li><li>1 porção de Inseto Saltador</li><li>1 porção de Osso de Vento</li></ul><p>Estude a fonte por uma hora antes da primeira tentativa. Até memorizar, consulte o livro durante a produção. Os ingredientes são consumidos quando o teste é resolvido, inclusive em uma falha. O livro permanece.</p><h2>Elixir de Salto</h2><table><tbody><tr><th>Forma</th><td>Elixir ingerível</td></tr><tr><th>Uso</th><td>Ação Bônus</td></tr><tr><th>Alvo ou área</th><td>Você ou uma criatura voluntária/incapacitada</td></tr><tr><th>Alcance</th><td>Pessoal ou 1,5 m</td></tr><tr><th>Duração</th><td>10 minutos</td></tr><tr><th>Salvaguarda</th><td>Nenhuma</td></tr></tbody></table><h3>Efeito</h3><p>As distâncias de salto do alvo são triplicadas e dispensam corrida inicial. Além disso, reduza em 2d6 o dano de queda que ele sofrer, até o mínimo de 0.</p><h3>Encerramento</h3><p>Ao fim da duração.</p><table><tbody><tr><th>Preço</th><td>120 po</td></tr><tr><th>Disponibilidade</th><td>Cidade média</td></tr></tbody></table><h3>Regras opcionais</h3><p><strong>Aprimoramento Heroico.</strong> A redução do dano de queda aumenta para 4d6.</p>",
+        "en": "<h2>C3 Crafting — Advanced</h2><table><tbody><tr><th>Source</th><td>Blue-covered Alchemy Book — one formula per book</td></tr><tr><th>Book price</th><td>500 gp</td></tr><tr><th>Tools</th><td>Alchemist&#x27;s Supplies</td></tr><tr><th>Crafting DC</th><td>15</td></tr><tr><th>Normal time</th><td>1 hour</td></tr><tr><th>Output</th><td>One unit of the product on success</td></tr></tbody></table><h3>Ingredients per attempt</h3><ul><li>1 portion of Resilient Fiber</li><li>1 portion of Leaping Insect</li><li>1 portion of Wind Bone</li></ul><p>Study the source for one hour before your first attempt. Consult the book during crafting until the formula is memorized. Ingredients are consumed when the check is resolved, including on a failure. The book remains.</p><h2>Leaping Elixir</h2><table><tbody><tr><th>Form</th><td>Ingestible elixir</td></tr><tr><th>Use</th><td>Bonus Action</td></tr><tr><th>Target or area</th><td>You or 1 willing or Incapacitated creature</td></tr><tr><th>Range</th><td>Self or 1.5 m</td></tr><tr><th>Duration</th><td>10 minutes</td></tr><tr><th>Saving throw</th><td>None</td></tr></tbody></table><h3>Effect</h3><p>The target&#x27;s jump distances are tripled, and it need not move before making a jump. In addition, reduce any falling damage the target takes by 2d6, to a minimum of 0.</p><h3>Ending</h3><p>When the duration ends.</p><table><tbody><tr><th>Price</th><td>120 gp</td></tr><tr><th>Availability</th><td>Medium City</td></tr></tbody></table><h3>Optional rules</h3><p><strong>Heroic Enhancement.</strong> The falling damage reduction increases to 4d6.</p>"
+      },
+      "metadata": {
+        "sourcePage": 102,
+        "family": {
+          "pt-BR": "Ingeríveis",
+          "en": "Ingestibles"
+        }
+      },
+      "heroicDescription": {
+        "pt-BR": "A redução do dano de queda aumenta para 4d6.",
+        "en": "The falling damage reduction increases to 4d6."
       }
     }
   ]

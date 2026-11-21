@@ -2,11 +2,11 @@
 
 **Livros para descobrir. Fórmulas para aprender. Preparações para usar nas suas aventuras.**
 
-Versão 0.1.6 • Marcelo Sant Ana / Sant Ana RPG Press · [English](README.md)
+Versão 0.1.7 • Marcelo Sant Ana / Sant Ana RPG Press · [English](README.md)
 
 O Sant Ana Alchemy leva as regras de fabricação do *Compêndio de Alquimia* para o Foundry: o personagem estuda um livro físico, reúne os ingredientes, resolve o teste de fabricação e avança na memorização da fórmula. A demonstração é gratuita e usa o mesmo motor dos pacotes completos do livro.
 
-Motor de fabricação alquímica para Foundry VTT 14 e o sistema dnd5e. A interface está disponível em português e inglês. O fluxo do mestre foi conferido em uma instalação real de Foundry 14, build 370, com dnd5e 6.1.0. O escopo e as verificações adicionais estão registrados abaixo.
+Motor de fabricação alquímica para Foundry VTT 14 e o sistema dnd5e. A interface está disponível em português e inglês.
 
 ## O que está incluído
 
@@ -18,17 +18,15 @@ Motor de fabricação alquímica para Foundry VTT 14 e o sistema dnd5e. A interf
 - CDs e tempos C1–C5, condições gerais, Acelerar, Jogar Seguro e Desafio Heroico.
 - Rolagem, consumo, entrega do produto e registro de progresso/memorização.
 - Importação de kits JSON e reconhecimento de módulos de conteúdo compatíveis.
-- Demonstração gratuita: cinco fórmulas C1, dez ingredientes, cinco livros físicos, cinco notas e os modelos dos cinco produtos prontos.
+- Demonstração gratuita com 24 ingredientes e 12 fórmulas. Cada fórmula tem um livro físico, uma nota de Diário e um modelo do produto pronto.
 
-| Fórmula incluída | Uso na aventura |
-|---|---|
-| Conservante de Água | Conservar água potável durante viagens |
-| Antisséptico Rústico | Estabilizar uma criatura com 0 PV |
-| Fogo Instável | Arremessar uma preparação que causa dano de fogo |
-| Fumaça Distrativa | Dificultar testes de Percepção que dependam da visão |
-| Tinta Reveladora | Encontrar vestígios recentes de sangue e saliva |
+| Complexidade | Fórmulas incluídas | Fabricação |
+|---|---|---|
+| C1 | Conservante de Água, Antisséptico Rústico, Fogo Instável, Fumaça Distrativa e Tinta Reveladora | CD 9 · 1 minuto |
+| C2 | Luz Engarrafada, Poção de Cura Menor, Cola Alquímica, Pó de Alarme Químico e Soro de Orientação | CD 12 · 10 minutos |
+| C3 | Frasco de Resina Restritiva e Elixir de Salto | CD 15 · 1 hora |
 
-Todas são C1, com CD 9 e tempo normal de fabricação de um minuto. Consulte as descrições dos produtos para as regras completas de uso e suas limitações. O pacote C1 completo contém 25 fórmulas; o livro reúne 125 fórmulas C1–C5.
+Para alcançar C2, fabrique com sucesso três C1 diferentes e conclua a leitura orientada ou instrução equivalente. Para chegar a C3, fabrique com sucesso cada uma das cinco C2. Confira o contador em **Progresso**. O mestre confirma os requisitos e ajusta o nível em **Gerenciar → Configurar personagem**. Para fabricar C3 de forma independente, o personagem precisa de proficiência na ferramenta compatível e da fonte estudada.
 
 O forrageamento e os pacotes comerciais C1–C5 permanecem produtos separados. O conteúdo completo do PDF não é distribuído neste módulo.
 
@@ -36,7 +34,7 @@ O forrageamento e os pacotes comerciais C1–C5 permanecem produtos separados. O
 
 O **Compêndio de Alquimia**, de Marcelo Sant Ana, amplia a coleção para **125 fórmulas distribuídas entre C1 e C5 e 110 ingredientes**.
 
-A compra do livro inclui os **pacotes completos C1–C5 para Foundry VTT e o módulo de forrageamento como bônus**. Eles utilizam este mesmo motor gratuito. Ao importar o C1 completo, as fórmulas e os ingredientes compartilhados com a demonstração são reaproveitados pelos mesmos identificadores.
+A compra do livro inclui os **pacotes completos C1–C5 para Foundry VTT e o módulo de forrageamento como bônus**. Eles utilizam este mesmo motor gratuito. Ao importar os pacotes completos C1 a C3, as fórmulas e os ingredientes compartilhados com a demonstração são reaproveitados pelos mesmos identificadores.
 
 **[Livro em português e bônus para Foundry](https://payhip.com/b/sUa8I)** · **[English edition and Foundry bonus](https://payhip.com/b/6Z0ru)**
 
@@ -62,14 +60,10 @@ O mesmo endereço permite que o Foundry consulte futuras atualizações e funcio
 4. Abra um mundo dnd5e e ative **Sant Ana Alchemy — Crafting Engine** em Gerenciar Módulos. Recarregue a página quando o Foundry solicitar.
 5. Entre como mestre. As pastas e as duas macros são criadas automaticamente. Se necessário, use **Configurações → Configurar opções → Sant Ana Alchemy → Abrir gerenciador**.
 
-Na Molten Hosting, faça a cópia da pasta pelo gerenciador de arquivos disponibilizado pela hospedagem, dentro da pasta `Data/modules` da instância existente. A pasta precisa ser extraída; apenas guardar o ZIP nessa pasta não instala o módulo. O pacote não contrata serviços nem muda o plano de hospedagem.
-
-Os arquivos de instalação estão hospedados no repositório público. A homologação completa e o processo de submissão ao Foundry ainda são necessários antes do cadastro no catálogo oficial.
-
 ## Primeira demonstração
 
 1. Use um mundo de testes dnd5e no seu servidor atual.
-2. Execute **Alquimia — Gerenciar** e escolha **Instalar kit → Demonstração C1 — Cinco Fórmulas**.
+2. Execute **Alquimia — Gerenciar** e escolha **Instalar kit → Demonstração C1–C3 — Doze Fórmulas**.
 3. Crie um personagem de teste com Inteligência definida.
 4. Para começar pelo Conservante de Água, arraste seu livro e uma porção de Besouro de Sal e de Madeira Encharcada das pastas de Itens para a ficha. Para outra fórmula, entregue seu próprio livro e os ingredientes listados nela.
 5. Acrescente Suprimentos de Alquimista à ficha. Se a ferramenta vier de uma importação antiga ou representar equipamento emprestado, o mestre pode registrar o acesso físico no gerenciador.
@@ -83,7 +77,7 @@ Um mestre precisa estar conectado para atender os pedidos. Os jogadores só prec
 
 ## Atualizar uma demonstração já instalada
 
-Atualize o motor no Foundry e instale novamente **Demonstração C1 — Cinco Fórmulas** no gerenciador. O identificador do kit permanece igual: os documentos do Conservante de Água são reutilizados, e as quatro novas fórmulas são acrescentadas. A opção explícita de atualizar modelos aplica os textos, preços e ícones ampliados aos modelos existentes do mundo. Cópias nas fichas e o progresso de estudo e memorização são preservados. Os identificadores também são os mesmos do pacote C1 completo, permitindo reaproveitar o conteúdo ao importá-lo.
+Atualize o motor no Foundry e instale novamente **Demonstração C1–C3 — Doze Fórmulas** no gerenciador. A instalação reaproveita os documentos já existentes e acrescenta as fórmulas e ingredientes que faltam. Marque a opção de atualizar modelos somente se desejar substituir os modelos existentes no mundo. As cópias nas fichas e o progresso de estudo e memorização são preservados. Os pacotes completos C1, C2 e C3 utilizam os mesmos identificadores.
 
 ## Regras e decisões do mestre
 
@@ -123,18 +117,6 @@ A importação repetida reutiliza identidades. A opção de atualizar modelos é
 Se uma escrita falhar antes de concluir a fabricação, o motor tenta compensar a operação. Se não for possível determinar um estado seguro, a ficha recebe um registro pendente e novas fabricações ficam bloqueadas.
 
 O mestre abre **Gerenciar → Configurar personagem**, confere o registro e o inventário, corrige o que for necessário e confirma a reconciliação. Liberar pedidos não altera quantidades. Após perda de conexão, confira o resultado e o estoque antes de enviar novamente um pedido.
-
-## Estado de validação
-
-- 66 testes automatizados em Node passaram, cobrindo regras, fabricação das cinco fórmulas em português e inglês, atualização da demonstração antiga, importação repetida, permissões, concorrência e recuperação de falhas.
-- As APIs usadas foram conferidas na documentação pública do Foundry 14.
-- Em 16/11/2026, as cinco fórmulas da demonstração foram estudadas, fabricadas e memorizadas pela interface nativa em português, como mestre, no Foundry 14 build 370 com dnd5e 6.1.0. Foram conferidos o consumo dos ingredientes, produtos de sucesso e de falha leve, permanência dos livros e fabricação por memória sem acesso ao livro.
-- O teste usou um personagem separado em um mundo existente com outros módulos e os pacotes completos ativos, acesso manual autorizado às ferramentas de alquimista, bônus de teste +10 nas tentativas de sucesso e ajuste de INT permanente +3 para a meta de memória. A versão 0.1.6 registra a compatibilidade; código executável, demonstração e imagens permanecem idênticos aos da 0.1.5 testada.
-- Pedidos de jogadores, clientes simultâneos, interface nativa em inglês, isolamento em mundo limpo e detecção de um item físico de ferramenta continuam como verificações adicionais em mesa. A cobertura automatizada não substitui esses testes. Consulte [VALIDATION.json](VALIDATION.json) e [DEVELOPMENT.md](DEVELOPMENT.md).
-
-Para repetir os testes: `node --test tests/*.test.mjs` na pasta do módulo. Não é preciso instalar dependências de desenvolvimento.
-
-Consulte `KIT_FORMAT.md` para produzir os futuros pacotes. O código-fonte e os testes acompanham esta distribuição gratuita.
 
 ## Uso gratuito e conteúdo completo
 

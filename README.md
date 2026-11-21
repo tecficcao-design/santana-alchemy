@@ -1,6 +1,6 @@
 # Sant Ana Alchemy — Alchemy Crafting for Foundry VTT
 
-**Free crafting engine with five C1 formulas · Foundry VTT 14 + dnd5e · English and Brazilian Portuguese**
+**Free crafting engine with 12 formulas from C1 to C3 · Foundry VTT 14 + dnd5e · English and Brazilian Portuguese**
 
 [Português (Brasil)](README_PT-BR.md) · [Installation](#install) · [The complete compendium](#the-complete-alchemy-compendium)
 
@@ -16,19 +16,17 @@ Give alchemy a place in your adventures: books to discover, formulas to study, i
 - **Play in English or Portuguese.** The interface and included content support both languages.
 - **Expand the collection.** The same free engine powers the complete C1–C5 content packs supplied with the book.
 
-## Five free C1 formulas
+## Free formulas
 
-The demonstration includes five different ways to use alchemy at the table:
-
-| Formula | Português | Use in an adventure |
+| Tier | Recipes | Crafting DC and time |
 |---|---|---|
-| **Unstable Fire** | Fogo Instável | Throw an alchemical preparation that deals Fire damage. |
-| **Distracting Smoke** | Fumaça Distrativa | Create light obscurement that hinders sight-based Perception. |
-| **Rustic Antiseptic** | Antisséptico Rústico | Stabilize a creature at 0 Hit Points. |
-| **Revealing Ink** | Tinta Reveladora | Reveal recent organic traces such as blood or saliva. |
-| **Water Preservative** | Conservante de Água | Preserve drinking water for an expedition. |
+| C1 | Water Preservative, Rustic Antiseptic, Unstable Fire, Distracting Smoke, Revealing Ink | DC 9 · 1 minute |
+| C2 | Bottled Light, Lesser Healing Potion, Alchemical Adhesive, Chemical Alarm Powder, Wayfinding Serum | DC 12 · 10 minutes |
+| C3 | Restrictive Resin Flask, Leaping Elixir | DC 15 · 1 hour |
 
-Included: **10 ingredients, five physical recipe books, five recipe Journals and five finished-product templates**, with bilingual descriptions and local icons. All five formulas are C1, with a normal crafting time of one minute and DC 9.
+The kit includes 24 ingredients and a book, Journal entry and finished product for each recipe. Chemical Alarm Powder signals the first disturbance at a prepared spot. Wayfinding Serum grants advantage on Survival checks for navigation for 24 hours.
+
+Start at C1 and successfully craft three different C1 formulas. After guided reading or equivalent instruction, the GM can grant C2. Successfully craft all five distinct C2 formulas. Once the GM grants C3, an alchemist with appropriate tool proficiency can study and independently craft either C3 formula. Check the character’s distinct successes under **Progress** and set their tier under **Manage → Configure character**.
 
 The product descriptions contain the complete use rules and limits. Applying damage, conditions and other product effects remains a table decision; the free demo handles crafting and inventory.
 
@@ -40,7 +38,7 @@ The complete book expands your collection to:
 - **110 ingredients** for your alchemical adventures.
 - **Complete C1–C5 Foundry content packs and a foraging module**, supplied as bonuses with the book.
 
-The complete packs use this same crafting engine. Your demo formulas and their permanent identifiers are reused when you import the full C1 pack.
+The complete packs use this same crafting engine. Your demo formulas and their permanent identifiers are reused when you import the full C1–C3 packs.
 
 **[Get the English book and Foundry bonus](https://payhip.com/b/6Z0ru)** · **[Edição em português com bônus para Foundry](https://payhip.com/b/sUa8I)**
 
@@ -50,7 +48,7 @@ By **Marcelo Sant Ana · Sant Ana RPG Press**. [Visit the store](https://payhip.
 
 **Leve a alquimia para as suas aventuras:** encontre livros, estude fórmulas, reúna ingredientes e fabrique preparações úteis.
 
-O **Sant Ana Alchemy** é um motor gratuito para Foundry VTT 14 e dnd5e, com interface e conteúdo em português e inglês. A demonstração inclui **cinco fórmulas C1 e dez ingredientes**, além dos livros e modelos dos produtos. O sistema acompanha fabricação, consumo de ingredientes e memorização.
+O **Sant Ana Alchemy** é um motor gratuito para Foundry VTT 14 e dnd5e, com interface e conteúdo em português e inglês. A demonstração inclui **12 fórmulas (cinco C1, cinco C2 e duas C3) e 24 ingredientes**, além dos livros e modelos dos produtos. O sistema acompanha fabricação, consumo de ingredientes e memorização.
 
 O livro completo reúne **125 fórmulas C1–C5 e 110 ingredientes**, com os pacotes completos para Foundry e o módulo de forrageamento como bônus. Todos utilizam este mesmo motor gratuito.
 
@@ -58,9 +56,9 @@ O livro completo reúne **125 fórmulas C1–C5 e 110 ingredientes**, com os pac
 
 ## Current status and requirements
 
-**Version 0.1.6 has a live GM crafting check on Foundry VTT 14 (build 370) and dnd5e 6.1.0.** Requires Foundry VTT 14, the dnd5e system and a connected GM to process crafting requests. No Socketlib, Item Macro, Midi-QOL or Item Piles dependency is required.
+Version 0.1.7 expands the demo content. The engine and its five C1 formulas previously passed a live GM crafting check on Foundry VTT 14 (build 370) and dnd5e 6.1.0. Requires Foundry VTT 14, the dnd5e system and a connected GM to process crafting requests. No Socketlib, Item Macro, Midi-QOL or Item Piles dependency is required.
 
-**66 automated tests passed**, including crafting all five formulas in both languages and upgrading the original demo without duplicates. All five formulas were also studied, crafted and memorized through the native Portuguese interface as GM. Ingredient consumption, a mild failure, retained books and crafting from memory without book access were checked. See [VALIDATION.json](VALIDATION.json) for the test scope and remaining checks.
+The automated suite covers all 12 formulas in both languages, C1–C3 progression, and upgrades from the one- and five-formula demos. Native GM checks covered the original five C1 formulas. See [VALIDATION.json](VALIDATION.json).
 
 ## Install
 
@@ -82,7 +80,7 @@ Installation files are hosted in this public repository. The official package pa
 
 ## Try it
 
-1. Open **Alchemy — Manage → Install kit** and install **C1 Demo — Five Formulas**.
+1. Open **Alchemy — Manage → Install kit** and install **C1–C3 Demo — Twelve Formulas**.
 2. Pick a formula and drag its physical book and required ingredients from the Item folders to a test character. Water Preservative is a simple first example.
 3. Add Alchemist's Supplies or approved physical tool access through the GM manager.
 4. Select the character token and run **Alchemy — Craft Item**.
@@ -98,11 +96,11 @@ Core C1–C5 rules, natural 1/20, failure severity/mitigation, pacing, overall c
 
 Damage, conditions, contamination, flawed product limitations, C3 severe additional ingredient loss, and heroic enhancements require GM adjudication; the consequence is displayed. Optional specialties, batches, quality, installations and other optional book subsystems remain table-managed in this version. The engine does not automatically apply Alchemist class features. Product-use automation belongs to the individual kit; the demo produces a reference item whose application is handled by the table.
 
-Foraging and the complete C1–C5 content packs are separate. This free build contains a five-formula selection from C1. The complete C1 pack has 25 formulas, and the book has 125 formulas across C1–C5.
+Foraging and the complete C1–C5 content packs are separate. This free build contains five C1, five C2 and two C3 formulas. The complete C1 pack has 25 formulas, and the book has 125 formulas across C1–C5.
 
 ## Updating an existing demo world
 
-Update the engine in Foundry and install **C1 Demo — Five Formulas** in the manager again. The kit keeps its original identifier: existing Water Preservative documents are reused and the four additional formulas are added. Choose the explicit template-update option to apply the expanded descriptions, prices and icons to existing world templates. Character inventory copies and study/memorization progress are preserved. The same permanent recipe and ingredient IDs are used in the complete C1 pack, so its import reuses the demo content.
+Update the engine in Foundry and reinstall **C1–C3 Demo — Twelve Formulas** in the manager. The existing kit ID is retained. Reinstalling adds the missing templates and reuses documents already present. Choose the template-update option only if you wish to replace existing world templates. Character inventory and study progress are preserved. The complete C1, C2 and C3 packs use the same permanent identifiers.
 
 ## Kits and maintenance
 
@@ -116,7 +114,7 @@ Interrupted writes are compensated when safe. If reconciliation is uncertain, an
 
 Automated Node tests cover rules, idempotent import, complete crafting flow, permission checks, simultaneous requests and error recovery. On 2026-11-16, the unchanged 0.1.5 runtime passed native GM workflow checks on Foundry 14 build 370 with dnd5e 6.1.0: all five demo formulas, study, stock consumption, success and mild failure, products, retained books, memorization and crafting without book access. Version 0.1.6 records this compatibility and validation; its runtime, demo data and assets are unchanged from 0.1.5.
 
-The live check used Portuguese, approved manual alchemist tool access, and a separate test character in an existing world with other modules, including the full content packs. Success-path checks used a +10 test bonus and a permanent Intelligence modifier override of +3 for the memory target. Non-GM requests, simultaneous clients, native English dialogs, clean-world isolation and native tool-item detection remain additional live checks; their automated coverage does not replace those checks. See [DEVELOPMENT.md](DEVELOPMENT.md) and [VALIDATION.json](VALIDATION.json).
+The native GM checks covered C1. Native checks for the new C2/C3 content remain pending.
 
 Run `node --test tests/*.test.mjs`; no npm dependencies are required. Source and tests are included.
 

@@ -17,3 +17,9 @@ This permission covers only the files included in this free engine package. It d
 Todos os demais direitos estão reservados. Esta permissão não é uma licença de código aberto e não autoriza vender, sublicenciar ou redistribuir este pacote fora dos direitos previstos pelos termos aplicáveis do GitHub para visualizar e criar forks de repositórios públicos. Outros usos dependem de autorização do autor.
 
 Esta permissão abrange somente os arquivos incluídos neste pacote gratuito do motor. Não licencia o livro, os pacotes C1–C5 separados, o módulo de forrageamento ou outros conteúdos fornecidos separadamente. O Foundry VTT e o sistema dnd5e continuam sujeitos aos seus próprios termos e licenças.
+
+## Game rules attribution
+
+This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
+The alchemy subsystem, ingredient catalog and formulas are original supplement content by Marcelo Sant Ana / Sant Ana RPG Press.

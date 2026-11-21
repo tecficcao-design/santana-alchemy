@@ -1,69 +1,30 @@
 {
-  "version": "0.1.6",
-  "date": "2026-11-16",
+  "version": "0.1.7",
+  "date": "2026-11-21",
   "automated_tests": {
-    "engine": 66
+    "engine": 82
   },
   "result": "passed",
-  "test_environment": "Node.js 24.22.1; Foundry document/API mocks",
+  "test_environment": "Node.js 24.22.3; Foundry document/API mocks",
   "coverage": [
-    "All five formulas studied and crafted with exact stock in English and Portuguese",
+    "All 12 recipes studied and crafted in English and Portuguese with their exact ingredients",
     "Approved alternative tools",
-    "Upgrade from original one-formula demo: permanent IDs, no duplicates, preserved actor inventory and memorization",
+    "Upgrades from both the one- and five-recipe kits preserve IDs, actor inventory and progress",
     "Unrelated stock not consumed",
-    "Core rules, permissions, serialized requests and error recovery"
+    "Core rules, permissions, serialized requests and error recovery",
+    "Study, distinct C1 and C2 successes, GM tier confirmation, and successful C3 crafting using only the free kit"
   ],
   "content_kit": {
     "id": "base-c1-demo",
-    "version": "1.1.0",
-    "recipes": 5,
-    "ingredients": 10,
-    "products": 5,
-    "generated_books": 5
+    "version": "1.2.0",
+    "recipes": 12,
+    "ingredients": 24,
+    "products": 12,
+    "generated_books": 12
   },
-  "runtime_code": "byte-identical to 0.1.5; compatibility metadata and documentation only",
-  "local_package_checks": "passed: reference C1 subset, matching quantities/descriptions, local SVG assets, locale key parity, JSON, manifest files and archive integrity",
+  "runtime_code": "Unchanged from 0.1.6; expanded demo content.",
+  "local_package_checks": "C2/C3 subset checked against the original 1.0.0 kits; exact identifiers, ingredient quantities, bilingual texts, local assets, release manifest and ZIP integrity.",
   "live_foundry_validation": {
-    "result": "passed within the GM workflow scope below",
-    "date": "2026-11-16",
-    "tested_runtime_version": "0.1.5",
-    "same_runtime_in_release": "0.1.6",
-    "core": {
-      "version": "14",
-      "build": "370"
-    },
-    "system": {
-      "id": "dnd5e",
-      "version": "6.1.0"
-    },
-    "client_language": "pt-BR",
-    "user_role": "Gamemaster",
-    "actor_type": "character",
-    "environment": "Existing world with 38 active modules, including full C1-C5 content packs and foraging. Imported the free demo without overwriting existing templates. No clean-world isolation claim.",
-    "controlled_setup": {
-      "tool": "GM manual alchemist access and proficiency multiplier 1",
-      "success_check_bonus": 10,
-      "memory_permanent_intelligence_modifier_override": 3,
-      "time": "Acknowledged as authorized test time; world calendar not advanced"
-    },
-    "checks": [
-      "All five demo formulas studied, successfully crafted and memorized through native dialogs",
-      "Mild failure at total 6 versus DC 9 consumed one portion of each Water Preservative ingredient, retained the book and created one flawed product",
-      "Successful crafting totals: Water Preservative 17, Rustic Antiseptic 17, Unstable Fire 30, Distracting Smoke 19, Revealing Ink 17; all versus DC 9",
-      "Inventory confirmed one normal product per successful attempt, one portion deducted from each required ingredient, all five books retained at quantity 1",
-      "All five formulas appeared in the memorized-recipe picker",
-      "Water Preservative crafted successfully at total 14 versus DC 9 after its book quantity was reduced to 0; book restored to 1 afterwards",
-      "Missing ingredients were shown in the crafting review before stock was supplied"
-    ],
-    "remaining_live_checks": [
-      "Clean world with only the free engine",
-      "Non-GM owner request and ownership enforcement",
-      "Simultaneous clients",
-      "Native English interface and imports",
-      "Native physical tool-item detection",
-      "Other Foundry builds or dnd5e versions"
-    ]
-  },
-  "official_foundry_catalog_publication": "Package exists; version registration is a separate post-build operation. Consult the official package page for current availability.",
-  "public_download_validation": "performed after publication; not included in this build-time record"
+    "scope": "The five original C1 formulas were previously checked in native Foundry VTT 14 (build 370) with dnd5e 6.1.0. Native testing of the new C2/C3 kit remains pending."
+  }
 }
